@@ -11,26 +11,22 @@ import { HttpClientService } from '../http-client.service';
 export class ProductService {
   constructor(private httpClientService: HttpClientService) { }
 
-  create(product: Create_Product, successCallBack?: () => void, errorCallBack?: (errorMessage: string) => void) {
+  create(product: Create_Product,successCallBack?: () => void,errorCallBack?: (errorMessage: string) => void) {
     this.httpClientService.post({
-      controller: "products",
+      controller: "products"
     }, product)
       .subscribe(result => {
-        successCallBack?.();
-      }, (errorResponse: HttpErrorResponse) => {
-        let message = "";
-
-        const errors = errorResponse.error;
-        for (let key in errors) {
-          if (Array.isArray(errors[key])) {
-            errors[key].forEach((m: string) => {
-              message += `${m}<br>`;
+          successCallBack();
+        },(errorResponse: HttpErrorResponse) => {
+          const _error: Array<{ key: string, value: Array<string> }> = errorResponse.error;
+          let message = "";
+          _error.forEach((v, index) => {
+            v.value.forEach((_v, _index) => {
+              message += `${_v}<br>`;
             });
-          }
-        }
-
-        errorCallBack?.(message);
-      });
+          });
+          errorCallBack(message);
+        });
   }
 
   async read(page: number = 0, size: number = 5, successCallBack?: () => void, errorCallBack?: (errorMessage: string) => void): Promise<{ totalCount: number; products: List_Product[] }> {

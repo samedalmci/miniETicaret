@@ -33,7 +33,7 @@ export class HttpClientService {
     else
       url = `${this.url(requestParameter)}${requestParameter.queryString ? `?${requestParameter.queryString}` : ""}`;
 
-    return this.httpClient.get<T>(url, { headers: requestParameter.headers });
+    return this.httpClient.post<T>(url, body, { headers: requestParameter.headers });
   }
 
   put<T>(requestParameter: Partial<RequestParameters>, body: Partial<T>): Observable<T> {

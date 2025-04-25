@@ -11,6 +11,5 @@
     "\\src\\app\\services\\common",
     "\\src\\app\\services\\common\\file-upload"
   ],
-  "SelectedNode": "\\src\\app\\services\\common\\file-upload\\file-upload.component.html",
   "PreviewInSolutionExplorer": false
 }

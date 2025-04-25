@@ -230,3 +230,4 @@ C:\Users\samed\Desktop\ETicaretUygulaması\miniETicaret\ETicaretAPI\Presentation
 C:\Users\samed\Desktop\ETicaretUygulaması\miniETicaret\ETicaretAPI\Presentation\ETicaretAPI.API\obj\Debug\net6.0\ETicaretAPI.API.pdb
 C:\Users\samed\Desktop\ETicaretUygulaması\miniETicaret\ETicaretAPI\Presentation\ETicaretAPI.API\obj\Debug\net6.0\ETicaretAPI.API.genruntimeconfig.cache
 C:\Users\samed\Desktop\ETicaretUygulaması\miniETicaret\ETicaretAPI\Presentation\ETicaretAPI.API\obj\Debug\net6.0\ref\ETicaretAPI.API.dll
+C:\Users\samed\Desktop\ETicaretUygulaması\miniETicaret\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net6.0\ETicaretAPI.API.staticwebassets.runtime.json

@@ -43,6 +43,7 @@ if (app.Environment.IsDevelopment())
     app.UseDeveloperExceptionPage();
 }
 
+app.UseStaticFiles();
 // CORS'u kullanın
 app.UseCors("AllowAngular");
 

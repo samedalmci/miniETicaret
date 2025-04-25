@@ -7,7 +7,6 @@ import { HttpClientService } from '../../services/common/http-client.service';
 import { AlertifyService, MessageType, Position } from '../../services/admin/alertify.service';
 import { HttpErrorResponse } from '@angular/common/http';
 
-
 declare var $: any;
 
 @Directive({
@@ -23,19 +22,10 @@ export class DeleteDirective {
     private spinner: NgxSpinnerService,
     public dialog: MatDialog,
     private alertifyService : AlertifyService
-  ) {
-
-    const img = _renderer.createElement("img");
-    img.setAttribute("src", "assets/images/delete.png");
-    img.setAttribute("style", "cursor: pointer;");
-    img.width = 25;
-    img.height = 25;
-    _renderer.appendChild(element.nativeElement, img);
-  }
+  ) {}
 
   @Input() id: string;
   @Input() controller: string;
-
   @Output() callback: EventEmitter<any> = new EventEmitter();
 
   @HostListener("click")
@@ -67,7 +57,6 @@ export class DeleteDirective {
         })
       });  
     });
-
   }
 
   openDialog(afterClosed: any): void {
@@ -82,6 +71,4 @@ export class DeleteDirective {
       }
     });
   }
-
-
 }

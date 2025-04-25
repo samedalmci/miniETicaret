@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\resource\\product-images\\2069411685.pdf"
     },
     {
+      "Id": "C:\\Users\\samed\\Desktop\\ETicaretUygulaması\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\resource\\product-images\\2136410465.png",
+      "PackagePath": "staticwebassets\\resource\\product-images\\2136410465.png"
+    },
+    {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.ETicaretAPI.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },

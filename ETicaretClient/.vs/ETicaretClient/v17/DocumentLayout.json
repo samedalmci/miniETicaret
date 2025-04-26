@@ -38,8 +38,7 @@
               "RelativeToolTip": "src\\app\\services\\common\\file-upload\\file-upload.component.html",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-04-25T16:32:43.855Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-25T16:32:43.855Z"
             },
             {
               "$type": "Document",
@@ -64,8 +63,7 @@
               "RelativeToolTip": "src\\app\\directives\\admin\\delete.directive.ts",
               "ViewState": "AgIAABkAAAAAAAAAAAAgwDoAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-04-25T16:29:28.832Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-25T16:29:28.832Z"
             },
             {
               "$type": "Document",
@@ -77,8 +75,7 @@
               "RelativeToolTip": "src\\app\\services\\common\\dialog.service.ts",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-04-25T16:01:05.412Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-25T16:01:05.412Z"
             }
           ]
         }

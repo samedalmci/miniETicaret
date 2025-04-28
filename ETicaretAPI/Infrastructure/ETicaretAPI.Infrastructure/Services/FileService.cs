@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ETicaretAPI.Application.Services;
+using ETicaretAPI.Infrastructure.Operations;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 
@@ -23,7 +24,7 @@ namespace ETicaretAPI.Infrastructure.Services
             try
             {
                 await using FileStream fileStream = new(path, FileMode.Create, FileAccess.Write, FileShare.None, 1024 * 1024, useAsync: false);
-                await fileStream.CopyToAsync(fileStream);
+                await file.CopyToAsync(fileStream);
                 await fileStream.FlushAsync();
                 return true;
             }
@@ -35,11 +36,19 @@ namespace ETicaretAPI.Infrastructure.Services
       
         }
 
-        public Task<string> FileRenameAsync(string fileName)
+        async Task<string> FileRenameAsync(string path, string fileName, bool first = true)
         {
-            throw new NotImplementedException();
+            string extension = Path.GetExtension(fileName);
+            string oldName = Path.GetFileNameWithoutExtension(fileName);
+            string newName = NameOperation.CharacterRegulatory(oldName);
+            string[] allFiles = Directory.GetFiles(path, $"{newName}*{extension}");
+            string result = $"{newName}";
+            var filesCount = allFiles.Length;
+            if (filesCount > 0)
+                result += $"-{(filesCount + 1)}";
+            result += $"{extension}";
+            return result;
         }
-
 
 
 
@@ -53,7 +62,7 @@ namespace ETicaretAPI.Infrastructure.Services
             List<bool> results = new();
             foreach (IFormFile file in files) 
             {
-                string fileNewName = await FileRenameAsync(file.FileName);
+                string fileNewName = await FileRenameAsync(uploadPath , file.FileName);
 
                 bool result = await CopyFileAsync($"{uploadPath}\\{fileNewName}",file);
                 datas.Add((fileNewName, $"{uploadPath}\\{fileNewName}"));

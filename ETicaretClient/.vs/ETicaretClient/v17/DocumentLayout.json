@@ -40,7 +40,7 @@
               "RelativeDocumentMoniker": "src\\app\\services\\common\\file-upload\\file-upload.component.html",
               "ToolTip": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretClient\\src\\app\\services\\common\\file-upload\\file-upload.component.html",
               "RelativeToolTip": "src\\app\\services\\common\\file-upload\\file-upload.component.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAUwAwAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-04-25T16:32:43.855Z",
               "EditorCaption": ""
@@ -55,8 +55,7 @@
               "RelativeToolTip": "src\\app\\services\\common\\file-upload\\file-upload.component.ts",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAACoAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-04-25T16:29:49.64Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-25T16:29:49.64Z"
             },
             {
               "$type": "Document",
@@ -68,8 +67,7 @@
               "RelativeToolTip": "src\\app\\dialogs\\file-upload-dialog\\file-upload-dialog.component.ts",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-04-28T14:26:30.779Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-28T14:26:30.779Z"
             },
             {
               "$type": "Document",
@@ -81,8 +79,7 @@
               "RelativeToolTip": "src\\app\\directives\\admin\\delete.directive.ts",
               "ViewState": "AgIAABsAAAAAAAAAAAAmwDoAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-04-25T16:29:28.832Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-25T16:29:28.832Z"
             },
             {
               "$type": "Document",
@@ -94,8 +91,7 @@
               "RelativeToolTip": "src\\app\\services\\common\\dialog.service.ts",
               "ViewState": "AgIAABAAAAAAAAAAAAAAwC0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-04-25T16:01:05.412Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-25T16:01:05.412Z"
             }
           ]
         }

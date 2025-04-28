@@ -37,7 +37,7 @@ export class FileUploadComponent {
       });
     }
     this.dialogService.openDialog({
-      componentType: FileUploadComponent,
+      componentType: FileUploadDialogComponent,
       data: FileUploadDialogState.Yes,
       afterClosed: () => {
         this.httpClientService.post({

@@ -30,6 +30,7 @@ namespace ETicaretAPI.API.Controllers
             _productWriteRepository = productWriteRepository;
             _productReadRepository = productReadRepository;
             this._webHostEnvironment = webHostEnvironment;
+            this._fileService = fileService;
         }
 
         [HttpGet]

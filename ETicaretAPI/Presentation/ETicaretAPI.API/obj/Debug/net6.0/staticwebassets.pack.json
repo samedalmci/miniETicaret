@@ -1,14 +1,6 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\samed\\Desktop\\ETicaretUygulaması\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\resource\\product-images\\ornekSite-2.png",
-      "PackagePath": "staticwebassets\\resource\\product-images\\ornekSite-2.png"
-    },
-    {
-      "Id": "C:\\Users\\samed\\Desktop\\ETicaretUygulaması\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\resource\\product-images\\ornekSite-3.png",
-      "PackagePath": "staticwebassets\\resource\\product-images\\ornekSite-3.png"
-    },
-    {
       "Id": "C:\\Users\\samed\\Desktop\\ETicaretUygulaması\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\resource\\product-images\\ornekSite.png",
       "PackagePath": "staticwebassets\\resource\\product-images\\ornekSite.png"
     },

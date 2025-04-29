@@ -1,2 +1,1 @@
-wwwroot\photo-images\Ekran-goruntusu-2025-04-29-173322.png
 wwwroot\photo-images\ornekSite.png

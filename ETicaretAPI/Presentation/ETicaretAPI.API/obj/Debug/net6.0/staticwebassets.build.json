@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "kiEEdDkQiDBOPfg2betWPGpVM46xsBQM+r5HTFs4fXA=",
+  "Hash": "3/FND6Wbj+W6lW35cXxkR+354YmHOTQwoRku6qbq7J8=",
   "Source": "ETicaretAPI.API",
   "BasePath": "_content/ETicaretAPI.API",
   "Mode": "Default",
@@ -17,12 +17,12 @@
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\samed\\Desktop\\ETicaretUygulaması\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\resource\\product-images\\ornekSite.png",
+      "Identity": "C:\\Users\\samed\\Desktop\\ETicaretUygulaması\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\resource\\files\\ÖrnekSite.png",
       "SourceId": "ETicaretAPI.API",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\samed\\Desktop\\ETicaretUygulaması\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\",
       "BasePath": "_content/ETicaretAPI.API",
-      "RelativePath": "resource/product-images/ornekSite#[.{fingerprint}]?.png",
+      "RelativePath": "resource/files/ÖrnekSite#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -35,13 +35,13 @@
       "Integrity": "VzsDDv39nwoEjM8jQlbnT9e7aixEdbJcn5OSRyya1ak=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\resource\\product-images\\ornekSite.png"
+      "OriginalItemSpec": "wwwroot\\resource\\files\\ÖrnekSite.png"
     }
   ],
   "Endpoints": [
     {
-      "Route": "resource/product-images/ornekSite.bjaw6u44my.png",
-      "AssetFile": "C:\\Users\\samed\\Desktop\\ETicaretUygulaması\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\resource\\product-images\\ornekSite.png",
+      "Route": "resource/files/ÖrnekSite.bjaw6u44my.png",
+      "AssetFile": "C:\\Users\\samed\\Desktop\\ETicaretUygulaması\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\resource\\files\\ÖrnekSite.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -62,7 +62,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 18:37:56 GMT"
+          "Value": "Mon, 28 Apr 2025 22:05:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -76,7 +76,7 @@
         },
         {
           "Name": "label",
-          "Value": "resource/product-images/ornekSite.png"
+          "Value": "resource/files/ÖrnekSite.png"
         },
         {
           "Name": "integrity",
@@ -85,8 +85,8 @@
       ]
     },
     {
-      "Route": "resource/product-images/ornekSite.png",
-      "AssetFile": "C:\\Users\\samed\\Desktop\\ETicaretUygulaması\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\resource\\product-images\\ornekSite.png",
+      "Route": "resource/files/ÖrnekSite.png",
+      "AssetFile": "C:\\Users\\samed\\Desktop\\ETicaretUygulaması\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\resource\\files\\ÖrnekSite.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -107,7 +107,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 18:37:56 GMT"
+          "Value": "Mon, 28 Apr 2025 22:05:28 GMT"
         },
         {
           "Name": "Cache-Control",

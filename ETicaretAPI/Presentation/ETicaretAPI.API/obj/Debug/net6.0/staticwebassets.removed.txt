@@ -1,0 +1,2 @@
+C:\Users\samed\Desktop\ETicaretUygulaması\miniETicaret\ETicaretAPI\Presentation\ETicaretAPI.API\wwwroot\resource\product-images\ornekSite.png
+C:\Users\samed\Desktop\ETicaretUygulaması\miniETicaret\ETicaretAPI\Presentation\ETicaretAPI.API\wwwroot\resource\product-images\ornekSite-2.png

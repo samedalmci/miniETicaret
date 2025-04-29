@@ -1,1 +1,1 @@
-wwwroot\resource\product-images\ornekSite.png
+wwwroot\resource\files\ÖrnekSite.png

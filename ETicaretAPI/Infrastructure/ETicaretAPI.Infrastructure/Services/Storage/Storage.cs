@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using ETicaretAPI.Infrastructure.Operations;
 
 namespace ETicaretAPI.Infrastructure.Services.Storage
-{
+{    
     public class Storage
     {
         protected delegate bool HasFile(string pathOrContainerName, string fileName);
@@ -67,4 +67,5 @@ namespace ETicaretAPI.Infrastructure.Services.Storage
         }
     }
 }
-}
+
+

@@ -32,13 +32,14 @@ namespace ETicaretAPI.Infrastructure.Services.Storage.Local
         }
 
         public bool HasFile(string path, string fileName)
-            =>File.Exists($"{path}\\{fileName}");
+                    => File.Exists($"{path}\\{fileName}");
 
         async Task<bool> CopyFileAsync(string path, IFormFile file)
         {
             try
             {
                 await using FileStream fileStream = new(path, FileMode.Create, FileAccess.Write, FileShare.None, 1024 * 1024, useAsync: false);
+
                 await file.CopyToAsync(fileStream);
                 await fileStream.FlushAsync();
                 return true;
@@ -48,7 +49,6 @@ namespace ETicaretAPI.Infrastructure.Services.Storage.Local
                 //todo log!
                 throw ex;
             }
-
         }
 
         public async Task<List<(string fileName, string pathOrContainerName)>> UploadAsync(string path, IFormFileCollection files)
@@ -62,15 +62,11 @@ namespace ETicaretAPI.Infrastructure.Services.Storage.Local
             {
                 string fileNewName = await FileRenameAsync(path, file.Name, HasFile);
 
-
                 await CopyFileAsync($"{uploadPath}\\{fileNewName}", file);
-                datas.Add((fileNewName, $"{path}\\{fileNewName}"));  
+                datas.Add((fileNewName, $"{path}\\{fileNewName}"));
             }
 
             return datas;
-
-            //todo Eğer ki yukardaki if geçerli değilse buradaki dosyaların sunucuya yüklenirken hata alını exeption fırlat
-
         }
     }
 }

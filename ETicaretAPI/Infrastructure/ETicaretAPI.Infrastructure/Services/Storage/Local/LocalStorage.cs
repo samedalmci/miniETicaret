@@ -32,7 +32,10 @@ namespace ETicaretAPI.Infrastructure.Services.Storage.Local
         }
 
         public bool HasFile(string path, string fileName)
-                    => File.Exists($"{path}\\{fileName}");
+        {
+            string fullPath = Path.Combine(_webHostEnvironment.WebRootPath, path, fileName);
+            return File.Exists(fullPath);
+        }
 
         async Task<bool> CopyFileAsync(string path, IFormFile file)
         {
@@ -60,10 +63,10 @@ namespace ETicaretAPI.Infrastructure.Services.Storage.Local
             List<(string fileName, string path)> datas = new();
             foreach (IFormFile file in files)
             {
-                string fileNewName = await FileRenameAsync(path, file.Name, HasFile);
-
-                await CopyFileAsync($"{uploadPath}\\{fileNewName}", file);
-                datas.Add((fileNewName, $"{path}\\{fileNewName}"));
+                string fileNewName = await FileRenameAsync(path, file.FileName, HasFile);
+                string fullPath = Path.Combine(uploadPath, fileNewName);
+                await CopyFileAsync(fullPath, file);
+                datas.Add((fileNewName, Path.Combine(path, fileNewName)));
             }
 
             return datas;

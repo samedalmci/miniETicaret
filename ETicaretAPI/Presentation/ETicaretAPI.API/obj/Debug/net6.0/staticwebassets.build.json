@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "RQ3tEav2oqUjGKX3Pf21Bse0w/c6Q7T6MpBmIi9ssJI=",
+  "Hash": "RLRYH1RHdaP4pb1AjsS3exQb3WWC1SDib5hom4Oq8S8=",
   "Source": "ETicaretAPI.API",
   "BasePath": "_content/ETicaretAPI.API",
   "Mode": "Default",
@@ -62,7 +62,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Apr 2025 16:38:33 GMT"
+          "Value": "Wed, 30 Apr 2025 12:43:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -107,7 +107,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Apr 2025 16:38:33 GMT"
+          "Value": "Wed, 30 Apr 2025 12:43:59 GMT"
         },
         {
           "Name": "Cache-Control",

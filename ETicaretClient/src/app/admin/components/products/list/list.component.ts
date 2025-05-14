@@ -49,7 +49,6 @@ export class ListComponent extends BaseComponent implements OnInit {
       options: {
         width: "1400px"
       }
-
     })
   }
 

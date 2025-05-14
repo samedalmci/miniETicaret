@@ -3,13 +3,13 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\admin",
-    "\\src\\app\\admin\\components",
-    "\\src\\app\\admin\\components\\products",
-    "\\src\\app\\admin\\components\\products\\create",
+    "\\src\\app\\contracts",
+    "\\src\\app\\dialogs",
+    "\\src\\app\\dialogs\\select-product-image-dialog",
     "\\src\\app\\services",
     "\\src\\app\\services\\common",
-    "\\src\\app\\services\\common\\file-upload"
+    "\\src\\app\\services\\common\\file-upload",
+    "\\src\\app\\services\\common\\models"
   ],
   "PreviewInSolutionExplorer": false
 }

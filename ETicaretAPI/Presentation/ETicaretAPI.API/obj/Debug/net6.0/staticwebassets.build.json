@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "RLRYH1RHdaP4pb1AjsS3exQb3WWC1SDib5hom4Oq8S8=",
+  "Hash": "gKwil9XlXag5KIrA+xfmfQ4lpUWBDtxTlFnzRpUHW98=",
   "Source": "ETicaretAPI.API",
   "BasePath": "_content/ETicaretAPI.API",
   "Mode": "Default",
@@ -36,6 +36,90 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\photo-images\\ornekSite.png"
+    },
+    {
+      "Identity": "C:\\Users\\samed\\Desktop\\ETicaretUygulaması\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\photo-images\\ornekSite-2.png",
+      "SourceId": "ETicaretAPI.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\samed\\Desktop\\ETicaretUygulaması\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\",
+      "BasePath": "_content/ETicaretAPI.API",
+      "RelativePath": "photo-images/ornekSite-2#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bjaw6u44my",
+      "Integrity": "VzsDDv39nwoEjM8jQlbnT9e7aixEdbJcn5OSRyya1ak=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\photo-images\\ornekSite-2.png"
+    },
+    {
+      "Identity": "C:\\Users\\samed\\Desktop\\ETicaretUygulaması\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\photo-images\\ornekSite-3.png",
+      "SourceId": "ETicaretAPI.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\samed\\Desktop\\ETicaretUygulaması\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\",
+      "BasePath": "_content/ETicaretAPI.API",
+      "RelativePath": "photo-images/ornekSite-3#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bjaw6u44my",
+      "Integrity": "VzsDDv39nwoEjM8jQlbnT9e7aixEdbJcn5OSRyya1ak=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\photo-images\\ornekSite-3.png"
+    },
+    {
+      "Identity": "C:\\Users\\samed\\Desktop\\ETicaretUygulaması\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\photo-images\\ornekSite-4.png",
+      "SourceId": "ETicaretAPI.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\samed\\Desktop\\ETicaretUygulaması\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\",
+      "BasePath": "_content/ETicaretAPI.API",
+      "RelativePath": "photo-images/ornekSite-4#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bjaw6u44my",
+      "Integrity": "VzsDDv39nwoEjM8jQlbnT9e7aixEdbJcn5OSRyya1ak=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\photo-images\\ornekSite-4.png"
+    },
+    {
+      "Identity": "C:\\Users\\samed\\Desktop\\ETicaretUygulaması\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\photo-images\\ornekSite-5.png",
+      "SourceId": "ETicaretAPI.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\samed\\Desktop\\ETicaretUygulaması\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\",
+      "BasePath": "_content/ETicaretAPI.API",
+      "RelativePath": "photo-images/ornekSite-5#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bjaw6u44my",
+      "Integrity": "VzsDDv39nwoEjM8jQlbnT9e7aixEdbJcn5OSRyya1ak=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\photo-images\\ornekSite-5.png"
     }
   ],
   "Endpoints": [
@@ -62,7 +146,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Apr 2025 12:43:59 GMT"
+          "Value": "Wed, 30 Apr 2025 12:44:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -107,7 +191,335 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Apr 2025 12:43:59 GMT"
+          "Value": "Wed, 30 Apr 2025 12:44:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VzsDDv39nwoEjM8jQlbnT9e7aixEdbJcn5OSRyya1ak="
+        }
+      ]
+    },
+    {
+      "Route": "photo-images/ornekSite-2.bjaw6u44my.png",
+      "AssetFile": "C:\\Users\\samed\\Desktop\\ETicaretUygulaması\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\photo-images\\ornekSite-2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "152927"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VzsDDv39nwoEjM8jQlbnT9e7aixEdbJcn5OSRyya1ak=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 30 Apr 2025 12:44:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bjaw6u44my"
+        },
+        {
+          "Name": "label",
+          "Value": "photo-images/ornekSite-2.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VzsDDv39nwoEjM8jQlbnT9e7aixEdbJcn5OSRyya1ak="
+        }
+      ]
+    },
+    {
+      "Route": "photo-images/ornekSite-2.png",
+      "AssetFile": "C:\\Users\\samed\\Desktop\\ETicaretUygulaması\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\photo-images\\ornekSite-2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "152927"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VzsDDv39nwoEjM8jQlbnT9e7aixEdbJcn5OSRyya1ak=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 30 Apr 2025 12:44:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VzsDDv39nwoEjM8jQlbnT9e7aixEdbJcn5OSRyya1ak="
+        }
+      ]
+    },
+    {
+      "Route": "photo-images/ornekSite-3.bjaw6u44my.png",
+      "AssetFile": "C:\\Users\\samed\\Desktop\\ETicaretUygulaması\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\photo-images\\ornekSite-3.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "152927"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VzsDDv39nwoEjM8jQlbnT9e7aixEdbJcn5OSRyya1ak=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 11:27:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bjaw6u44my"
+        },
+        {
+          "Name": "label",
+          "Value": "photo-images/ornekSite-3.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VzsDDv39nwoEjM8jQlbnT9e7aixEdbJcn5OSRyya1ak="
+        }
+      ]
+    },
+    {
+      "Route": "photo-images/ornekSite-3.png",
+      "AssetFile": "C:\\Users\\samed\\Desktop\\ETicaretUygulaması\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\photo-images\\ornekSite-3.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "152927"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VzsDDv39nwoEjM8jQlbnT9e7aixEdbJcn5OSRyya1ak=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 11:27:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VzsDDv39nwoEjM8jQlbnT9e7aixEdbJcn5OSRyya1ak="
+        }
+      ]
+    },
+    {
+      "Route": "photo-images/ornekSite-4.bjaw6u44my.png",
+      "AssetFile": "C:\\Users\\samed\\Desktop\\ETicaretUygulaması\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\photo-images\\ornekSite-4.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "152927"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VzsDDv39nwoEjM8jQlbnT9e7aixEdbJcn5OSRyya1ak=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 11:35:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bjaw6u44my"
+        },
+        {
+          "Name": "label",
+          "Value": "photo-images/ornekSite-4.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VzsDDv39nwoEjM8jQlbnT9e7aixEdbJcn5OSRyya1ak="
+        }
+      ]
+    },
+    {
+      "Route": "photo-images/ornekSite-4.png",
+      "AssetFile": "C:\\Users\\samed\\Desktop\\ETicaretUygulaması\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\photo-images\\ornekSite-4.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "152927"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VzsDDv39nwoEjM8jQlbnT9e7aixEdbJcn5OSRyya1ak=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 11:35:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VzsDDv39nwoEjM8jQlbnT9e7aixEdbJcn5OSRyya1ak="
+        }
+      ]
+    },
+    {
+      "Route": "photo-images/ornekSite-5.bjaw6u44my.png",
+      "AssetFile": "C:\\Users\\samed\\Desktop\\ETicaretUygulaması\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\photo-images\\ornekSite-5.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "152927"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VzsDDv39nwoEjM8jQlbnT9e7aixEdbJcn5OSRyya1ak=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 12:03:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bjaw6u44my"
+        },
+        {
+          "Name": "label",
+          "Value": "photo-images/ornekSite-5.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VzsDDv39nwoEjM8jQlbnT9e7aixEdbJcn5OSRyya1ak="
+        }
+      ]
+    },
+    {
+      "Route": "photo-images/ornekSite-5.png",
+      "AssetFile": "C:\\Users\\samed\\Desktop\\ETicaretUygulaması\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\photo-images\\ornekSite-5.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "152927"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VzsDDv39nwoEjM8jQlbnT9e7aixEdbJcn5OSRyya1ak=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 12:03:22 GMT"
         },
         {
           "Name": "Cache-Control",

@@ -1,1 +1,5 @@
 wwwroot\photo-images\ornekSite.png
+wwwroot\photo-images\ornekSite-2.png
+wwwroot\photo-images\ornekSite-3.png
+wwwroot\photo-images\ornekSite-4.png
+wwwroot\photo-images\ornekSite-5.png

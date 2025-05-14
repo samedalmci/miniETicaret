@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gKwil9XlXag5KIrA+xfmfQ4lpUWBDtxTlFnzRpUHW98=",
+  "Hash": "1V8V8wMng86+OSs0N8NZD38KMeQhOzE9bsIQw47+1+Y=",
   "Source": "ETicaretAPI.API",
   "BasePath": "_content/ETicaretAPI.API",
   "Mode": "Default",
@@ -99,27 +99,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\photo-images\\ornekSite-4.png"
-    },
-    {
-      "Identity": "C:\\Users\\samed\\Desktop\\ETicaretUygulaması\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\photo-images\\ornekSite-5.png",
-      "SourceId": "ETicaretAPI.API",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\samed\\Desktop\\ETicaretUygulaması\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\",
-      "BasePath": "_content/ETicaretAPI.API",
-      "RelativePath": "photo-images/ornekSite-5#[.{fingerprint}]?.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "bjaw6u44my",
-      "Integrity": "VzsDDv39nwoEjM8jQlbnT9e7aixEdbJcn5OSRyya1ak=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\photo-images\\ornekSite-5.png"
     }
   ],
   "Endpoints": [
@@ -146,7 +125,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Apr 2025 12:44:41 GMT"
+          "Value": "Wed, 14 May 2025 12:20:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -191,7 +170,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Apr 2025 12:44:41 GMT"
+          "Value": "Wed, 14 May 2025 12:20:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -228,7 +207,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Apr 2025 12:44:44 GMT"
+          "Value": "Wed, 14 May 2025 12:20:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -273,7 +252,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Apr 2025 12:44:44 GMT"
+          "Value": "Wed, 14 May 2025 12:20:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -310,7 +289,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 11:27:32 GMT"
+          "Value": "Wed, 14 May 2025 12:20:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -355,7 +334,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 11:27:32 GMT"
+          "Value": "Wed, 14 May 2025 12:20:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -392,7 +371,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 11:35:45 GMT"
+          "Value": "Wed, 14 May 2025 12:20:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -437,89 +416,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 11:35:45 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-VzsDDv39nwoEjM8jQlbnT9e7aixEdbJcn5OSRyya1ak="
-        }
-      ]
-    },
-    {
-      "Route": "photo-images/ornekSite-5.bjaw6u44my.png",
-      "AssetFile": "C:\\Users\\samed\\Desktop\\ETicaretUygulaması\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\photo-images\\ornekSite-5.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "152927"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"VzsDDv39nwoEjM8jQlbnT9e7aixEdbJcn5OSRyya1ak=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 12:03:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "bjaw6u44my"
-        },
-        {
-          "Name": "label",
-          "Value": "photo-images/ornekSite-5.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-VzsDDv39nwoEjM8jQlbnT9e7aixEdbJcn5OSRyya1ak="
-        }
-      ]
-    },
-    {
-      "Route": "photo-images/ornekSite-5.png",
-      "AssetFile": "C:\\Users\\samed\\Desktop\\ETicaretUygulaması\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\photo-images\\ornekSite-5.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "152927"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"VzsDDv39nwoEjM8jQlbnT9e7aixEdbJcn5OSRyya1ak=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 12:03:22 GMT"
+          "Value": "Wed, 14 May 2025 12:20:22 GMT"
         },
         {
           "Name": "Cache-Control",

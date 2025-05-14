@@ -149,7 +149,8 @@ namespace ETicaretAPI.API.Controllers
 
             return Ok(product.ProductImageFiles.Select(p => new
             {
-                Path = $"{configuration["BaseStorageUrl"]}/{p.Path}",
+                //Path = $"{configuration["BaseStorageUrlAzure"]}/{p.Path}",  AZUREStorage
+                Path = $"{configuration["BaseStorageUrlLoc"]}/{Path.GetFileName(p.Path)}",
                 p.FileName,
                 p.Id
             }));

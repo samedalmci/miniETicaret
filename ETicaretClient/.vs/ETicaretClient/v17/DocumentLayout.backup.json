@@ -42,8 +42,7 @@
               "RelativeToolTip": "src\\app\\admin\\components\\products\\list\\list.component.ts",
               "ViewState": "AgIAABcAAAAAAAAAAAAtwC8AAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-05-13T21:30:27.915Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-13T21:30:27.915Z"
             },
             {
               "$type": "Document",
@@ -68,8 +67,7 @@
               "RelativeToolTip": "src\\app\\dialogs\\select-product-image-dialog\\select-product-image-dialog.component.html",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-05-13T16:45:50.119Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-13T16:45:50.119Z"
             },
             {
               "$type": "Document",
@@ -81,8 +79,7 @@
               "RelativeToolTip": "src\\app\\contracts\\list_product_images.ts",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-05-13T17:20:09.027Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-13T17:20:09.027Z"
             },
             {
               "$type": "Document",
@@ -94,8 +91,7 @@
               "RelativeToolTip": "src\\app\\services\\common\\models\\product.service.ts",
               "ViewState": "AgIAACMAAAAAAAAAAAAswEEAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-05-13T16:42:11.062Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-13T16:42:11.062Z"
             }
           ]
         }

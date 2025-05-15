@@ -71,17 +71,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/VM_Update_Product"
+                "$ref": "#/components/schemas/UpdateProductCommandRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/VM_Update_Product"
+                "$ref": "#/components/schemas/UpdateProductCommandRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/VM_Update_Product"
+                "$ref": "#/components/schemas/UpdateProductCommandRequest"
               }
             }
           }
@@ -93,14 +93,14 @@
         }
       }
     },
-    "/api/Products/{id}": {
+    "/api/Products/{Id}": {
       "get": {
         "tags": [
           "Products"
         ],
         "parameters": [
           {
-            "name": "id",
+            "name": "Id",
             "in": "path",
             "required": true,
             "schema": {
@@ -120,7 +120,7 @@
         ],
         "parameters": [
           {
-            "name": "id",
+            "name": "Id",
             "in": "path",
             "required": true,
             "schema": {
@@ -142,13 +142,36 @@
         ],
         "parameters": [
           {
-            "name": "id",
+            "name": "Id",
             "in": "query",
             "schema": {
               "type": "string"
             }
           }
         ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "Files": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "format": "binary"
+                    }
+                  }
+                }
+              },
+              "encoding": {
+                "Files": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "description": "Success"
@@ -163,7 +186,7 @@
         ],
         "parameters": [
           {
-            "name": "id",
+            "name": "Id",
             "in": "path",
             "required": true,
             "schema": {
@@ -185,7 +208,15 @@
         ],
         "parameters": [
           {
-            "name": "id",
+            "name": "Id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ImageId",
             "in": "path",
             "required": true,
             "schema": {
@@ -228,7 +259,7 @@
         },
         "additionalProperties": false
       },
-      "VM_Update_Product": {
+      "UpdateProductCommandRequest": {
         "type": "object",
         "properties": {
           "Id": {

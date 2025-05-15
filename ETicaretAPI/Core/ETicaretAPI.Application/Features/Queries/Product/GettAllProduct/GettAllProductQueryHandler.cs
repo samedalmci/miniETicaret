@@ -7,7 +7,7 @@ using ETicaretAPI.Application.Repositories;
 using ETicaretAPI.Application.RequestParameters;
 using MediatR;
 
-namespace ETicaretAPI.Application.Features.Queries.GettAllProduct
+namespace ETicaretAPI.Application.Features.Queries.Product.GettAllProduct
 {
     public class GettAllProductQueryHandler : IRequestHandler<GettAllProductQueryRequest, GettAllProductQueryResponse>
     {

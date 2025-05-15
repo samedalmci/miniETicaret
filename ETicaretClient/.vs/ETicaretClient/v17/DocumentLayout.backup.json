@@ -44,7 +44,7 @@
               "RelativeDocumentMoniker": "src\\app\\admin\\components\\products\\list\\list.component.ts",
               "ToolTip": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretClient\\src\\app\\admin\\components\\products\\list\\list.component.ts",
               "RelativeToolTip": "src\\app\\admin\\components\\products\\list\\list.component.ts",
-              "ViewState": "AgIAABcAAAAAAAAAAAAtwDIAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAtwC0AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
               "WhenOpened": "2025-05-13T21:30:27.915Z",
               "EditorCaption": ""
@@ -57,9 +57,10 @@
               "RelativeDocumentMoniker": "src\\app\\dialogs\\select-product-image-dialog\\select-product-image-dialog.component.ts",
               "ToolTip": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretClient\\src\\app\\dialogs\\select-product-image-dialog\\select-product-image-dialog.component.ts",
               "RelativeToolTip": "src\\app\\dialogs\\select-product-image-dialog\\select-product-image-dialog.component.ts",
-              "ViewState": "AgIAACkAAAAAAAAAAAAgwEMAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-05-13T17:22:34.801Z"
+              "WhenOpened": "2025-05-13T17:22:34.801Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

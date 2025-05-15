@@ -1,6 +1,14 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\samed\\Desktop\\ETicaretUygulaması\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\photo-images\\Ekran-goruntusu-2025-04-29-173322.png",
+      "PackagePath": "staticwebassets\\photo-images\\Ekran-goruntusu-2025-04-29-173322.png"
+    },
+    {
+      "Id": "C:\\Users\\samed\\Desktop\\ETicaretUygulaması\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\photo-images\\Ekran-goruntusu-2025-04-29-173323.png",
+      "PackagePath": "staticwebassets\\photo-images\\Ekran-goruntusu-2025-04-29-173323.png"
+    },
+    {
       "Id": "C:\\Users\\samed\\Desktop\\ETicaretUygulaması\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\photo-images\\ornekSite-2.png",
       "PackagePath": "staticwebassets\\photo-images\\ornekSite-2.png"
     },
@@ -11,6 +19,10 @@
     {
       "Id": "C:\\Users\\samed\\Desktop\\ETicaretUygulaması\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\photo-images\\ornekSite-4.png",
       "PackagePath": "staticwebassets\\photo-images\\ornekSite-4.png"
+    },
+    {
+      "Id": "C:\\Users\\samed\\Desktop\\ETicaretUygulaması\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\photo-images\\ornekSite-5.png",
+      "PackagePath": "staticwebassets\\photo-images\\ornekSite-5.png"
     },
     {
       "Id": "C:\\Users\\samed\\Desktop\\ETicaretUygulaması\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\photo-images\\ornekSite.png",

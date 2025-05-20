@@ -3,8 +3,15 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\entities"
+    "\\src\\app\\contracts",
+    "\\src\\app\\contracts\\users",
+    "\\src\\app\\services",
+    "\\src\\app\\services\\common",
+    "\\src\\app\\services\\common\\model",
+    "\\src\\app\\ui",
+    "\\src\\app\\ui\\components",
+    "\\src\\app\\ui\\components\\register"
   ],
-  "SelectedNode": "\\src\\app\\app.module.ts",
+  "SelectedNode": "\\src\\app\\services\\common\\model\\product.service.ts",
   "PreviewInSolutionExplorer": false
 }

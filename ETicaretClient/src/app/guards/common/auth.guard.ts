@@ -7,6 +7,7 @@ import { NgxSpinnerService } from 'ngx-spinner';
 import { SpinnerType } from '../../base/base.component';
 import { isPlatformBrowser } from '@angular/common';
 import { PLATFORM_ID, Inject } from '@angular/core';
+import { AuthService, _isAuthenticated } from '../../services/common/auth.service';
 
 @Injectable({
   providedIn: 'root'
@@ -17,28 +18,28 @@ export class AuthGuard implements CanActivate {
     private jwtHelper: JwtHelperService, 
     private router: Router, 
     private toastrService: CustomToastrService, 
-    private spinner: NgxSpinnerService,
-    @Inject(PLATFORM_ID) private platformId: Object
+    private spinner: NgxSpinnerService, 
+    @Inject(PLATFORM_ID) private platformId: Object    
   ) {}
 
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
     this.spinner.show(SpinnerType.BallAtom);
     
-    let token: string = null;
-    if (isPlatformBrowser(this.platformId)) {
-      token = localStorage.getItem("accessToken");
-    }
+    //let token: string = null;
+    //if (isPlatformBrowser(this.platformId)) {
+    //  token = localStorage.getItem("accessToken");
+    //}
 
-    //const decodeToken = this.jwtHelper.decodeToken(token);
-    //const expirationDate: Date = this.jwtHelper.getTokenExpirationDate(token);
-    let expired: boolean;
-    try {
-      expired = this.jwtHelper.isTokenExpired(token);
-    } catch {
-      expired = true;
-    }
+    ////const decodeToken = this.jwtHelper.decodeToken(token);
+    ////const expirationDate: Date = this.jwtHelper.getTokenExpirationDate(token);
+    //let expired: boolean;
+    //try {
+    //  expired = this.jwtHelper.isTokenExpired(token);
+    //} catch {
+    //  expired = true;
+    //}
 
-    if (!token || expired) {
+    if (!_isAuthenticated) {
       this.router.navigate(["login"], { queryParams: { returnUrl: state.url } });
       this.toastrService.message("Oturum açmanız gerekiyor!", "Yetkisiz Erişim!", {
         messageType: ToastrMessageType.Warning,

@@ -5,19 +5,29 @@ import { JwtHelperService } from '@auth0/angular-jwt'
 import { CustomToastrService, ToastrMessageType, ToastrPosition } from '../../services/ui/custom-toastr.service';
 import { NgxSpinnerService } from 'ngx-spinner';
 import { SpinnerType } from '../../base/base.component';
+import { isPlatformBrowser } from '@angular/common';
+import { PLATFORM_ID, Inject } from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthGuard implements CanActivate {
 
-  constructor(private jwtHelper: JwtHelperService, private router: Router, private toastrService: CustomToastrService, private spinner: NgxSpinnerService) {
-
-  }
+  constructor(
+    private jwtHelper: JwtHelperService, 
+    private router: Router, 
+    private toastrService: CustomToastrService, 
+    private spinner: NgxSpinnerService,
+    @Inject(PLATFORM_ID) private platformId: Object
+  ) {}
 
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
     this.spinner.show(SpinnerType.BallAtom);
-    const token: string = localStorage.getItem("accessToken");
+    
+    let token: string = null;
+    if (isPlatformBrowser(this.platformId)) {
+      token = localStorage.getItem("accessToken");
+    }
 
     //const decodeToken = this.jwtHelper.decodeToken(token);
     //const expirationDate: Date = this.jwtHelper.getTokenExpirationDate(token);
@@ -36,9 +46,7 @@ export class AuthGuard implements CanActivate {
       })
     }
 
-
     this.spinner.hide(SpinnerType.BallAtom);
-
     return true;
   }
 

@@ -3,13 +3,9 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\services",
-    "\\src\\app\\services\\common",
-    "\\src\\app\\services\\common\\model",
-    "\\src\\app\\ui",
-    "\\src\\app\\ui\\components",
-    "\\src\\app\\ui\\components\\login",
-    "\\src\\app\\ui\\components\\register"
+    "\\src\\app\\contracts",
+    "\\src\\app\\contracts\\token"
   ],
+  "SelectedNode": "\\src\\app\\contracts\\token\\tokenResponse.ts",
   "PreviewInSolutionExplorer": false
 }

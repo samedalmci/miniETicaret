@@ -8,12 +8,14 @@ using ETicaretAPI.Application.Features.Queries.Product.GetByIdProduct;
 using ETicaretAPI.Application.Features.Queries.Product.GettAllProduct;
 using ETicaretAPI.Application.Features.Queries.ProductImageFile.GetProductImages;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ETicaretAPI.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(AuthenticationSchemes = "Admin" )]
     public class ProductsController : ControllerBase
     {
         readonly IMediator _mediator;

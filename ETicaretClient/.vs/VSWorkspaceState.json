@@ -3,9 +3,9 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\contracts",
-    "\\src\\app\\contracts\\token"
+    "\\src\\app\\guards",
+    "\\src\\app\\guards\\common"
   ],
-  "SelectedNode": "\\src\\app\\contracts\\token\\tokenResponse.ts",
+  "SelectedNode": "\\src\\app\\guards\\common\\auth.guard.ts",
   "PreviewInSolutionExplorer": false
 }

@@ -19,9 +19,9 @@ export class LoginComponent extends BaseComponent implements OnInit {
   ngOnInit(): void {        
   }
 
-  async login(userNameOrEmail: string, password: string) {
+  async login(usernameOrEmail: string, password: string) {
     this.showSpinner(SpinnerType.BallAtom);
-    await this.userService.login(userNameOrEmail, password, () => this.hideSpinner(SpinnerType.BallAtom));
+    await this.userService.login(usernameOrEmail, password, () => this.hideSpinner(SpinnerType.BallAtom));
   }
 
 

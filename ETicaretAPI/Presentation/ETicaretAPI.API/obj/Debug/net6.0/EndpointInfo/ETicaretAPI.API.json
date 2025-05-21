@@ -350,7 +350,7 @@
       "LoginUserCommandRequest": {
         "type": "object",
         "properties": {
-          "UserNameOrEmail": {
+          "UsernameOrEmail": {
             "type": "string",
             "nullable": true
           },

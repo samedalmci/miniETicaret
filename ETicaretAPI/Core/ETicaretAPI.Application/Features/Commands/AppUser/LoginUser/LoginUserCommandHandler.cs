@@ -6,30 +6,35 @@ using System.Threading.Tasks;
 using ETicaretAPI.Application.Exceotions;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
-using A = ETicaretAPI.Domain.Entities.Identity;
+
 
 namespace ETicaretAPI.Application.Features.Commands.AppUser.LoginUser
 {
     public class LoginUserCommandHandler : IRequestHandler<LoginUserCommandRequest, LoginUserCommandResponse>
     {
-        readonly UserManager<A.AppUser> _userManager;
-        readonly SignInManager<A.AppUser> _signInManager;
+               readonly UserManager<Domain.Entities.Identity.AppUser> _userManager;
+        readonly SignInManager<Domain.Entities.Identity.AppUser> _signInManager;
+
+        public LoginUserCommandHandler(UserManager<Domain.Entities.Identity.AppUser> userManager, SignInManager<Domain.Entities.Identity.AppUser> signInManager)
+        {
+            _userManager = userManager;
+            _signInManager = signInManager;
+        }
 
         public async Task<LoginUserCommandResponse> Handle(LoginUserCommandRequest request, CancellationToken cancellationToken)
         {
-            A.AppUser user = await _userManager.FindByNameAsync(request.UserNameOrEmail);
+            Domain.Entities.Identity.AppUser user = await _userManager.FindByNameAsync(request.UsernameOrEmail);
             if (user == null)
-                user = await _userManager.FindByEmailAsync(request.UserNameOrEmail);
+                user = await _userManager.FindByEmailAsync(request.UsernameOrEmail);
 
             if (user == null)
-                throw new NotFoundUserExceptions("Kullanıcı Veya Şifre Hatalı...");
+                throw new NotFoundUserExceptions("Kullanıcı veya şifre hatalı...");
 
             SignInResult result = await _signInManager.CheckPasswordSignInAsync(user, request.Password, false);
-            if (result.Succeeded)//Başarılı!!!
+            if (result.Succeeded) //Authentication başarılı!
             {
-                //Yapılacaklar
+                //.... Yetkileri belirlememiz gerekiyor!
             }
-
 
             return new();
         }

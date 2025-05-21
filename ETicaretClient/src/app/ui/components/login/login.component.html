@@ -5,7 +5,7 @@
     <br />
     <div class="form-group">
       <label for="username">Kullanıcı Adı</label>
-      <input #txtUserNameOrEmail type="text" class="form-control" id="username" placeholder="Kullanıcı Adı & Email">
+      <input #txtUsernameOrEmail  type="text" class="form-control" id="username" placeholder="Kullanıcı Adı & Email">
       <small class="form-text text-muted invalid-feedback">*****</small>
     </div>
     <div class="form-group">
@@ -15,7 +15,7 @@
 
 
     <br />
-    <button type="submit" class="btn btn-primary" (click)="login(txtUserNameOrEmail.value,txtPassword.value)">Giriş Yap</button>
+    <button type="submit" class="btn btn-primary" (click)="login(txtUsernameOrEmail.value,txtPassword.value)">Giriş Yap</button>
 
 
   </div>

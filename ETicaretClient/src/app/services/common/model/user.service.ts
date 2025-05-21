@@ -26,6 +26,6 @@ export class UserService {
     }, { userNameOrEmail, password })
 
     await firstValueFrom(observable);
-    callBackFunction
+    callBackFunction();
   }
 }

@@ -6,6 +6,8 @@ import { User } from '../../../entities/user';
 import { UserService } from '../../../services/common/model/user.service';
 import { Create_User } from '../../../contracts/users/create_user';
 import { CustomToastrService, ToastrMessageType, ToastrPosition } from '../../../services/ui/custom-toastr.service';
+import { BaseComponent } from '../../../base/base.component';
+import { NgxSpinnerService } from 'ngx-spinner';
 
 
 @Component({
@@ -14,9 +16,11 @@ import { CustomToastrService, ToastrMessageType, ToastrPosition } from '../../..
   templateUrl: './register.component.html',
   styleUrl: './register.component.scss'
 })
-export class RegisterComponent implements OnInit {
+export class RegisterComponent extends BaseComponent implements OnInit {
 
-  constructor(private formBuilder: FormBuilder, private userService: UserService, private toastService: CustomToastrService) { }
+  constructor(private formBuilder: FormBuilder, private userService: UserService, private toastrService: CustomToastrService, spinner: NgxSpinnerService) {
+    super(spinner)
+  }
 
   frm: FormGroup;
 
@@ -55,8 +59,6 @@ export class RegisterComponent implements OnInit {
   get component() {
     return this.frm.controls; 
   }
-
-
   submitted: boolean = false;
   async onSubmit(user: User) {
     this.submitted = true;
@@ -64,18 +66,17 @@ export class RegisterComponent implements OnInit {
     if (this.frm.invalid)
       return;
 
-    const result: Create_User = await this.userService.create(user)
-    if (result.succeeded)
-      this.toastService.message(result.message, "Kullanıcı Kaydı Başarılı", {
+    const result: Create_User = await this.userService.create(user);
+    if (result.Succeeded)
+      this.toastrService.message(result.Message, "Kullanıcı Kaydı Başarılı", {
         messageType: ToastrMessageType.Success,
         position: ToastrPosition.TopRight
       })
     else
-      this.toastService.message(result.message, "Hata", {
+      this.toastrService.message(result.Message, "Hata", {
         messageType: ToastrMessageType.Error,
         position: ToastrPosition.TopRight
-      } )
-          
+      })          
   }
 }
 

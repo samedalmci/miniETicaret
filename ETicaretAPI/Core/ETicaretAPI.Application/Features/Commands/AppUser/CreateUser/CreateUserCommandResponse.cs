@@ -10,6 +10,6 @@ namespace ETicaretAPI.Application.Features.Commands.AppUser.CreateUser
     {
         public bool Succeeded { get; set; }
 
-        public string Message  { get; set; }
+        public string Message { get; set; }
     }
 }

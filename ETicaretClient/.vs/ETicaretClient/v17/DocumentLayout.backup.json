@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretClient\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretClient\\src\\app\\ui\\components\\login\\login.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\ui\\components\\login\\login.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretClient\\src\\app\\ui\\components\\login\\login.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\ui\\components\\login\\login.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretClient\\src\\app\\app.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\app.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretClient\\src\\app\\ui\\components\\login\\login.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\ui\\components\\login\\login.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretClient\\src\\app\\services\\common\\model\\user.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\services\\common\\model\\user.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretClient\\src\\app\\app.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\app.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,24 +26,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "login.component.ts",
               "DocumentMoniker": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretClient\\src\\app\\ui\\components\\login\\login.component.ts",
               "RelativeDocumentMoniker": "src\\app\\ui\\components\\login\\login.component.ts",
               "ToolTip": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretClient\\src\\app\\ui\\components\\login\\login.component.ts",
               "RelativeToolTip": "src\\app\\ui\\components\\login\\login.component.ts",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAADHAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
               "WhenOpened": "2025-05-22T14:49:40.601Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "login.component.html",
               "DocumentMoniker": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretClient\\src\\app\\ui\\components\\login\\login.component.html",
               "RelativeDocumentMoniker": "src\\app\\ui\\components\\login\\login.component.html",
@@ -56,7 +56,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "user.service.ts",
               "DocumentMoniker": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretClient\\src\\app\\services\\common\\model\\user.service.ts",
               "RelativeDocumentMoniker": "src\\app\\services\\common\\model\\user.service.ts",
@@ -69,7 +69,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "app.module.ts",
               "DocumentMoniker": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretClient\\src\\app\\app.module.ts",
               "RelativeDocumentMoniker": "src\\app\\app.module.ts",
@@ -77,8 +77,7 @@
               "RelativeToolTip": "src\\app\\app.module.ts",
               "ViewState": "AgIAABwAAAAAAAAAAAAswCkAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-05-22T13:44:49.624Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-22T13:44:49.624Z"
             }
           ]
         }

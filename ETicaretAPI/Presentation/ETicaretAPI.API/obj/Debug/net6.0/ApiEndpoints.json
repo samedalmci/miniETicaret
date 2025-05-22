@@ -165,6 +165,22 @@
   },
   {
     "ContainingType": "ETicaretAPI.API.Controllers.UsersController",
+    "Method": "GoogleLogin",
+    "RelativePath": "api/Users/google-login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "googleLoginCommandRequest",
+        "Type": "ETicaretAPI.Application.Features.Commands.AppUser.GoogleLogin.GoogleLoginCommandRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ETicaretAPI.API.Controllers.UsersController",
     "Method": "Login",
     "RelativePath": "api/Users/Login",
     "HttpMethod": "POST",

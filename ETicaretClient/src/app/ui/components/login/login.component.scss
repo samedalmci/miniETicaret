@@ -1,0 +1,11 @@
+asl-google-signin-button {
+  display: block;
+  margin: 20px 0;
+  width: 100%;
+}
+
+::ng-deep .asl-google-signin-button {
+  width: 100% !important;
+  height: 40px !important;
+}
+

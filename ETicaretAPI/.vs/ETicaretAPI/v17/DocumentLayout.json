@@ -1,37 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{44620835-309D-4531-9C6C-D4EFFA734E1A}|Presentation\\ETicaretAPI.API\\ETicaretAPI.API.csproj|c:\\users\\samed\\desktop\\eticaretuygulamas\u0131\\minieticaret\\eticaretapi\\presentation\\eticaretapi.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{44620835-309D-4531-9C6C-D4EFFA734E1A}|Presentation\\ETicaretAPI.API\\ETicaretAPI.API.csproj|solutionrelative:presentation\\eticaretapi.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\appsettings.json",
-              "RelativeDocumentMoniker": "Presentation\\ETicaretAPI.API\\appsettings.json",
-              "ToolTip": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\appsettings.json",
-              "RelativeToolTip": "Presentation\\ETicaretAPI.API\\appsettings.json",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACAAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-24T12:53:07.884Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

@@ -3,7 +3,9 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\services"
+    "\\src\\app\\services",
+    "\\src\\app\\services\\common"
   ],
+  "SelectedNode": "\\src\\app\\app.module.ts",
   "PreviewInSolutionExplorer": false
 }

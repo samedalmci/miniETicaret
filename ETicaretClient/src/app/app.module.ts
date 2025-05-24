@@ -10,7 +10,7 @@ import { NgxSpinnerModule } from "ngx-spinner";
 import { HttpClientModule } from '@angular/common/http';
 import { JwtModule } from '@auth0/angular-jwt';
 import { LoginComponent } from './ui/components/login/login.component';
-import { GoogleLoginProvider, SocialAuthServiceConfig, SocialLoginModule } from '@abacritt/angularx-social-login';
+import { FacebookLoginProvider, GoogleLoginProvider, SocialAuthServiceConfig, SocialLoginModule } from '@abacritt/angularx-social-login';
 
 @NgModule({
   declarations: [
@@ -37,14 +37,25 @@ import { GoogleLoginProvider, SocialAuthServiceConfig, SocialLoginModule } from 
     AdminModule
   ],
   providers: [
-    { provide: "baseUrl", useValue: "http://localhost:5216/api", multi: true },    
-    {provide: "SocialAuthServiceConfig",
+    { provide: "baseUrl", useValue: "http://localhost:5216/api", multi: true },
+
+    {
+      provide: "SocialAuthServiceConfig",
       useValue: {
         autoLogin: false,
         providers: [
           {
             id: GoogleLoginProvider.PROVIDER_ID,
-            provider: new GoogleLoginProvider("932674286640-f77tle1pkpva3ce33lmui9fbsqobutvj.apps.googleusercontent.com")
+            provider: new GoogleLoginProvider("932674286640-f77tle1pkpva3ce33lmui9fbsqobutvj.apps.googleusercontent.com", {
+              oneTapEnabled: false,
+              prompt: 'select_account',
+            })
+          },
+          {
+            id: FacebookLoginProvider.PROVIDER_ID,
+            provider: new FacebookLoginProvider("687915383831988", {
+              scope: 'email,public_profile'
+            })
           }
         ],
         onError: err => console.log(err)

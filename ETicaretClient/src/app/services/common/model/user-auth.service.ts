@@ -22,7 +22,7 @@ export class UserAuthService {
 
     if (tokenResponse) {
       localStorage.setItem("accessToken", tokenResponse.Token.AccessToken);
-      localStorage.setItem("refreshToken", tokenResponse.Token.refreshToken);
+      localStorage.setItem("refreshToken", tokenResponse.Token.RefreshToken);
 
       this.toastrService.message("Kullanıcı girişi başarıyla sağlanmıştır.", "Giriş Başarılı", {
         messageType: ToastrMessageType.Success,
@@ -43,7 +43,7 @@ export class UserAuthService {
 
     if (tokenResponse) {
       localStorage.setItem("accessToken", tokenResponse.Token.AccessToken);
-      localStorage.setItem("refreshToken", tokenResponse.Token.refreshToken);
+      localStorage.setItem("refreshToken", tokenResponse.Token.RefreshToken);
     }
 
     callBackFunction();
@@ -59,7 +59,7 @@ export class UserAuthService {
 
     if (tokenResponse) {
       localStorage.setItem("accessToken", tokenResponse.Token.AccessToken);
-      localStorage.setItem("refreshToken", tokenResponse.Token.refreshToken);
+      localStorage.setItem("refreshToken", tokenResponse.Token.RefreshToken);
 
       this.toastrService.message("Google üzerinden giriş başarıyla sağlanmıştır.", "Giriş Başarılı", {
         messageType: ToastrMessageType.Success,
@@ -80,7 +80,7 @@ export class UserAuthService {
 
     if (tokenResponse) {
       localStorage.setItem("accessToken", tokenResponse.Token.AccessToken);
-      localStorage.setItem("refreshToken", tokenResponse.Token.refreshToken);
+      localStorage.setItem("refreshToken", tokenResponse.Token.RefreshToken);
 
       this.toastrService.message("Facebook üzerinden giriş başarıyla sağlanmıştır.", "Giriş Başarılı", {
         messageType: ToastrMessageType.Success,

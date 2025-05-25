@@ -2,11 +2,7 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\app",
-    "\\src\\app\\ui",
-    "\\src\\app\\ui\\components",
-    "\\src\\app\\ui\\components\\login"
+    "\\src\\app"
   ],
-  "SelectedNode": "\\src\\app\\ui\\components\\login\\login.component.ts",
   "PreviewInSolutionExplorer": false
 }

@@ -30,7 +30,9 @@ export class UserAuthService {
       })
     }
 
-    callBackFunction();
+    if (callBackFunction) {
+      callBackFunction();
+    }
   }
 
   async refreshTokenLogin(refreshToken: string, callBackFunction?: () => void): Promise<any> {
@@ -46,7 +48,9 @@ export class UserAuthService {
       localStorage.setItem("refreshToken", tokenResponse.Token.RefreshToken);
     }
 
-    callBackFunction();
+    if (callBackFunction) {
+      callBackFunction();
+    }
   }
 
   async googleLogin(user: SocialUser, callBackFunction?: () => void): Promise<any> {
@@ -67,7 +71,9 @@ export class UserAuthService {
       });
     }
 
-    callBackFunction();
+    if (callBackFunction) {
+      callBackFunction();
+    }
   }
 
   async facebookLogin(user: SocialUser, callBackFunction?: () => void): Promise<any> {
@@ -88,6 +94,8 @@ export class UserAuthService {
       })
     }
 
-    callBackFunction();
+    if (callBackFunction) {
+      callBackFunction();
+    }
   }
 }

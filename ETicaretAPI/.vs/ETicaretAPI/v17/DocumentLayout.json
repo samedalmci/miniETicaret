@@ -3,32 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{44620835-309D-4531-9C6C-D4EFFA734E1A}|Presentation\\ETicaretAPI.API\\ETicaretAPI.API.csproj|c:\\users\\samed\\desktop\\eticaretuygulamas\u0131\\minieticaret\\eticaretapi\\presentation\\eticaretapi.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44620835-309D-4531-9C6C-D4EFFA734E1A}|Presentation\\ETicaretAPI.API\\ETicaretAPI.API.csproj|solutionrelative:presentation\\eticaretapi.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{44620835-309D-4531-9C6C-D4EFFA734E1A}|Presentation\\ETicaretAPI.API\\ETicaretAPI.API.csproj|c:\\users\\samed\\desktop\\eticaretuygulamas\u0131\\minieticaret\\eticaretapi\\presentation\\eticaretapi.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44620835-309D-4531-9C6C-D4EFFA734E1A}|Presentation\\ETicaretAPI.API\\ETicaretAPI.API.csproj|solutionrelative:presentation\\eticaretapi.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{44620835-309D-4531-9C6C-D4EFFA734E1A}|Presentation\\ETicaretAPI.API\\ETicaretAPI.API.csproj|c:\\users\\samed\\desktop\\eticaretuygulamas\u0131\\minieticaret\\eticaretapi\\presentation\\eticaretapi.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{44620835-309D-4531-9C6C-D4EFFA734E1A}|Presentation\\ETicaretAPI.API\\ETicaretAPI.API.csproj|solutionrelative:presentation\\eticaretapi.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{AD79A7C0-6AD8-4BC2-9DDB-70B885AE9687}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|c:\\users\\samed\\desktop\\eticaretuygulamas\u0131\\minieticaret\\eticaretapi\\core\\eticaretapi.application\\features\\queries\\product\\gettallproduct\\gettallproductqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD79A7C0-6AD8-4BC2-9DDB-70B885AE9687}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|solutionrelative:core\\eticaretapi.application\\features\\queries\\product\\gettallproduct\\gettallproductqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{44620835-309D-4531-9C6C-D4EFFA734E1A}|Presentation\\ETicaretAPI.API\\ETicaretAPI.API.csproj|c:\\users\\samed\\desktop\\eticaretuygulamas\u0131\\minieticaret\\eticaretapi\\presentation\\eticaretapi.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{44620835-309D-4531-9C6C-D4EFFA734E1A}|Presentation\\ETicaretAPI.API\\ETicaretAPI.API.csproj|solutionrelative:presentation\\eticaretapi.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{71B87DD4-E30E-42DE-984A-53ECFD4C85B3}|Infrastructure\\ETicaretAPI.SingalR\\ETicaretAPI.SingalR.csproj|c:\\users\\samed\\desktop\\eticaretuygulamas\u0131\\minieticaret\\eticaretapi\\infrastructure\\eticaretapi.singalr\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{71B87DD4-E30E-42DE-984A-53ECFD4C85B3}|Infrastructure\\ETicaretAPI.SingalR\\ETicaretAPI.SingalR.csproj|solutionrelative:infrastructure\\eticaretapi.singalr\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD79A7C0-6AD8-4BC2-9DDB-70B885AE9687}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|c:\\users\\samed\\desktop\\eticaretuygulamas\u0131\\minieticaret\\eticaretapi\\core\\eticaretapi.application\\abstractions\\hubs\\iproducthubservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD79A7C0-6AD8-4BC2-9DDB-70B885AE9687}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|solutionrelative:core\\eticaretapi.application\\abstractions\\hubs\\iproducthubservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{71B87DD4-E30E-42DE-984A-53ECFD4C85B3}|Infrastructure\\ETicaretAPI.SingalR\\ETicaretAPI.SingalR.csproj|c:\\users\\samed\\desktop\\eticaretuygulamas\u0131\\minieticaret\\eticaretapi\\infrastructure\\eticaretapi.singalr\\hubservices\\producthubservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{71B87DD4-E30E-42DE-984A-53ECFD4C85B3}|Infrastructure\\ETicaretAPI.SingalR\\ETicaretAPI.SingalR.csproj|solutionrelative:infrastructure\\eticaretapi.singalr\\hubservices\\producthubservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD79A7C0-6AD8-4BC2-9DDB-70B885AE9687}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|c:\\users\\samed\\desktop\\eticaretuygulamas\u0131\\minieticaret\\eticaretapi\\core\\eticaretapi.application\\features\\commands\\product\\createproduct\\createproductcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD79A7C0-6AD8-4BC2-9DDB-70B885AE9687}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|solutionrelative:core\\eticaretapi.application\\features\\commands\\product\\createproduct\\createproductcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AD79A7C0-6AD8-4BC2-9DDB-70B885AE9687}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|c:\\users\\samed\\desktop\\eticaretuygulamas\u0131\\minieticaret\\eticaretapi\\core\\eticaretapi.application\\features\\queries\\product\\gettallproduct\\gettallproductqueryresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD79A7C0-6AD8-4BC2-9DDB-70B885AE9687}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|solutionrelative:core\\eticaretapi.application\\features\\queries\\product\\gettallproduct\\gettallproductqueryresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,97 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Presentation\\ETicaretAPI.API\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Presentation\\ETicaretAPI.API\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-25T23:41:22.941Z",
+              "DocumentIndex": 0,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "Presentation\\ETicaretAPI.API\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "Presentation\\ETicaretAPI.API\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAcwDUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T15:18:21.129Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\appsettings.json",
-              "RelativeDocumentMoniker": "Presentation\\ETicaretAPI.API\\appsettings.json",
-              "ToolTip": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\appsettings.json",
-              "RelativeToolTip": "Presentation\\ETicaretAPI.API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-25T23:41:17.301Z",
+              "Title": "GettAllProductQueryResponse.cs",
+              "DocumentMoniker": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Features\\Queries\\Product\\GettAllProduct\\GettAllProductQueryResponse.cs",
+              "RelativeDocumentMoniker": "Core\\ETicaretAPI.Application\\Features\\Queries\\Product\\GettAllProduct\\GettAllProductQueryResponse.cs",
+              "ToolTip": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Features\\Queries\\Product\\GettAllProduct\\GettAllProductQueryResponse.cs",
+              "RelativeToolTip": "Core\\ETicaretAPI.Application\\Features\\Queries\\Product\\GettAllProduct\\GettAllProductQueryResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T14:42:10.046Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CreateProductCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Features\\Commands\\Product\\CreateProduct\\CreateProductCommandHandler.cs",
-              "RelativeDocumentMoniker": "Core\\ETicaretAPI.Application\\Features\\Commands\\Product\\CreateProduct\\CreateProductCommandHandler.cs",
-              "ToolTip": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Features\\Commands\\Product\\CreateProduct\\CreateProductCommandHandler.cs",
-              "RelativeToolTip": "Core\\ETicaretAPI.Application\\Features\\Commands\\Product\\CreateProduct\\CreateProductCommandHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABKAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "GettAllProductQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Features\\Queries\\Product\\GettAllProduct\\GettAllProductQueryHandler.cs",
+              "RelativeDocumentMoniker": "Core\\ETicaretAPI.Application\\Features\\Queries\\Product\\GettAllProduct\\GettAllProductQueryHandler.cs",
+              "ToolTip": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Features\\Queries\\Product\\GettAllProduct\\GettAllProductQueryHandler.cs",
+              "RelativeToolTip": "Core\\ETicaretAPI.Application\\Features\\Queries\\Product\\GettAllProduct\\GettAllProductQueryHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T23:21:27.75Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ProductHubService.cs",
-              "DocumentMoniker": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Infrastructure\\ETicaretAPI.SingalR\\HubServices\\ProductHubService.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\ETicaretAPI.SingalR\\HubServices\\ProductHubService.cs",
-              "ToolTip": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Infrastructure\\ETicaretAPI.SingalR\\HubServices\\ProductHubService.cs",
-              "RelativeToolTip": "Infrastructure\\ETicaretAPI.SingalR\\HubServices\\ProductHubService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T23:17:01.23Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IProductHubServices.cs",
-              "DocumentMoniker": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Abstractions\\Hubs\\IProductHubServices.cs",
-              "RelativeDocumentMoniker": "Core\\ETicaretAPI.Application\\Abstractions\\Hubs\\IProductHubServices.cs",
-              "ToolTip": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Abstractions\\Hubs\\IProductHubServices.cs",
-              "RelativeToolTip": "Core\\ETicaretAPI.Application\\Abstractions\\Hubs\\IProductHubServices.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T23:16:34.775Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ServiceRegistration.cs",
-              "DocumentMoniker": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Infrastructure\\ETicaretAPI.SingalR\\ServiceRegistration.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\ETicaretAPI.SingalR\\ServiceRegistration.cs",
-              "ToolTip": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Infrastructure\\ETicaretAPI.SingalR\\ServiceRegistration.cs",
-              "RelativeToolTip": "Infrastructure\\ETicaretAPI.SingalR\\ServiceRegistration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T23:12:36.481Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\Program.cs",
-              "RelativeDocumentMoniker": "Presentation\\ETicaretAPI.API\\Program.cs",
-              "ToolTip": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\Program.cs",
-              "RelativeToolTip": "Presentation\\ETicaretAPI.API\\Program.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAASwCYAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T23:07:31.596Z",
+              "WhenOpened": "2025-05-26T14:41:38.683Z",
               "EditorCaption": ""
             }
           ]

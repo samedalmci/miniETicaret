@@ -14,6 +14,15 @@ export class HttpClientService {
     return `${requestParameter.baseUrl ? requestParameter.baseUrl : this.baseUrl}/${requestParameter.controller}${requestParameter.action ? `/${requestParameter.action}` : ""}`;
   }
 
+  private getHeaders(): HttpHeaders {
+    const token = localStorage.getItem("accessToken");
+    let headers = new HttpHeaders();
+    if (token) {
+      headers = headers.set("Authorization", `Bearer ${token}`);
+    }
+    return headers;
+  }
+
   get<T>(requestParameter: Partial<RequestParameters>, id?: string): Observable<T> {
     let url: string = "";
 
@@ -22,9 +31,8 @@ export class HttpClientService {
     else
       url = `${this.url(requestParameter)}${id ? `/${id}` : ""}${requestParameter.queryString ? `?${requestParameter.queryString}` : ""}`;
 
-    return this.httpClient.get<T>(url, { headers: requestParameter.headers });
+    return this.httpClient.get<T>(url, { headers: this.getHeaders() });
   }
-
 
   post<T>(requestParameter: Partial<RequestParameters>, body: Partial<T>): Observable<T> {
     let url: string = "";
@@ -33,7 +41,7 @@ export class HttpClientService {
     else
       url = `${this.url(requestParameter)}${requestParameter.queryString ? `?${requestParameter.queryString}` : ""}`;
 
-    return this.httpClient.post<T>(url, body, { headers: requestParameter.headers });
+    return this.httpClient.post<T>(url, body, { headers: this.getHeaders() });
   }
 
   put<T>(requestParameter: Partial<RequestParameters>, body: Partial<T>): Observable<T> {
@@ -43,7 +51,7 @@ export class HttpClientService {
     else
       url = `${this.url(requestParameter)}${requestParameter.queryString ? `?${requestParameter.queryString}` : ""}`;
 
-    return this.httpClient.put<T>(url, body, { headers: requestParameter.headers });
+    return this.httpClient.put<T>(url, body, { headers: this.getHeaders() });
   }
 
   delete<T>(requestParameter: Partial<RequestParameters>, id: string): Observable<T> {
@@ -53,18 +61,16 @@ export class HttpClientService {
     else
       url = `${this.url(requestParameter)}/${id}${requestParameter.queryString ? `?${requestParameter.queryString}` : ""}`;
 
-    return this.httpClient.delete<T>(url, { headers: requestParameter.headers });
+    return this.httpClient.delete<T>(url, { headers: this.getHeaders() });
   }
-
 }
-
 
 export class RequestParameters{
   controller?: string;
   action?: string;
   queryString?: string;
 
-  headers?: HttpHeaders ;
+  headers?: HttpHeaders;
   baseUrl?: string;
   fullEndPoint?: string;
 }

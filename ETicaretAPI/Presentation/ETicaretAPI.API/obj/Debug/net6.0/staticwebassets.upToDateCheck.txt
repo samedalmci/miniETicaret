@@ -1,7 +1,9 @@
 wwwroot\photo-images\Ekran-goruntusu-2025-04-29-173322.png
 wwwroot\photo-images\Ekran-goruntusu-2025-04-29-173323.png
+wwwroot\photo-images\Ekran-goruntusu-2025-04-29-173324.png
 wwwroot\photo-images\ornekSite.png
 wwwroot\photo-images\ornekSite-2.png
 wwwroot\photo-images\ornekSite-3.png
 wwwroot\photo-images\ornekSite-4.png
 wwwroot\photo-images\ornekSite-5.png
+wwwroot\photo-images\ornekSite-6.png

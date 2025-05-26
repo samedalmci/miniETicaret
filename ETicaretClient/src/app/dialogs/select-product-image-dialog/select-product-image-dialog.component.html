@@ -6,7 +6,7 @@
 
   <mat-card class="prodcut-image-card" *ngFor="let image of images" appearance="outlined">
     <mat-card-header>
-     
+      <input type="radio" name="img" (click)="ShowCase(image.Id)" />
     </mat-card-header>
     <img mat-card-image [src]="image.Path">
     <mat-card-content>

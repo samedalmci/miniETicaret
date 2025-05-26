@@ -25,6 +25,7 @@
     "@angular/router": "^19.2.12",
     "@angular/ssr": "^19.2.12",
     "@auth0/angular-jwt": "^5.2.0",
+    "@microsoft/signalr": "^8.0.7",
     "@popperjs/core": "^2.11.8",
     "alertifyjs": "^1.14.0",
     "bootstrap": "^5.3.5",

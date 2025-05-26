@@ -10,8 +10,10 @@ using ETicaretAPI.Infrastructure.Filters;
 using ETicaretAPI.Infrastructure.Services.Storage.Azure;
 using ETicaretAPI.Infrastructure.Services.Storage.Local;
 using ETicaretAPI.Persistence;
+using ETicaretAPI.SingalR;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.HttpLogging;
 using Microsoft.IdentityModel.Tokens;
 using NpgsqlTypes;
@@ -27,6 +29,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddPresitenceServices();
 builder.Services.AddInfrastructureServices();
 builder.Services.AddApplicationServices();
+builder.Services.AddSignalRServices();
 
 builder.Services.AddStorage<LocalStorage>();
 //builder.Services.AddStorage<AzureStorage>();
@@ -39,7 +42,8 @@ builder.Services.AddCors(options => options.AddPolicy("AllowAngular",
         builder.WithOrigins("http://localhost:4200", "https://localhost:4200")
                .AllowAnyHeader()
                .AllowAnyMethod()
-               .AllowCredentials();
+               .AllowCredentials();             
+
     }));
 
 Log.Logger = new LoggerConfiguration()
@@ -132,17 +136,21 @@ app.UseHttpLogging();
 app.UseCors("AllowAngular");
 //app.UseHttpsRedirection();
 
+
+
 app.UseAuthentication();
 app.UseAuthorization();
 
 app.Use(async (context, next) =>
 {
-    var username = context.User?.Identity?.IsAuthenticated != null || true ? context.User.Identity.Name : null;
+   var username = context.User?.Identity?.IsAuthenticated != null || true ? context.User.Identity.Name : null;
     LogContext.PushProperty("user_name", username);
     await next();
 });
 
 
 app.MapControllers();
+
+app.MapHubs();
 
 app.Run();

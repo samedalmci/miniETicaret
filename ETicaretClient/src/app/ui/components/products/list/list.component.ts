@@ -20,23 +20,16 @@ export class ListComponent implements OnInit {
   totalPageCount: number;
   pageSize: number = 12;
   pageList: number[] = [];
-  baseUrl: BaseUrl;
+  baseUrl: string = "http://localhost:5216";
 
   products: List_Product[];
   async ngOnInit() {
-
-    this.baseUrl = await this.fileService.getBaseStorageUrl();
-
     this.activatedRoute.params.subscribe(async params => {
       this.currentPageNo = parseInt(params["pageNo"] ?? 1);
 
       const data: { totalProductCount: number, products: List_Product[] } = await this.productService.read(this.currentPageNo - 1, this.pageSize,
-        () => {
-
-        },
-        errorMessage => {
-
-        });
+        () => {},
+        errorMessage => {});
 
       this.products = data.products;
 
@@ -64,16 +57,13 @@ export class ListComponent implements OnInit {
       if (this.currentPageNo - 3 <= 0)
         for (let i = 1; i <= 7; i++)
           this.pageList.push(i);
-
       else if (this.currentPageNo + 3 >= this.totalPageCount)
         for (let i = this.totalPageCount - 6; i <= this.totalPageCount; i++)
           this.pageList.push(i);
-
       else
         for (let i = this.currentPageNo - 3; i <= this.currentPageNo + 3; i++)
           this.pageList.push(i);
     });
-
   }
 }
     

@@ -19,7 +19,7 @@ namespace ETicaretAPI.API.Controllers
         {
             return Ok(new
             {
-                Url = _configuration["BaseStorageUrlLoc"]
+                Url = _configuration["BaseStorageUrlLocProductPage"]
             });
         }
 

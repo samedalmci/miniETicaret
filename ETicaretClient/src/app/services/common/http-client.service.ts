@@ -15,10 +15,12 @@ export class HttpClientService {
   }
 
   private getHeaders(): HttpHeaders {
-    const token = localStorage.getItem("accessToken");
     let headers = new HttpHeaders();
-    if (token) {
-      headers = headers.set("Authorization", `Bearer ${token}`);
+    if (typeof window !== 'undefined') {
+      const token = localStorage.getItem("accessToken");
+      if (token) {
+        headers = headers.set("Authorization", `Bearer ${token}`);
+      }
     }
     return headers;
   }

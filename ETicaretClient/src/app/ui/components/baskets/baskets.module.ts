@@ -15,6 +15,9 @@ import { RouterModule } from '@angular/router';
       {path: "", component: BasketsComponent}
 
     ])
+  ],
+  exports: [
+    BasketsComponent
   ]
 })
 export class BasketsModule { }

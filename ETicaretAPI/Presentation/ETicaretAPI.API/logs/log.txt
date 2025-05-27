@@ -30360,3 +30360,970 @@ Sec-Fetch-Dest: [Redacted]
 StatusCode: 404
 2025-05-26 23:37:21.606 +03:00 [INF] HTTP GET / responded 404 in 2.1926 ms
 2025-05-26 23:37:21.607 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/ - - - 404 0 - 4.4172ms
+2025-05-27 03:56:19.642 +03:00 [INF] User profile is available. Using 'C:\Users\samed\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-27 03:56:19.792 +03:00 [INF] Now listening on: http://localhost:5216
+2025-05-27 03:56:19.824 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-27 03:56:19.825 +03:00 [INF] Hosting environment: Development
+2025-05-27 03:56:19.826 +03:00 [INF] Content root path: C:\Users\samed\Desktop\ETicaretUygulaması\miniETicaret\ETicaretAPI\Presentation\ETicaretAPI.API\
+2025-05-27 03:56:48.294 +03:00 [INF] User profile is available. Using 'C:\Users\samed\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-27 03:56:48.415 +03:00 [INF] Now listening on: http://localhost:5216
+2025-05-27 03:56:48.463 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-27 03:56:48.465 +03:00 [INF] Hosting environment: Development
+2025-05-27 03:56:48.467 +03:00 [INF] Content root path: C:\Users\samed\Desktop\ETicaretUygulaması\miniETicaret\ETicaretAPI\Presentation\ETicaretAPI.API\
+2025-05-27 03:57:31.572 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/api/products?page=0&size=12 - -
+2025-05-27 03:57:31.640 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/products
+Accept: application/json, text/plain, */*
+Connection: keep-alive
+Host: localhost:5216
+User-Agent: node
+Accept-Encoding: gzip, deflate
+Accept-Language: *
+sec-fetch-mode: [Redacted]
+2025-05-27 03:57:31.716 +03:00 [INF] Executing endpoint 'ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API)'
+2025-05-27 03:57:31.776 +03:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(ETicaretAPI.Application.Features.Queries.Product.GettAllProduct.GettAllProductQueryRequest) on controller ETicaretAPI.API.Controllers.ProductsController (ETicaretAPI.API).
+2025-05-27 03:57:32.223 +03:00 [INF] Get all products
+2025-05-27 03:57:33.096 +03:00 [INF] Entity Framework Core 6.0.2 initialized 'ETicaretAPIDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f' with options: None
+2025-05-27 03:57:33.289 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)::INT
+FROM "Products" AS p
+2025-05-27 03:57:33.342 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2025-05-27 03:57:33.344 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2025-05-27 03:57:33.470 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."Name", t."Stock", t."Price", t."CreatedDate", t."UpdateDate", t0."Id", t0."CreatedDate", t0."Discriminator", t0."FileName", t0."Path", t0."Storage", t0."Showcase", t0."ProductImageFilesId", t0."ProductsId"
+FROM (
+    SELECT p."Id", p."Name", p."Stock", p."Price", p."CreatedDate", p."UpdateDate"
+    FROM "Products" AS p
+    LIMIT @__p_1 OFFSET @__p_0
+) AS t
+LEFT JOIN (
+    SELECT t1."Id", t1."CreatedDate", t1."Discriminator", t1."FileName", t1."Path", t1."Storage", t1."Showcase", p0."ProductImageFilesId", p0."ProductsId"
+    FROM "ProductProductImageFile" AS p0
+    INNER JOIN (
+        SELECT f."Id", f."CreatedDate", f."Discriminator", f."FileName", f."Path", f."Storage", f."Showcase"
+        FROM "Files" AS f
+        WHERE f."Discriminator" = 'ProductImageFile'
+    ) AS t1 ON p0."ProductImageFilesId" = t1."Id"
+) AS t0 ON t."Id" = t0."ProductsId"
+ORDER BY t."Id", t0."ProductImageFilesId", t0."ProductsId"
+2025-05-27 03:57:33.485 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Queries.Product.GettAllProduct.GettAllProductQueryResponse'.
+2025-05-27 03:57:33.498 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-05-27 03:57:33.505 +03:00 [INF] Executed action ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API) in 1723.2736ms
+2025-05-27 03:57:33.506 +03:00 [INF] Executed endpoint 'ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API)'
+2025-05-27 03:57:33.508 +03:00 [INF] ResponseBody: {"totalProductCount":20,"products":[{"Id":"502dab11-38f3-4896-82f8-4d6273f9a76a","Name":"Ürün 5","Stock":5,"Price":5,"CreatedDate":"2025-04-28T19:44:08.913138Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[{"Showcase":false,"Products":null,"FileName":"Ekran-goruntusu-2025-04-29-173324.png","Path":"photo-images\\Ekran-goruntusu-2025-04-29-173324.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"7fabe6b6-8d73-42b0-8064-f1d7a5bf8200","CreatedDate":"2025-05-26T15:29:40.8159Z"},{"Showcase":true,"Products":null,"FileName":"ornekSite-7.png","Path":"photo-images\\ornekSite-7.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"9fb5c84a-cc71-4a15-8c2b-0f42092f9035","CreatedDate":"2025-05-26T16:11:35.390989Z"}]},{"Id":"5cab9393-1711-488e-8a15-987d7f73202f","Name":"Ürün 10","Stock":10,"Price":10,"CreatedDate":"2025-04-28T19:44:39.623498Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[{"Showcase":false,"Products":null,"FileName":"ornekSite-8.png","Path":"photo-images\\ornekSite-8.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"4efc5a1f-d2c9-4597-9e49-a3a54d721c69","CreatedDate":"2025-05-26T20:37:20.165331Z"}]},{"Id":"658862f4-a933-449e-88db-d2a77f3efca8","Name":"Ürün 9","Stock":9,"Price":9,"CreatedDate":"2025-04-28T19:44:34.352427Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[]},{"Id":"857bb9dc-6bb5-46e7-9a24-e4b54181e927","Name":"Ürün 12","Stock":12,"Price":12,"CreatedDate":"2025-05-15T00:39:59.815151Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[]},{"Id":"88bcfd38-44bc-4979-be30-0d5e4dae5b74","Name":"Ürün 7","Stock":7,"Price":7,"CreatedDate":"2025-04-28T19:44:20.944632Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[]},{"Id":"95e5ed0e-f138-47ac-8481-9d5a5602dcfd","Name":"Ürün 4","Stock":4,"Price":4,"CreatedDate":"2025-04-28T19:44:02.934027Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[{"Showcase":true,"Products":null,"FileName":"ornekSite-6.png","Path":"photo-images\\ornekSite-6.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"9d30e8a8-83c6-4359-a11a-cc730a801e87","CreatedDate":"2025-05-26T15:41:27.79222Z"}]},{"Id":"a02ab55b-fcaf-445e-9a29-690463c3d470","Name":"Ürün 3","Stock":3,"Price":3,"CreatedDate":"2025-04-28T19:43:58.654797Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[{"Showcase":true,"Products":null,"FileName":"Ekran-goruntusu-2025-04-29-173325.png","Path":"photo-images\\Ekran-goruntusu-2025-04-29-173325.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"d6e16872-d7db-49fe-8caf-764550214aec","CreatedDate":"2025-05-26T20:34:38.372244Z"}]},{"Id":"adf05f49-4850-4f85-9701-4a59cb435b03","Name":"Ürün 8","Stock":8,"Price":8,"CreatedDate":"2025-04-28T19:44:29.241882Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[]},{"Id":"d110ff3e-31b9-4899-a59a-99e9f80a43e1","Name":"Ürün 6","Stock":6,"Price":6,"CreatedDate":"2025-04-28T19:44:15.538537Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[]},{"Id":"d3a62187-1c3a-4655-9c23-c52f182d9ace","Name":"Ürün 2","Stock":2,"Price":2,"CreatedDate":"2025-04-28T19:42:59.326713Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[]},{"Id":"e5398eda-4c14-4e9f-a643-4eb9e19a8246","Name":"Ürün 1","Stock":1,"Price":1,"CreatedDate":"2025-04-28T19:42:54.977536Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[{"Showcase":false,"Products":null,"FileName":"ornekSite-5.png","Path":"photo-images\\ornekSite-5.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"51f26b17-61e9-43dc-b2ec-3a54358269f0","CreatedDate":"2025-05-15T16:19:05.233887Z"},{"Showcase":false,"Products":null,"FileName":"ornekSite-2.png","Path":"photo-images\\ornekSite-2.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"5c82910f-3dd3-4925-bcb2-be273076b9c7","CreatedDate":"2025-05-14T12:20:13.014657Z"},{"Showcase":false,"Products":null,"FileName":"Ekran-goruntusu-2025-04-29-173322.png","Path":"photo-images\\Ekran-goruntusu-2025-04-29-173322.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"a25508ed-d7f9-4211-933d-20cac2bb02ef","CreatedDate":"2025-05-15T15:38:53.223063Z"},{"Showcase":true,"Products":null,"FileName":"ornekSite-4.png","Path":"photo-images\\ornekSite-4.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"acb9bda3-a045-46bd-8fd0-f655fbbf270c","CreatedDate":"2025-05-14T12:20:22.403939Z"},{"Showcase":false,"Products":null,"FileName":"ornekSite-3.png","Path":"photo-images\\ornekSite-3.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"b7dfda9c-9d79-40a7-aecb-9d2da2e8661f","CreatedDate":"2025-05-14T12:20:19.732544Z"},{"Showcase":false,"Products":null,"FileName":"Ekran-goruntusu-2025-04-29-173323.png","Path":"photo-images\\Ekran-goruntusu-2025-04-29-173323.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"bfbcf22a-a569-4d33-82d6-b3bcbc1590e1","CreatedDate":"2025-05-15T16:19:05.233859Z"},{"Showcase":false,"Products":null,"FileName":"ornekSite.png","Path":"photo-images\\ornekSite.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"f1fc9ef0-39f5-4341-8944-56cd97a83860","CreatedDate":"2025-05-14T12:20:06.22504Z"}]},{"Id":"e78e7ea3-84b6-48a7-80d2-f6e5aee44bf9","Name":"Ürün 11","Stock":11,"Price":11,"CreatedDate":"2025-05-09T14:57:20.206738Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[]}]}
+2025-05-27 03:57:33.518 +03:00 [INF] HTTP GET /api/products responded 200 in 1882.9852 ms
+2025-05-27 03:57:33.524 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/api/products?page=0&size=12 - - - 200 - application/json;+charset=utf-8 1955.8708ms
+2025-05-27 03:57:34.676 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5216/api/products?page=0&size=12 - -
+2025-05-27 03:57:34.679 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: OPTIONS
+Scheme: http
+PathBase: 
+Path: /api/products
+Accept: */*
+Connection: keep-alive
+Host: localhost:5216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-05-27 03:57:34.682 +03:00 [INF] CORS policy execution successful.
+2025-05-27 03:57:34.684 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Credentials: [Redacted]
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2025-05-27 03:57:34.685 +03:00 [INF] HTTP OPTIONS /api/products responded 204 in 6.7264 ms
+2025-05-27 03:57:34.687 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5216/api/products?page=0&size=12 - - - 204 - - 11.3254ms
+2025-05-27 03:57:34.692 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/api/products?page=0&size=12 - -
+2025-05-27 03:57:34.694 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/products
+Accept: application/json, text/plain, */*
+Connection: keep-alive
+Host: localhost:5216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Authorization: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: "Chromium";v="136", "Brave";v="136", "Not.A/Brand";v="99"
+sec-ch-ua-mobile: [Redacted]
+Sec-GPC: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-05-27 03:57:34.695 +03:00 [INF] CORS policy execution successful.
+2025-05-27 03:57:34.697 +03:00 [INF] Executing endpoint 'ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API)'
+2025-05-27 03:57:34.698 +03:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(ETicaretAPI.Application.Features.Queries.Product.GettAllProduct.GettAllProductQueryRequest) on controller ETicaretAPI.API.Controllers.ProductsController (ETicaretAPI.API).
+2025-05-27 03:57:34.705 +03:00 [INF] Get all products
+2025-05-27 03:57:34.735 +03:00 [INF] Entity Framework Core 6.0.2 initialized 'ETicaretAPIDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f' with options: None
+2025-05-27 03:57:34.740 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)::INT
+FROM "Products" AS p
+2025-05-27 03:57:34.745 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."Name", t."Stock", t."Price", t."CreatedDate", t."UpdateDate", t0."Id", t0."CreatedDate", t0."Discriminator", t0."FileName", t0."Path", t0."Storage", t0."Showcase", t0."ProductImageFilesId", t0."ProductsId"
+FROM (
+    SELECT p."Id", p."Name", p."Stock", p."Price", p."CreatedDate", p."UpdateDate"
+    FROM "Products" AS p
+    LIMIT @__p_1 OFFSET @__p_0
+) AS t
+LEFT JOIN (
+    SELECT t1."Id", t1."CreatedDate", t1."Discriminator", t1."FileName", t1."Path", t1."Storage", t1."Showcase", p0."ProductImageFilesId", p0."ProductsId"
+    FROM "ProductProductImageFile" AS p0
+    INNER JOIN (
+        SELECT f."Id", f."CreatedDate", f."Discriminator", f."FileName", f."Path", f."Storage", f."Showcase"
+        FROM "Files" AS f
+        WHERE f."Discriminator" = 'ProductImageFile'
+    ) AS t1 ON p0."ProductImageFilesId" = t1."Id"
+) AS t0 ON t."Id" = t0."ProductsId"
+ORDER BY t."Id", t0."ProductImageFilesId", t0."ProductsId"
+2025-05-27 03:57:34.749 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Queries.Product.GettAllProduct.GettAllProductQueryResponse'.
+2025-05-27 03:57:34.750 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-05-27 03:57:34.752 +03:00 [INF] Executed action ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API) in 52.2603ms
+2025-05-27 03:57:34.753 +03:00 [INF] Executed endpoint 'ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API)'
+2025-05-27 03:57:34.754 +03:00 [INF] ResponseBody: {"totalProductCount":20,"products":[{"Id":"502dab11-38f3-4896-82f8-4d6273f9a76a","Name":"Ürün 5","Stock":5,"Price":5,"CreatedDate":"2025-04-28T19:44:08.913138Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[{"Showcase":false,"Products":null,"FileName":"Ekran-goruntusu-2025-04-29-173324.png","Path":"photo-images\\Ekran-goruntusu-2025-04-29-173324.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"7fabe6b6-8d73-42b0-8064-f1d7a5bf8200","CreatedDate":"2025-05-26T15:29:40.8159Z"},{"Showcase":true,"Products":null,"FileName":"ornekSite-7.png","Path":"photo-images\\ornekSite-7.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"9fb5c84a-cc71-4a15-8c2b-0f42092f9035","CreatedDate":"2025-05-26T16:11:35.390989Z"}]},{"Id":"5cab9393-1711-488e-8a15-987d7f73202f","Name":"Ürün 10","Stock":10,"Price":10,"CreatedDate":"2025-04-28T19:44:39.623498Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[{"Showcase":false,"Products":null,"FileName":"ornekSite-8.png","Path":"photo-images\\ornekSite-8.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"4efc5a1f-d2c9-4597-9e49-a3a54d721c69","CreatedDate":"2025-05-26T20:37:20.165331Z"}]},{"Id":"658862f4-a933-449e-88db-d2a77f3efca8","Name":"Ürün 9","Stock":9,"Price":9,"CreatedDate":"2025-04-28T19:44:34.352427Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[]},{"Id":"857bb9dc-6bb5-46e7-9a24-e4b54181e927","Name":"Ürün 12","Stock":12,"Price":12,"CreatedDate":"2025-05-15T00:39:59.815151Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[]},{"Id":"88bcfd38-44bc-4979-be30-0d5e4dae5b74","Name":"Ürün 7","Stock":7,"Price":7,"CreatedDate":"2025-04-28T19:44:20.944632Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[]},{"Id":"95e5ed0e-f138-47ac-8481-9d5a5602dcfd","Name":"Ürün 4","Stock":4,"Price":4,"CreatedDate":"2025-04-28T19:44:02.934027Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[{"Showcase":true,"Products":null,"FileName":"ornekSite-6.png","Path":"photo-images\\ornekSite-6.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"9d30e8a8-83c6-4359-a11a-cc730a801e87","CreatedDate":"2025-05-26T15:41:27.79222Z"}]},{"Id":"a02ab55b-fcaf-445e-9a29-690463c3d470","Name":"Ürün 3","Stock":3,"Price":3,"CreatedDate":"2025-04-28T19:43:58.654797Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[{"Showcase":true,"Products":null,"FileName":"Ekran-goruntusu-2025-04-29-173325.png","Path":"photo-images\\Ekran-goruntusu-2025-04-29-173325.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"d6e16872-d7db-49fe-8caf-764550214aec","CreatedDate":"2025-05-26T20:34:38.372244Z"}]},{"Id":"adf05f49-4850-4f85-9701-4a59cb435b03","Name":"Ürün 8","Stock":8,"Price":8,"CreatedDate":"2025-04-28T19:44:29.241882Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[]},{"Id":"d110ff3e-31b9-4899-a59a-99e9f80a43e1","Name":"Ürün 6","Stock":6,"Price":6,"CreatedDate":"2025-04-28T19:44:15.538537Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[]},{"Id":"d3a62187-1c3a-4655-9c23-c52f182d9ace","Name":"Ürün 2","Stock":2,"Price":2,"CreatedDate":"2025-04-28T19:42:59.326713Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[]},{"Id":"e5398eda-4c14-4e9f-a643-4eb9e19a8246","Name":"Ürün 1","Stock":1,"Price":1,"CreatedDate":"2025-04-28T19:42:54.977536Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[{"Showcase":false,"Products":null,"FileName":"ornekSite-5.png","Path":"photo-images\\ornekSite-5.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"51f26b17-61e9-43dc-b2ec-3a54358269f0","CreatedDate":"2025-05-15T16:19:05.233887Z"},{"Showcase":false,"Products":null,"FileName":"ornekSite-2.png","Path":"photo-images\\ornekSite-2.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"5c82910f-3dd3-4925-bcb2-be273076b9c7","CreatedDate":"2025-05-14T12:20:13.014657Z"},{"Showcase":false,"Products":null,"FileName":"Ekran-goruntusu-2025-04-29-173322.png","Path":"photo-images\\Ekran-goruntusu-2025-04-29-173322.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"a25508ed-d7f9-4211-933d-20cac2bb02ef","CreatedDate":"2025-05-15T15:38:53.223063Z"},{"Showcase":true,"Products":null,"FileName":"ornekSite-4.png","Path":"photo-images\\ornekSite-4.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"acb9bda3-a045-46bd-8fd0-f655fbbf270c","CreatedDate":"2025-05-14T12:20:22.403939Z"},{"Showcase":false,"Products":null,"FileName":"ornekSite-3.png","Path":"photo-images\\ornekSite-3.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"b7dfda9c-9d79-40a7-aecb-9d2da2e8661f","CreatedDate":"2025-05-14T12:20:19.732544Z"},{"Showcase":false,"Products":null,"FileName":"Ekran-goruntusu-2025-04-29-173323.png","Path":"photo-images\\Ekran-goruntusu-2025-04-29-173323.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"bfbcf22a-a569-4d33-82d6-b3bcbc1590e1","CreatedDate":"2025-05-15T16:19:05.233859Z"},{"Showcase":false,"Products":null,"FileName":"ornekSite.png","Path":"photo-images\\ornekSite.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"f1fc9ef0-39f5-4341-8944-56cd97a83860","CreatedDate":"2025-05-14T12:20:06.22504Z"}]},{"Id":"e78e7ea3-84b6-48a7-80d2-f6e5aee44bf9","Name":"Ürün 11","Stock":11,"Price":11,"CreatedDate":"2025-05-09T14:57:20.206738Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[]}]}
+2025-05-27 03:57:34.759 +03:00 [INF] HTTP GET /api/products responded 200 in 65.5113 ms
+2025-05-27 03:57:34.761 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/api/products?page=0&size=12 - - - 200 - application/json;+charset=utf-8 68.6773ms
+2025-05-27 03:57:34.778 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/ - -
+2025-05-27 03:57:34.778 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/photo-images/ornekSite-4.png - -
+2025-05-27 03:57:34.778 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/photo-images/Ekran-goruntusu-2025-04-29-173325.png - -
+2025-05-27 03:57:34.778 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/photo-images/ornekSite-7.png - -
+2025-05-27 03:57:34.779 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/photo-images/ornekSite-6.png - -
+2025-05-27 03:57:34.779 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Connection: keep-alive
+Host: localhost:5216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: "Chromium";v="136", "Brave";v="136", "Not.A/Brand";v="99"
+sec-ch-ua-mobile: [Redacted]
+Sec-GPC: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-05-27 03:57:34.785 +03:00 [INF] The file /photo-images/ornekSite-6.png was not modified
+2025-05-27 03:57:34.785 +03:00 [INF] The file /photo-images/ornekSite-7.png was not modified
+2025-05-27 03:57:34.785 +03:00 [INF] The file /photo-images/Ekran-goruntusu-2025-04-29-173325.png was not modified
+2025-05-27 03:57:34.786 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/photo-images/ornekSite-6.png - - - 304 - image/png 7.5165ms
+2025-05-27 03:57:34.787 +03:00 [INF] Response:
+StatusCode: 404
+2025-05-27 03:57:34.788 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/photo-images/ornekSite-7.png - - - 304 - image/png 9.7835ms
+2025-05-27 03:57:34.790 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/photo-images/Ekran-goruntusu-2025-04-29-173325.png - - - 304 - image/png 11.8585ms
+2025-05-27 03:57:34.793 +03:00 [INF] Sending file. Request path: '/photo-images/ornekSite-4.png'. Physical path: 'C:\Users\samed\Desktop\ETicaretUygulaması\miniETicaret\ETicaretAPI\Presentation\ETicaretAPI.API\wwwroot\photo-images\ornekSite-4.png'
+2025-05-27 03:57:34.794 +03:00 [INF] HTTP GET / responded 404 in 14.9371 ms
+2025-05-27 03:57:34.800 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/ - - - 404 0 - 21.8559ms
+2025-05-27 03:57:34.800 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/photo-images/ornekSite-4.png - - - 200 152927 image/png 21.9275ms
+2025-05-27 03:57:40.744 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5216/api/auth/login - -
+2025-05-27 03:57:40.745 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: OPTIONS
+Scheme: http
+PathBase: 
+Path: /api/auth/login
+Accept: */*
+Connection: keep-alive
+Host: localhost:5216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-05-27 03:57:40.747 +03:00 [INF] CORS policy execution successful.
+2025-05-27 03:57:40.748 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Credentials: [Redacted]
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2025-05-27 03:57:40.749 +03:00 [INF] HTTP OPTIONS /api/auth/login responded 204 in 4.1514 ms
+2025-05-27 03:57:40.750 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5216/api/auth/login - - - 204 - - 6.5287ms
+2025-05-27 03:57:40.752 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5216/api/auth/login application/json 45
+2025-05-27 03:57:40.755 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/auth/login
+Accept: application/json, text/plain, */*
+Connection: keep-alive
+Host: localhost:5216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Authorization: [Redacted]
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 45
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: "Chromium";v="136", "Brave";v="136", "Not.A/Brand";v="99"
+sec-ch-ua-mobile: [Redacted]
+Sec-GPC: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-05-27 03:57:40.757 +03:00 [INF] CORS policy execution successful.
+2025-05-27 03:57:40.758 +03:00 [INF] Executing endpoint 'ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API)'
+2025-05-27 03:57:40.762 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ETicaretAPI.Application.Features.Commands.AppUser.LoginUser.LoginUserCommandRequest) on controller ETicaretAPI.API.Controllers.AuthController (ETicaretAPI.API).
+2025-05-27 03:57:40.769 +03:00 [INF] RequestBody: {"userNameOrEmail":"ankara","password":"123"}
+2025-05-27 03:57:40.791 +03:00 [INF] Entity Framework Core 6.0.2 initialized 'ETicaretAPIDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f' with options: None
+2025-05-27 03:57:40.826 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-05-27 03:57:41.041 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-05-27 03:57:41.147 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@p17='?', @p0='?' (DbType = Int32), @p1='?', @p18='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime), @p6='?', @p7='?', @p8='?', @p9='?', @p10='?', @p11='?' (DbType = Boolean), @p12='?', @p13='?' (DbType = DateTime), @p14='?', @p15='?' (DbType = Boolean), @p16='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "LockoutEnabled" = @p4, "LockoutEnd" = @p5, "NameSurname" = @p6, "NormalizedEmail" = @p7, "NormalizedUserName" = @p8, "PasswordHash" = @p9, "PhoneNumber" = @p10, "PhoneNumberConfirmed" = @p11, "RefreshToken" = @p12, "RefreshTokenEndDate" = @p13, "SecurityStamp" = @p14, "TwoFactorEnabled" = @p15, "UserName" = @p16
+WHERE "Id" = @p17 AND "ConcurrencyStamp" = @p18;
+2025-05-27 03:57:41.173 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Commands.AppUser.LoginUser.LoginUserSuccessCommendResponse'.
+2025-05-27 03:57:41.175 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-05-27 03:57:41.176 +03:00 [INF] Executed action ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API) in 411.3194ms
+2025-05-27 03:57:41.178 +03:00 [INF] Executed endpoint 'ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API)'
+2025-05-27 03:57:41.180 +03:00 [INF] ResponseBody: {"Token":{"AccessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYW5rYXJhIiwibmJmIjoxNzQ4MzA3NDYwLCJleHAiOjE3NDgzMDgzNjAsImlzcyI6Ind3dy5teWFwaS5jb20iLCJhdWQiOiJ3d3cuYmlsbWVtZW4uY29tIn0.JTovtH5jT71pwThg441800oM_0yQ3-VtQ6_FK4jQFKA","Expiration":"2025-05-27T01:12:40.9329976Z","RefreshToken":"yZONrQVA0XbUCjGYUYEjQh7OMa6DyI6BYOPI56FF80U="}}
+2025-05-27 03:57:41.182 +03:00 [INF] HTTP POST /api/auth/login responded 200 in 428.0337 ms
+2025-05-27 03:57:41.184 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5216/api/auth/login application/json 45 - 200 - application/json;+charset=utf-8 432.0593ms
+2025-05-27 03:57:44.795 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5216/products-hub/negotiate?negotiateVersion=1 - -
+2025-05-27 03:57:44.796 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: OPTIONS
+Scheme: http
+PathBase: 
+Path: /products-hub/negotiate
+Accept: */*
+Connection: keep-alive
+Host: localhost:5216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Cache-Control: max-age=0
+Origin: [Redacted]
+Referer: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-05-27 03:57:44.798 +03:00 [INF] CORS policy execution successful.
+2025-05-27 03:57:44.799 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Credentials: [Redacted]
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2025-05-27 03:57:44.800 +03:00 [INF] HTTP OPTIONS /products-hub/negotiate responded 204 in 3.9373 ms
+2025-05-27 03:57:44.802 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5216/products-hub/negotiate?negotiateVersion=1 - - - 204 - - 7.4272ms
+2025-05-27 03:57:44.803 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5216/products-hub/negotiate?negotiateVersion=1 - 0
+2025-05-27 03:57:44.805 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /products-hub/negotiate
+Accept: */*
+Connection: keep-alive
+Host: localhost:5216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Cache-Control: max-age=0
+Cookie: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 0
+sec-ch-ua-platform: [Redacted]
+X-Requested-With: XMLHttpRequest
+sec-ch-ua: "Chromium";v="136", "Brave";v="136", "Not.A/Brand";v="99"
+sec-ch-ua-mobile: [Redacted]
+X-SignalR-User-Agent: [Redacted]
+Sec-GPC: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-05-27 03:57:44.807 +03:00 [INF] CORS policy execution successful.
+2025-05-27 03:57:44.809 +03:00 [INF] Executing endpoint '/products-hub/negotiate'
+2025-05-27 03:57:44.818 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json
+Content-Length: 316
+2025-05-27 03:57:44.820 +03:00 [INF] Executed endpoint '/products-hub/negotiate'
+2025-05-27 03:57:44.821 +03:00 [INF] ResponseBody: {"negotiateVersion":1,"connectionId":"NufyjOnO3x-Rb1LR7GZcIQ","connectionToken":"WOcExfgYfo8KpToic821CQ","availableTransports":[{"transport":"WebSockets","transferFormats":["Text","Binary"]},{"transport":"ServerSentEvents","transferFormats":["Text"]},{"transport":"LongPolling","transferFormats":["Text","Binary"]}]}
+2025-05-27 03:57:44.823 +03:00 [INF] HTTP POST /products-hub/negotiate responded 200 in 18.3520 ms
+2025-05-27 03:57:44.825 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5216/products-hub/negotiate?negotiateVersion=1 - 0 - 200 316 application/json 22.1667ms
+2025-05-27 03:57:44.834 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/products-hub?id=WOcExfgYfo8KpToic821CQ - -
+2025-05-27 03:57:44.835 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /products-hub
+Connection: Upgrade
+Host: localhost:5216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Cache-Control: no-cache
+Cookie: [Redacted]
+Origin: [Redacted]
+Pragma: [Redacted]
+Upgrade: websocket
+Sec-WebSocket-Version: 13
+Sec-WebSocket-Key: [Redacted]
+Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2025-05-27 03:57:44.837 +03:00 [INF] CORS policy execution successful.
+2025-05-27 03:57:44.839 +03:00 [INF] Executing endpoint '/products-hub'
+2025-05-27 03:57:46.277 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5216/api/products?page=0&size=5 - -
+2025-05-27 03:57:46.278 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: OPTIONS
+Scheme: http
+PathBase: 
+Path: /api/products
+Accept: */*
+Connection: keep-alive
+Host: localhost:5216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-05-27 03:57:46.280 +03:00 [INF] CORS policy execution successful.
+2025-05-27 03:57:46.280 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Credentials: [Redacted]
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2025-05-27 03:57:46.281 +03:00 [INF] HTTP OPTIONS /api/products responded 204 in 3.1767 ms
+2025-05-27 03:57:46.283 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5216/api/products?page=0&size=5 - - - 204 - - 5.9310ms
+2025-05-27 03:57:46.284 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/api/products?page=0&size=5 - -
+2025-05-27 03:57:46.286 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/products
+Accept: application/json, text/plain, */*
+Connection: keep-alive
+Host: localhost:5216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Authorization: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: "Chromium";v="136", "Brave";v="136", "Not.A/Brand";v="99"
+sec-ch-ua-mobile: [Redacted]
+Sec-GPC: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-05-27 03:57:46.287 +03:00 [INF] CORS policy execution successful.
+2025-05-27 03:57:46.288 +03:00 [INF] Executing endpoint 'ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API)'
+2025-05-27 03:57:46.289 +03:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(ETicaretAPI.Application.Features.Queries.Product.GettAllProduct.GettAllProductQueryRequest) on controller ETicaretAPI.API.Controllers.ProductsController (ETicaretAPI.API).
+2025-05-27 03:57:46.293 +03:00 [INF] Get all products
+2025-05-27 03:57:46.294 +03:00 [INF] Entity Framework Core 6.0.2 initialized 'ETicaretAPIDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f' with options: None
+2025-05-27 03:57:46.299 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)::INT
+FROM "Products" AS p
+2025-05-27 03:57:46.304 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."Name", t."Stock", t."Price", t."CreatedDate", t."UpdateDate", t0."Id", t0."CreatedDate", t0."Discriminator", t0."FileName", t0."Path", t0."Storage", t0."Showcase", t0."ProductImageFilesId", t0."ProductsId"
+FROM (
+    SELECT p."Id", p."Name", p."Stock", p."Price", p."CreatedDate", p."UpdateDate"
+    FROM "Products" AS p
+    LIMIT @__p_1 OFFSET @__p_0
+) AS t
+LEFT JOIN (
+    SELECT t1."Id", t1."CreatedDate", t1."Discriminator", t1."FileName", t1."Path", t1."Storage", t1."Showcase", p0."ProductImageFilesId", p0."ProductsId"
+    FROM "ProductProductImageFile" AS p0
+    INNER JOIN (
+        SELECT f."Id", f."CreatedDate", f."Discriminator", f."FileName", f."Path", f."Storage", f."Showcase"
+        FROM "Files" AS f
+        WHERE f."Discriminator" = 'ProductImageFile'
+    ) AS t1 ON p0."ProductImageFilesId" = t1."Id"
+) AS t0 ON t."Id" = t0."ProductsId"
+ORDER BY t."Id", t0."ProductImageFilesId", t0."ProductsId"
+2025-05-27 03:57:46.307 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Queries.Product.GettAllProduct.GettAllProductQueryResponse'.
+2025-05-27 03:57:46.309 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-05-27 03:57:46.310 +03:00 [INF] Executed action ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API) in 19.274ms
+2025-05-27 03:57:46.311 +03:00 [INF] Executed endpoint 'ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API)'
+2025-05-27 03:57:46.312 +03:00 [INF] ResponseBody: {"totalProductCount":20,"products":[{"Id":"502dab11-38f3-4896-82f8-4d6273f9a76a","Name":"Ürün 5","Stock":5,"Price":5,"CreatedDate":"2025-04-28T19:44:08.913138Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[{"Showcase":false,"Products":null,"FileName":"Ekran-goruntusu-2025-04-29-173324.png","Path":"photo-images\\Ekran-goruntusu-2025-04-29-173324.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"7fabe6b6-8d73-42b0-8064-f1d7a5bf8200","CreatedDate":"2025-05-26T15:29:40.8159Z"},{"Showcase":true,"Products":null,"FileName":"ornekSite-7.png","Path":"photo-images\\ornekSite-7.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"9fb5c84a-cc71-4a15-8c2b-0f42092f9035","CreatedDate":"2025-05-26T16:11:35.390989Z"}]},{"Id":"95e5ed0e-f138-47ac-8481-9d5a5602dcfd","Name":"Ürün 4","Stock":4,"Price":4,"CreatedDate":"2025-04-28T19:44:02.934027Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[{"Showcase":true,"Products":null,"FileName":"ornekSite-6.png","Path":"photo-images\\ornekSite-6.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"9d30e8a8-83c6-4359-a11a-cc730a801e87","CreatedDate":"2025-05-26T15:41:27.79222Z"}]},{"Id":"a02ab55b-fcaf-445e-9a29-690463c3d470","Name":"Ürün 3","Stock":3,"Price":3,"CreatedDate":"2025-04-28T19:43:58.654797Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[{"Showcase":true,"Products":null,"FileName":"Ekran-goruntusu-2025-04-29-173325.png","Path":"photo-images\\Ekran-goruntusu-2025-04-29-173325.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"d6e16872-d7db-49fe-8caf-764550214aec","CreatedDate":"2025-05-26T20:34:38.372244Z"}]},{"Id":"d3a62187-1c3a-4655-9c23-c52f182d9ace","Name":"Ürün 2","Stock":2,"Price":2,"CreatedDate":"2025-04-28T19:42:59.326713Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[]},{"Id":"e5398eda-4c14-4e9f-a643-4eb9e19a8246","Name":"Ürün 1","Stock":1,"Price":1,"CreatedDate":"2025-04-28T19:42:54.977536Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[{"Showcase":false,"Products":null,"FileName":"ornekSite-5.png","Path":"photo-images\\ornekSite-5.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"51f26b17-61e9-43dc-b2ec-3a54358269f0","CreatedDate":"2025-05-15T16:19:05.233887Z"},{"Showcase":false,"Products":null,"FileName":"ornekSite-2.png","Path":"photo-images\\ornekSite-2.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"5c82910f-3dd3-4925-bcb2-be273076b9c7","CreatedDate":"2025-05-14T12:20:13.014657Z"},{"Showcase":false,"Products":null,"FileName":"Ekran-goruntusu-2025-04-29-173322.png","Path":"photo-images\\Ekran-goruntusu-2025-04-29-173322.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"a25508ed-d7f9-4211-933d-20cac2bb02ef","CreatedDate":"2025-05-15T15:38:53.223063Z"},{"Showcase":true,"Products":null,"FileName":"ornekSite-4.png","Path":"photo-images\\ornekSite-4.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"acb9bda3-a045-46bd-8fd0-f655fbbf270c","CreatedDate":"2025-05-14T12:20:22.403939Z"},{"Showcase":false,"Products":null,"FileName":"ornekSite-3.png","Path":"photo-images\\ornekSite-3.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"b7dfda9c-9d79-40a7-aecb-9d2da2e8661f","CreatedDate":"2025-05-14T12:20:19.732544Z"},{"Showcase":false,"Products":null,"FileName":"Ekran-goruntusu-2025-04-29-173323.png","Path":"photo-images\\Ekran-goruntusu-2025-04-29-173323.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"bfbcf22a-a569-4d33-82d6-b3bcbc1590e1","CreatedDate":"2025-05-15T16:19:05.233859Z"},{"Showcase":false,"Products":null,"FileName":"ornekSite.png","Path":"photo-images\\ornekSite.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"f1fc9ef0-39f5-4341-8944-56cd97a83860","CreatedDate":"2025-05-14T12:20:06.22504Z"}]}]}
+2025-05-27 03:57:46.320 +03:00 [INF] HTTP GET /api/products responded 200 in 34.6149 ms
+2025-05-27 03:57:46.327 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/api/products?page=0&size=5 - - - 200 - application/json;+charset=utf-8 42.1383ms
+2025-05-27 03:57:49.064 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/api/products?page=0&size=5 - -
+2025-05-27 03:57:49.074 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/products
+Accept: application/json, text/plain, */*
+Connection: keep-alive
+Host: localhost:5216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Authorization: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: "Chromium";v="136", "Brave";v="136", "Not.A/Brand";v="99"
+sec-ch-ua-mobile: [Redacted]
+Sec-GPC: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-05-27 03:57:49.077 +03:00 [INF] CORS policy execution successful.
+2025-05-27 03:57:49.078 +03:00 [INF] Executing endpoint 'ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API)'
+2025-05-27 03:57:49.080 +03:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(ETicaretAPI.Application.Features.Queries.Product.GettAllProduct.GettAllProductQueryRequest) on controller ETicaretAPI.API.Controllers.ProductsController (ETicaretAPI.API).
+2025-05-27 03:57:49.084 +03:00 [INF] Get all products
+2025-05-27 03:57:49.085 +03:00 [INF] Entity Framework Core 6.0.2 initialized 'ETicaretAPIDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f' with options: None
+2025-05-27 03:57:49.119 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)::INT
+FROM "Products" AS p
+2025-05-27 03:57:49.130 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."Name", t."Stock", t."Price", t."CreatedDate", t."UpdateDate", t0."Id", t0."CreatedDate", t0."Discriminator", t0."FileName", t0."Path", t0."Storage", t0."Showcase", t0."ProductImageFilesId", t0."ProductsId"
+FROM (
+    SELECT p."Id", p."Name", p."Stock", p."Price", p."CreatedDate", p."UpdateDate"
+    FROM "Products" AS p
+    LIMIT @__p_1 OFFSET @__p_0
+) AS t
+LEFT JOIN (
+    SELECT t1."Id", t1."CreatedDate", t1."Discriminator", t1."FileName", t1."Path", t1."Storage", t1."Showcase", p0."ProductImageFilesId", p0."ProductsId"
+    FROM "ProductProductImageFile" AS p0
+    INNER JOIN (
+        SELECT f."Id", f."CreatedDate", f."Discriminator", f."FileName", f."Path", f."Storage", f."Showcase"
+        FROM "Files" AS f
+        WHERE f."Discriminator" = 'ProductImageFile'
+    ) AS t1 ON p0."ProductImageFilesId" = t1."Id"
+) AS t0 ON t."Id" = t0."ProductsId"
+ORDER BY t."Id", t0."ProductImageFilesId", t0."ProductsId"
+2025-05-27 03:57:49.137 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Queries.Product.GettAllProduct.GettAllProductQueryResponse'.
+2025-05-27 03:57:49.139 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-05-27 03:57:49.141 +03:00 [INF] Executed action ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API) in 58.1821ms
+2025-05-27 03:57:49.146 +03:00 [INF] Executed endpoint 'ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API)'
+2025-05-27 03:57:49.147 +03:00 [INF] ResponseBody: {"totalProductCount":20,"products":[{"Id":"502dab11-38f3-4896-82f8-4d6273f9a76a","Name":"Ürün 5","Stock":5,"Price":5,"CreatedDate":"2025-04-28T19:44:08.913138Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[{"Showcase":false,"Products":null,"FileName":"Ekran-goruntusu-2025-04-29-173324.png","Path":"photo-images\\Ekran-goruntusu-2025-04-29-173324.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"7fabe6b6-8d73-42b0-8064-f1d7a5bf8200","CreatedDate":"2025-05-26T15:29:40.8159Z"},{"Showcase":true,"Products":null,"FileName":"ornekSite-7.png","Path":"photo-images\\ornekSite-7.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"9fb5c84a-cc71-4a15-8c2b-0f42092f9035","CreatedDate":"2025-05-26T16:11:35.390989Z"}]},{"Id":"95e5ed0e-f138-47ac-8481-9d5a5602dcfd","Name":"Ürün 4","Stock":4,"Price":4,"CreatedDate":"2025-04-28T19:44:02.934027Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[{"Showcase":true,"Products":null,"FileName":"ornekSite-6.png","Path":"photo-images\\ornekSite-6.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"9d30e8a8-83c6-4359-a11a-cc730a801e87","CreatedDate":"2025-05-26T15:41:27.79222Z"}]},{"Id":"a02ab55b-fcaf-445e-9a29-690463c3d470","Name":"Ürün 3","Stock":3,"Price":3,"CreatedDate":"2025-04-28T19:43:58.654797Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[{"Showcase":true,"Products":null,"FileName":"Ekran-goruntusu-2025-04-29-173325.png","Path":"photo-images\\Ekran-goruntusu-2025-04-29-173325.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"d6e16872-d7db-49fe-8caf-764550214aec","CreatedDate":"2025-05-26T20:34:38.372244Z"}]},{"Id":"d3a62187-1c3a-4655-9c23-c52f182d9ace","Name":"Ürün 2","Stock":2,"Price":2,"CreatedDate":"2025-04-28T19:42:59.326713Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[]},{"Id":"e5398eda-4c14-4e9f-a643-4eb9e19a8246","Name":"Ürün 1","Stock":1,"Price":1,"CreatedDate":"2025-04-28T19:42:54.977536Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[{"Showcase":false,"Products":null,"FileName":"ornekSite-5.png","Path":"photo-images\\ornekSite-5.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"51f26b17-61e9-43dc-b2ec-3a54358269f0","CreatedDate":"2025-05-15T16:19:05.233887Z"},{"Showcase":false,"Products":null,"FileName":"ornekSite-2.png","Path":"photo-images\\ornekSite-2.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"5c82910f-3dd3-4925-bcb2-be273076b9c7","CreatedDate":"2025-05-14T12:20:13.014657Z"},{"Showcase":false,"Products":null,"FileName":"Ekran-goruntusu-2025-04-29-173322.png","Path":"photo-images\\Ekran-goruntusu-2025-04-29-173322.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"a25508ed-d7f9-4211-933d-20cac2bb02ef","CreatedDate":"2025-05-15T15:38:53.223063Z"},{"Showcase":true,"Products":null,"FileName":"ornekSite-4.png","Path":"photo-images\\ornekSite-4.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"acb9bda3-a045-46bd-8fd0-f655fbbf270c","CreatedDate":"2025-05-14T12:20:22.403939Z"},{"Showcase":false,"Products":null,"FileName":"ornekSite-3.png","Path":"photo-images\\ornekSite-3.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"b7dfda9c-9d79-40a7-aecb-9d2da2e8661f","CreatedDate":"2025-05-14T12:20:19.732544Z"},{"Showcase":false,"Products":null,"FileName":"Ekran-goruntusu-2025-04-29-173323.png","Path":"photo-images\\Ekran-goruntusu-2025-04-29-173323.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"bfbcf22a-a569-4d33-82d6-b3bcbc1590e1","CreatedDate":"2025-05-15T16:19:05.233859Z"},{"Showcase":false,"Products":null,"FileName":"ornekSite.png","Path":"photo-images\\ornekSite.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"f1fc9ef0-39f5-4341-8944-56cd97a83860","CreatedDate":"2025-05-14T12:20:06.22504Z"}]}]}
+2025-05-27 03:57:49.155 +03:00 [INF] HTTP GET /api/products responded 200 in 80.4677 ms
+2025-05-27 03:57:49.159 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/api/products?page=0&size=5 - - - 200 - application/json;+charset=utf-8 94.4707ms
+2025-05-27 03:57:50.857 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5216/api/products?page=0&size=12 - -
+2025-05-27 03:57:50.858 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: OPTIONS
+Scheme: http
+PathBase: 
+Path: /api/products
+Accept: */*
+Connection: keep-alive
+Host: localhost:5216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-05-27 03:57:50.860 +03:00 [INF] CORS policy execution successful.
+2025-05-27 03:57:50.861 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Credentials: [Redacted]
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2025-05-27 03:57:50.862 +03:00 [INF] HTTP OPTIONS /api/products responded 204 in 4.0954 ms
+2025-05-27 03:57:50.864 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5216/api/products?page=0&size=12 - - - 204 - - 7.1530ms
+2025-05-27 03:57:50.866 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/api/products?page=0&size=12 - -
+2025-05-27 03:57:50.867 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/products
+Accept: application/json, text/plain, */*
+Connection: keep-alive
+Host: localhost:5216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Authorization: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: "Chromium";v="136", "Brave";v="136", "Not.A/Brand";v="99"
+sec-ch-ua-mobile: [Redacted]
+Sec-GPC: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-05-27 03:57:50.868 +03:00 [INF] CORS policy execution successful.
+2025-05-27 03:57:50.869 +03:00 [INF] Executing endpoint 'ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API)'
+2025-05-27 03:57:50.870 +03:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(ETicaretAPI.Application.Features.Queries.Product.GettAllProduct.GettAllProductQueryRequest) on controller ETicaretAPI.API.Controllers.ProductsController (ETicaretAPI.API).
+2025-05-27 03:57:50.873 +03:00 [INF] Get all products
+2025-05-27 03:57:50.875 +03:00 [INF] Entity Framework Core 6.0.2 initialized 'ETicaretAPIDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f' with options: None
+2025-05-27 03:57:50.879 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)::INT
+FROM "Products" AS p
+2025-05-27 03:57:50.884 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."Name", t."Stock", t."Price", t."CreatedDate", t."UpdateDate", t0."Id", t0."CreatedDate", t0."Discriminator", t0."FileName", t0."Path", t0."Storage", t0."Showcase", t0."ProductImageFilesId", t0."ProductsId"
+FROM (
+    SELECT p."Id", p."Name", p."Stock", p."Price", p."CreatedDate", p."UpdateDate"
+    FROM "Products" AS p
+    LIMIT @__p_1 OFFSET @__p_0
+) AS t
+LEFT JOIN (
+    SELECT t1."Id", t1."CreatedDate", t1."Discriminator", t1."FileName", t1."Path", t1."Storage", t1."Showcase", p0."ProductImageFilesId", p0."ProductsId"
+    FROM "ProductProductImageFile" AS p0
+    INNER JOIN (
+        SELECT f."Id", f."CreatedDate", f."Discriminator", f."FileName", f."Path", f."Storage", f."Showcase"
+        FROM "Files" AS f
+        WHERE f."Discriminator" = 'ProductImageFile'
+    ) AS t1 ON p0."ProductImageFilesId" = t1."Id"
+) AS t0 ON t."Id" = t0."ProductsId"
+ORDER BY t."Id", t0."ProductImageFilesId", t0."ProductsId"
+2025-05-27 03:57:50.887 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Queries.Product.GettAllProduct.GettAllProductQueryResponse'.
+2025-05-27 03:57:50.889 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-05-27 03:57:50.890 +03:00 [INF] Executed action ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API) in 17.2292ms
+2025-05-27 03:57:50.891 +03:00 [INF] Executed endpoint 'ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API)'
+2025-05-27 03:57:50.892 +03:00 [INF] ResponseBody: {"totalProductCount":20,"products":[{"Id":"502dab11-38f3-4896-82f8-4d6273f9a76a","Name":"Ürün 5","Stock":5,"Price":5,"CreatedDate":"2025-04-28T19:44:08.913138Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[{"Showcase":false,"Products":null,"FileName":"Ekran-goruntusu-2025-04-29-173324.png","Path":"photo-images\\Ekran-goruntusu-2025-04-29-173324.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"7fabe6b6-8d73-42b0-8064-f1d7a5bf8200","CreatedDate":"2025-05-26T15:29:40.8159Z"},{"Showcase":true,"Products":null,"FileName":"ornekSite-7.png","Path":"photo-images\\ornekSite-7.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"9fb5c84a-cc71-4a15-8c2b-0f42092f9035","CreatedDate":"2025-05-26T16:11:35.390989Z"}]},{"Id":"5cab9393-1711-488e-8a15-987d7f73202f","Name":"Ürün 10","Stock":10,"Price":10,"CreatedDate":"2025-04-28T19:44:39.623498Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[{"Showcase":false,"Products":null,"FileName":"ornekSite-8.png","Path":"photo-images\\ornekSite-8.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"4efc5a1f-d2c9-4597-9e49-a3a54d721c69","CreatedDate":"2025-05-26T20:37:20.165331Z"}]},{"Id":"658862f4-a933-449e-88db-d2a77f3efca8","Name":"Ürün 9","Stock":9,"Price":9,"CreatedDate":"2025-04-28T19:44:34.352427Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[]},{"Id":"857bb9dc-6bb5-46e7-9a24-e4b54181e927","Name":"Ürün 12","Stock":12,"Price":12,"CreatedDate":"2025-05-15T00:39:59.815151Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[]},{"Id":"88bcfd38-44bc-4979-be30-0d5e4dae5b74","Name":"Ürün 7","Stock":7,"Price":7,"CreatedDate":"2025-04-28T19:44:20.944632Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[]},{"Id":"95e5ed0e-f138-47ac-8481-9d5a5602dcfd","Name":"Ürün 4","Stock":4,"Price":4,"CreatedDate":"2025-04-28T19:44:02.934027Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[{"Showcase":true,"Products":null,"FileName":"ornekSite-6.png","Path":"photo-images\\ornekSite-6.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"9d30e8a8-83c6-4359-a11a-cc730a801e87","CreatedDate":"2025-05-26T15:41:27.79222Z"}]},{"Id":"a02ab55b-fcaf-445e-9a29-690463c3d470","Name":"Ürün 3","Stock":3,"Price":3,"CreatedDate":"2025-04-28T19:43:58.654797Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[{"Showcase":true,"Products":null,"FileName":"Ekran-goruntusu-2025-04-29-173325.png","Path":"photo-images\\Ekran-goruntusu-2025-04-29-173325.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"d6e16872-d7db-49fe-8caf-764550214aec","CreatedDate":"2025-05-26T20:34:38.372244Z"}]},{"Id":"adf05f49-4850-4f85-9701-4a59cb435b03","Name":"Ürün 8","Stock":8,"Price":8,"CreatedDate":"2025-04-28T19:44:29.241882Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[]},{"Id":"d110ff3e-31b9-4899-a59a-99e9f80a43e1","Name":"Ürün 6","Stock":6,"Price":6,"CreatedDate":"2025-04-28T19:44:15.538537Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[]},{"Id":"d3a62187-1c3a-4655-9c23-c52f182d9ace","Name":"Ürün 2","Stock":2,"Price":2,"CreatedDate":"2025-04-28T19:42:59.326713Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[]},{"Id":"e5398eda-4c14-4e9f-a643-4eb9e19a8246","Name":"Ürün 1","Stock":1,"Price":1,"CreatedDate":"2025-04-28T19:42:54.977536Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[{"Showcase":false,"Products":null,"FileName":"ornekSite-5.png","Path":"photo-images\\ornekSite-5.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"51f26b17-61e9-43dc-b2ec-3a54358269f0","CreatedDate":"2025-05-15T16:19:05.233887Z"},{"Showcase":false,"Products":null,"FileName":"ornekSite-2.png","Path":"photo-images\\ornekSite-2.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"5c82910f-3dd3-4925-bcb2-be273076b9c7","CreatedDate":"2025-05-14T12:20:13.014657Z"},{"Showcase":false,"Products":null,"FileName":"Ekran-goruntusu-2025-04-29-173322.png","Path":"photo-images\\Ekran-goruntusu-2025-04-29-173322.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"a25508ed-d7f9-4211-933d-20cac2bb02ef","CreatedDate":"2025-05-15T15:38:53.223063Z"},{"Showcase":true,"Products":null,"FileName":"ornekSite-4.png","Path":"photo-images\\ornekSite-4.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"acb9bda3-a045-46bd-8fd0-f655fbbf270c","CreatedDate":"2025-05-14T12:20:22.403939Z"},{"Showcase":false,"Products":null,"FileName":"ornekSite-3.png","Path":"photo-images\\ornekSite-3.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"b7dfda9c-9d79-40a7-aecb-9d2da2e8661f","CreatedDate":"2025-05-14T12:20:19.732544Z"},{"Showcase":false,"Products":null,"FileName":"Ekran-goruntusu-2025-04-29-173323.png","Path":"photo-images\\Ekran-goruntusu-2025-04-29-173323.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"bfbcf22a-a569-4d33-82d6-b3bcbc1590e1","CreatedDate":"2025-05-15T16:19:05.233859Z"},{"Showcase":false,"Products":null,"FileName":"ornekSite.png","Path":"photo-images\\ornekSite.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"f1fc9ef0-39f5-4341-8944-56cd97a83860","CreatedDate":"2025-05-14T12:20:06.22504Z"}]},{"Id":"e78e7ea3-84b6-48a7-80d2-f6e5aee44bf9","Name":"Ürün 11","Stock":11,"Price":11,"CreatedDate":"2025-05-09T14:57:20.206738Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[]}]}
+2025-05-27 03:57:50.898 +03:00 [INF] HTTP GET /api/products responded 200 in 30.7758 ms
+2025-05-27 03:57:50.899 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/api/products?page=0&size=12 - - - 200 - application/json;+charset=utf-8 33.5040ms
+2025-05-27 03:57:50.912 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/ - -
+2025-05-27 03:57:50.914 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Connection: keep-alive
+Host: localhost:5216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: "Chromium";v="136", "Brave";v="136", "Not.A/Brand";v="99"
+sec-ch-ua-mobile: [Redacted]
+Sec-GPC: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-05-27 03:57:50.916 +03:00 [INF] Response:
+StatusCode: 404
+2025-05-27 03:57:50.917 +03:00 [INF] HTTP GET / responded 404 in 2.9750 ms
+2025-05-27 03:57:50.919 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/ - - - 404 0 - 6.7463ms
+2025-05-27 03:57:51.831 +03:00 [INF] Executed endpoint '/products-hub'
+2025-05-27 03:57:51.833 +03:00 [INF] Response:
+StatusCode: 101
+Connection: Upgrade
+Date: Tue, 27 May 2025 00:57:44 GMT
+Server: Kestrel
+Access-Control-Allow-Credentials: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Upgrade: websocket
+Vary: [Redacted]
+Sec-WebSocket-Accept: [Redacted]
+2025-05-27 03:57:51.835 +03:00 [INF] HTTP GET /products-hub responded 101 in 6999.4685 ms
+2025-05-27 03:57:51.858 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/products-hub?id=WOcExfgYfo8KpToic821CQ - - - 101 - - 7023.5887ms
+2025-05-27 03:57:53.410 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5216/products-hub/negotiate?negotiateVersion=1 - -
+2025-05-27 03:57:53.411 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: OPTIONS
+Scheme: http
+PathBase: 
+Path: /products-hub/negotiate
+Accept: */*
+Connection: keep-alive
+Host: localhost:5216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Cache-Control: max-age=0
+Origin: [Redacted]
+Referer: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-05-27 03:57:53.413 +03:00 [INF] CORS policy execution successful.
+2025-05-27 03:57:53.414 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Credentials: [Redacted]
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2025-05-27 03:57:53.415 +03:00 [INF] HTTP OPTIONS /products-hub/negotiate responded 204 in 3.4748 ms
+2025-05-27 03:57:53.416 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5216/products-hub/negotiate?negotiateVersion=1 - - - 204 - - 5.7806ms
+2025-05-27 03:57:53.417 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5216/products-hub/negotiate?negotiateVersion=1 - 0
+2025-05-27 03:57:53.418 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /products-hub/negotiate
+Accept: */*
+Connection: keep-alive
+Host: localhost:5216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Cache-Control: max-age=0
+Cookie: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 0
+sec-ch-ua-platform: [Redacted]
+X-Requested-With: XMLHttpRequest
+sec-ch-ua: "Chromium";v="136", "Brave";v="136", "Not.A/Brand";v="99"
+sec-ch-ua-mobile: [Redacted]
+X-SignalR-User-Agent: [Redacted]
+Sec-GPC: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-05-27 03:57:53.420 +03:00 [INF] CORS policy execution successful.
+2025-05-27 03:57:53.421 +03:00 [INF] Executing endpoint '/products-hub/negotiate'
+2025-05-27 03:57:53.422 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json
+Content-Length: 316
+2025-05-27 03:57:53.423 +03:00 [INF] Executed endpoint '/products-hub/negotiate'
+2025-05-27 03:57:53.424 +03:00 [INF] ResponseBody: {"negotiateVersion":1,"connectionId":"25Dq0DHJhMzisOafNbTVbA","connectionToken":"Av3ZdM0KlEP8abWq_FbvLQ","availableTransports":[{"transport":"WebSockets","transferFormats":["Text","Binary"]},{"transport":"ServerSentEvents","transferFormats":["Text"]},{"transport":"LongPolling","transferFormats":["Text","Binary"]}]}
+2025-05-27 03:57:53.426 +03:00 [INF] HTTP POST /products-hub/negotiate responded 200 in 7.8507 ms
+2025-05-27 03:57:53.427 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5216/products-hub/negotiate?negotiateVersion=1 - 0 - 200 316 application/json 10.5288ms
+2025-05-27 03:57:53.435 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/products-hub?id=Av3ZdM0KlEP8abWq_FbvLQ - -
+2025-05-27 03:57:53.436 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /products-hub
+Connection: Upgrade
+Host: localhost:5216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Cache-Control: no-cache
+Cookie: [Redacted]
+Origin: [Redacted]
+Pragma: [Redacted]
+Upgrade: websocket
+Sec-WebSocket-Version: 13
+Sec-WebSocket-Key: [Redacted]
+Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2025-05-27 03:57:53.437 +03:00 [INF] CORS policy execution successful.
+2025-05-27 03:57:53.438 +03:00 [INF] Executing endpoint '/products-hub'
+2025-05-27 03:57:54.595 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/api/products?page=0&size=12 - -
+2025-05-27 03:57:54.596 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/products
+Accept: application/json, text/plain, */*
+Connection: keep-alive
+Host: localhost:5216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Authorization: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: "Chromium";v="136", "Brave";v="136", "Not.A/Brand";v="99"
+sec-ch-ua-mobile: [Redacted]
+Sec-GPC: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-05-27 03:57:54.598 +03:00 [INF] CORS policy execution successful.
+2025-05-27 03:57:54.599 +03:00 [INF] Executing endpoint 'ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API)'
+2025-05-27 03:57:54.600 +03:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(ETicaretAPI.Application.Features.Queries.Product.GettAllProduct.GettAllProductQueryRequest) on controller ETicaretAPI.API.Controllers.ProductsController (ETicaretAPI.API).
+2025-05-27 03:57:54.604 +03:00 [INF] Get all products
+2025-05-27 03:57:54.605 +03:00 [INF] Entity Framework Core 6.0.2 initialized 'ETicaretAPIDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f' with options: None
+2025-05-27 03:57:54.610 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)::INT
+FROM "Products" AS p
+2025-05-27 03:57:54.615 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."Name", t."Stock", t."Price", t."CreatedDate", t."UpdateDate", t0."Id", t0."CreatedDate", t0."Discriminator", t0."FileName", t0."Path", t0."Storage", t0."Showcase", t0."ProductImageFilesId", t0."ProductsId"
+FROM (
+    SELECT p."Id", p."Name", p."Stock", p."Price", p."CreatedDate", p."UpdateDate"
+    FROM "Products" AS p
+    LIMIT @__p_1 OFFSET @__p_0
+) AS t
+LEFT JOIN (
+    SELECT t1."Id", t1."CreatedDate", t1."Discriminator", t1."FileName", t1."Path", t1."Storage", t1."Showcase", p0."ProductImageFilesId", p0."ProductsId"
+    FROM "ProductProductImageFile" AS p0
+    INNER JOIN (
+        SELECT f."Id", f."CreatedDate", f."Discriminator", f."FileName", f."Path", f."Storage", f."Showcase"
+        FROM "Files" AS f
+        WHERE f."Discriminator" = 'ProductImageFile'
+    ) AS t1 ON p0."ProductImageFilesId" = t1."Id"
+) AS t0 ON t."Id" = t0."ProductsId"
+ORDER BY t."Id", t0."ProductImageFilesId", t0."ProductsId"
+2025-05-27 03:57:54.619 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Queries.Product.GettAllProduct.GettAllProductQueryResponse'.
+2025-05-27 03:57:54.620 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-05-27 03:57:54.621 +03:00 [INF] Executed action ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API) in 18.005ms
+2025-05-27 03:57:54.623 +03:00 [INF] Executed endpoint 'ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API)'
+2025-05-27 03:57:54.624 +03:00 [INF] ResponseBody: {"totalProductCount":20,"products":[{"Id":"502dab11-38f3-4896-82f8-4d6273f9a76a","Name":"Ürün 5","Stock":5,"Price":5,"CreatedDate":"2025-04-28T19:44:08.913138Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[{"Showcase":false,"Products":null,"FileName":"Ekran-goruntusu-2025-04-29-173324.png","Path":"photo-images\\Ekran-goruntusu-2025-04-29-173324.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"7fabe6b6-8d73-42b0-8064-f1d7a5bf8200","CreatedDate":"2025-05-26T15:29:40.8159Z"},{"Showcase":true,"Products":null,"FileName":"ornekSite-7.png","Path":"photo-images\\ornekSite-7.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"9fb5c84a-cc71-4a15-8c2b-0f42092f9035","CreatedDate":"2025-05-26T16:11:35.390989Z"}]},{"Id":"5cab9393-1711-488e-8a15-987d7f73202f","Name":"Ürün 10","Stock":10,"Price":10,"CreatedDate":"2025-04-28T19:44:39.623498Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[{"Showcase":false,"Products":null,"FileName":"ornekSite-8.png","Path":"photo-images\\ornekSite-8.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"4efc5a1f-d2c9-4597-9e49-a3a54d721c69","CreatedDate":"2025-05-26T20:37:20.165331Z"}]},{"Id":"658862f4-a933-449e-88db-d2a77f3efca8","Name":"Ürün 9","Stock":9,"Price":9,"CreatedDate":"2025-04-28T19:44:34.352427Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[]},{"Id":"857bb9dc-6bb5-46e7-9a24-e4b54181e927","Name":"Ürün 12","Stock":12,"Price":12,"CreatedDate":"2025-05-15T00:39:59.815151Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[]},{"Id":"88bcfd38-44bc-4979-be30-0d5e4dae5b74","Name":"Ürün 7","Stock":7,"Price":7,"CreatedDate":"2025-04-28T19:44:20.944632Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[]},{"Id":"95e5ed0e-f138-47ac-8481-9d5a5602dcfd","Name":"Ürün 4","Stock":4,"Price":4,"CreatedDate":"2025-04-28T19:44:02.934027Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[{"Showcase":true,"Products":null,"FileName":"ornekSite-6.png","Path":"photo-images\\ornekSite-6.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"9d30e8a8-83c6-4359-a11a-cc730a801e87","CreatedDate":"2025-05-26T15:41:27.79222Z"}]},{"Id":"a02ab55b-fcaf-445e-9a29-690463c3d470","Name":"Ürün 3","Stock":3,"Price":3,"CreatedDate":"2025-04-28T19:43:58.654797Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[{"Showcase":true,"Products":null,"FileName":"Ekran-goruntusu-2025-04-29-173325.png","Path":"photo-images\\Ekran-goruntusu-2025-04-29-173325.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"d6e16872-d7db-49fe-8caf-764550214aec","CreatedDate":"2025-05-26T20:34:38.372244Z"}]},{"Id":"adf05f49-4850-4f85-9701-4a59cb435b03","Name":"Ürün 8","Stock":8,"Price":8,"CreatedDate":"2025-04-28T19:44:29.241882Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[]},{"Id":"d110ff3e-31b9-4899-a59a-99e9f80a43e1","Name":"Ürün 6","Stock":6,"Price":6,"CreatedDate":"2025-04-28T19:44:15.538537Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[]},{"Id":"d3a62187-1c3a-4655-9c23-c52f182d9ace","Name":"Ürün 2","Stock":2,"Price":2,"CreatedDate":"2025-04-28T19:42:59.326713Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[]},{"Id":"e5398eda-4c14-4e9f-a643-4eb9e19a8246","Name":"Ürün 1","Stock":1,"Price":1,"CreatedDate":"2025-04-28T19:42:54.977536Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[{"Showcase":false,"Products":null,"FileName":"ornekSite-5.png","Path":"photo-images\\ornekSite-5.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"51f26b17-61e9-43dc-b2ec-3a54358269f0","CreatedDate":"2025-05-15T16:19:05.233887Z"},{"Showcase":false,"Products":null,"FileName":"ornekSite-2.png","Path":"photo-images\\ornekSite-2.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"5c82910f-3dd3-4925-bcb2-be273076b9c7","CreatedDate":"2025-05-14T12:20:13.014657Z"},{"Showcase":false,"Products":null,"FileName":"Ekran-goruntusu-2025-04-29-173322.png","Path":"photo-images\\Ekran-goruntusu-2025-04-29-173322.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"a25508ed-d7f9-4211-933d-20cac2bb02ef","CreatedDate":"2025-05-15T15:38:53.223063Z"},{"Showcase":true,"Products":null,"FileName":"ornekSite-4.png","Path":"photo-images\\ornekSite-4.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"acb9bda3-a045-46bd-8fd0-f655fbbf270c","CreatedDate":"2025-05-14T12:20:22.403939Z"},{"Showcase":false,"Products":null,"FileName":"ornekSite-3.png","Path":"photo-images\\ornekSite-3.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"b7dfda9c-9d79-40a7-aecb-9d2da2e8661f","CreatedDate":"2025-05-14T12:20:19.732544Z"},{"Showcase":false,"Products":null,"FileName":"Ekran-goruntusu-2025-04-29-173323.png","Path":"photo-images\\Ekran-goruntusu-2025-04-29-173323.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"bfbcf22a-a569-4d33-82d6-b3bcbc1590e1","CreatedDate":"2025-05-15T16:19:05.233859Z"},{"Showcase":false,"Products":null,"FileName":"ornekSite.png","Path":"photo-images\\ornekSite.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"f1fc9ef0-39f5-4341-8944-56cd97a83860","CreatedDate":"2025-05-14T12:20:06.22504Z"}]},{"Id":"e78e7ea3-84b6-48a7-80d2-f6e5aee44bf9","Name":"Ürün 11","Stock":11,"Price":11,"CreatedDate":"2025-05-09T14:57:20.206738Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[]}]}
+2025-05-27 03:57:54.630 +03:00 [INF] HTTP GET /api/products responded 200 in 33.6556 ms
+2025-05-27 03:57:54.632 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/api/products?page=0&size=12 - - - 200 - application/json;+charset=utf-8 36.7814ms
+2025-05-27 03:57:54.658 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/ - -
+2025-05-27 03:57:54.660 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Connection: keep-alive
+Host: localhost:5216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: "Chromium";v="136", "Brave";v="136", "Not.A/Brand";v="99"
+sec-ch-ua-mobile: [Redacted]
+Sec-GPC: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-05-27 03:57:54.662 +03:00 [INF] Response:
+StatusCode: 404
+2025-05-27 03:57:54.663 +03:00 [INF] HTTP GET / responded 404 in 3.5926 ms
+2025-05-27 03:57:54.665 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/ - - - 404 0 - 6.8094ms
+2025-05-27 03:58:07.671 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5216/api/auth/login - -
+2025-05-27 03:58:07.672 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: OPTIONS
+Scheme: http
+PathBase: 
+Path: /api/auth/login
+Accept: */*
+Connection: keep-alive
+Host: localhost:5216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-05-27 03:58:07.673 +03:00 [INF] CORS policy execution successful.
+2025-05-27 03:58:07.673 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Credentials: [Redacted]
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2025-05-27 03:58:07.674 +03:00 [INF] HTTP OPTIONS /api/auth/login responded 204 in 2.4462 ms
+2025-05-27 03:58:07.676 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5216/api/auth/login - - - 204 - - 4.9584ms
+2025-05-27 03:58:07.677 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5216/api/auth/login application/json 45
+2025-05-27 03:58:07.677 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/auth/login
+Accept: application/json, text/plain, */*
+Connection: keep-alive
+Host: localhost:5216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 45
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: "Chromium";v="136", "Brave";v="136", "Not.A/Brand";v="99"
+sec-ch-ua-mobile: [Redacted]
+Sec-GPC: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-05-27 03:58:07.679 +03:00 [INF] CORS policy execution successful.
+2025-05-27 03:58:07.680 +03:00 [INF] Executing endpoint 'ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API)'
+2025-05-27 03:58:07.681 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ETicaretAPI.Application.Features.Commands.AppUser.LoginUser.LoginUserCommandRequest) on controller ETicaretAPI.API.Controllers.AuthController (ETicaretAPI.API).
+2025-05-27 03:58:07.683 +03:00 [INF] RequestBody: {"userNameOrEmail":"ankara","password":"123"}
+2025-05-27 03:58:07.684 +03:00 [INF] Entity Framework Core 6.0.2 initialized 'ETicaretAPIDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f' with options: None
+2025-05-27 03:58:07.689 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-05-27 03:58:07.698 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-05-27 03:58:07.705 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p17='?', @p0='?' (DbType = Int32), @p1='?', @p18='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime), @p6='?', @p7='?', @p8='?', @p9='?', @p10='?', @p11='?' (DbType = Boolean), @p12='?', @p13='?' (DbType = DateTime), @p14='?', @p15='?' (DbType = Boolean), @p16='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "LockoutEnabled" = @p4, "LockoutEnd" = @p5, "NameSurname" = @p6, "NormalizedEmail" = @p7, "NormalizedUserName" = @p8, "PasswordHash" = @p9, "PhoneNumber" = @p10, "PhoneNumberConfirmed" = @p11, "RefreshToken" = @p12, "RefreshTokenEndDate" = @p13, "SecurityStamp" = @p14, "TwoFactorEnabled" = @p15, "UserName" = @p16
+WHERE "Id" = @p17 AND "ConcurrencyStamp" = @p18;
+2025-05-27 03:58:07.712 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Commands.AppUser.LoginUser.LoginUserSuccessCommendResponse'.
+2025-05-27 03:58:07.714 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-05-27 03:58:07.715 +03:00 [INF] Executed action ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API) in 32.3046ms
+2025-05-27 03:58:07.716 +03:00 [INF] Executed endpoint 'ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API)'
+2025-05-27 03:58:07.717 +03:00 [INF] ResponseBody: {"Token":{"AccessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYW5rYXJhIiwibmJmIjoxNzQ4MzA3NDg3LCJleHAiOjE3NDgzMDgzODcsImlzcyI6Ind3dy5teWFwaS5jb20iLCJhdWQiOiJ3d3cuYmlsbWVtZW4uY29tIn0.s-PkeMR3t8uxWecwUy9fvQZjMHmeOZ0fsvKLlC5KCow","Expiration":"2025-05-27T01:13:07.6946895Z","RefreshToken":"Ijd7rsg36KkoTx5I+uA1ZIe4pbocKVwUxz7ER2Faf3A="}}
+2025-05-27 03:58:07.718 +03:00 [INF] HTTP POST /api/auth/login responded 200 in 40.9300 ms
+2025-05-27 03:58:07.721 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5216/api/auth/login application/json 45 - 200 - application/json;+charset=utf-8 44.0744ms
+2025-05-27 03:58:11.563 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5216/api/products?page=0&size=5 - -
+2025-05-27 03:58:11.565 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: OPTIONS
+Scheme: http
+PathBase: 
+Path: /api/products
+Accept: */*
+Connection: keep-alive
+Host: localhost:5216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-05-27 03:58:11.566 +03:00 [INF] CORS policy execution successful.
+2025-05-27 03:58:11.568 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Credentials: [Redacted]
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2025-05-27 03:58:11.569 +03:00 [INF] HTTP OPTIONS /api/products responded 204 in 4.6439 ms
+2025-05-27 03:58:11.571 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5216/api/products?page=0&size=5 - - - 204 - - 7.8548ms
+2025-05-27 03:58:11.572 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/api/products?page=0&size=5 - -
+2025-05-27 03:58:11.573 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/products
+Accept: application/json, text/plain, */*
+Connection: keep-alive
+Host: localhost:5216
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Authorization: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: "Chromium";v="136", "Brave";v="136", "Not.A/Brand";v="99"
+sec-ch-ua-mobile: [Redacted]
+Sec-GPC: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-05-27 03:58:11.575 +03:00 [INF] CORS policy execution successful.
+2025-05-27 03:58:11.576 +03:00 [INF] Executing endpoint 'ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API)'
+2025-05-27 03:58:11.577 +03:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(ETicaretAPI.Application.Features.Queries.Product.GettAllProduct.GettAllProductQueryRequest) on controller ETicaretAPI.API.Controllers.ProductsController (ETicaretAPI.API).
+2025-05-27 03:58:11.580 +03:00 [INF] Get all products
+2025-05-27 03:58:11.582 +03:00 [INF] Entity Framework Core 6.0.2 initialized 'ETicaretAPIDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.3+94d0a8eaeb9cf5af6ce55a9e59153c1a1be3244f' with options: None
+2025-05-27 03:58:11.586 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)::INT
+FROM "Products" AS p
+2025-05-27 03:58:11.590 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."Name", t."Stock", t."Price", t."CreatedDate", t."UpdateDate", t0."Id", t0."CreatedDate", t0."Discriminator", t0."FileName", t0."Path", t0."Storage", t0."Showcase", t0."ProductImageFilesId", t0."ProductsId"
+FROM (
+    SELECT p."Id", p."Name", p."Stock", p."Price", p."CreatedDate", p."UpdateDate"
+    FROM "Products" AS p
+    LIMIT @__p_1 OFFSET @__p_0
+) AS t
+LEFT JOIN (
+    SELECT t1."Id", t1."CreatedDate", t1."Discriminator", t1."FileName", t1."Path", t1."Storage", t1."Showcase", p0."ProductImageFilesId", p0."ProductsId"
+    FROM "ProductProductImageFile" AS p0
+    INNER JOIN (
+        SELECT f."Id", f."CreatedDate", f."Discriminator", f."FileName", f."Path", f."Storage", f."Showcase"
+        FROM "Files" AS f
+        WHERE f."Discriminator" = 'ProductImageFile'
+    ) AS t1 ON p0."ProductImageFilesId" = t1."Id"
+) AS t0 ON t."Id" = t0."ProductsId"
+ORDER BY t."Id", t0."ProductImageFilesId", t0."ProductsId"
+2025-05-27 03:58:11.594 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Queries.Product.GettAllProduct.GettAllProductQueryResponse'.
+2025-05-27 03:58:11.596 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-05-27 03:58:11.597 +03:00 [INF] Executed action ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API) in 17.2442ms
+2025-05-27 03:58:11.598 +03:00 [INF] Executed endpoint 'ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API)'
+2025-05-27 03:58:11.599 +03:00 [INF] ResponseBody: {"totalProductCount":20,"products":[{"Id":"502dab11-38f3-4896-82f8-4d6273f9a76a","Name":"Ürün 5","Stock":5,"Price":5,"CreatedDate":"2025-04-28T19:44:08.913138Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[{"Showcase":false,"Products":null,"FileName":"Ekran-goruntusu-2025-04-29-173324.png","Path":"photo-images\\Ekran-goruntusu-2025-04-29-173324.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"7fabe6b6-8d73-42b0-8064-f1d7a5bf8200","CreatedDate":"2025-05-26T15:29:40.8159Z"},{"Showcase":true,"Products":null,"FileName":"ornekSite-7.png","Path":"photo-images\\ornekSite-7.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"9fb5c84a-cc71-4a15-8c2b-0f42092f9035","CreatedDate":"2025-05-26T16:11:35.390989Z"}]},{"Id":"95e5ed0e-f138-47ac-8481-9d5a5602dcfd","Name":"Ürün 4","Stock":4,"Price":4,"CreatedDate":"2025-04-28T19:44:02.934027Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[{"Showcase":true,"Products":null,"FileName":"ornekSite-6.png","Path":"photo-images\\ornekSite-6.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"9d30e8a8-83c6-4359-a11a-cc730a801e87","CreatedDate":"2025-05-26T15:41:27.79222Z"}]},{"Id":"a02ab55b-fcaf-445e-9a29-690463c3d470","Name":"Ürün 3","Stock":3,"Price":3,"CreatedDate":"2025-04-28T19:43:58.654797Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[{"Showcase":true,"Products":null,"FileName":"Ekran-goruntusu-2025-04-29-173325.png","Path":"photo-images\\Ekran-goruntusu-2025-04-29-173325.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"d6e16872-d7db-49fe-8caf-764550214aec","CreatedDate":"2025-05-26T20:34:38.372244Z"}]},{"Id":"d3a62187-1c3a-4655-9c23-c52f182d9ace","Name":"Ürün 2","Stock":2,"Price":2,"CreatedDate":"2025-04-28T19:42:59.326713Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[]},{"Id":"e5398eda-4c14-4e9f-a643-4eb9e19a8246","Name":"Ürün 1","Stock":1,"Price":1,"CreatedDate":"2025-04-28T19:42:54.977536Z","UpdateDate":"0001-01-01T00:00:00","ProductImageFiles":[{"Showcase":false,"Products":null,"FileName":"ornekSite-5.png","Path":"photo-images\\ornekSite-5.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"51f26b17-61e9-43dc-b2ec-3a54358269f0","CreatedDate":"2025-05-15T16:19:05.233887Z"},{"Showcase":false,"Products":null,"FileName":"ornekSite-2.png","Path":"photo-images\\ornekSite-2.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"5c82910f-3dd3-4925-bcb2-be273076b9c7","CreatedDate":"2025-05-14T12:20:13.014657Z"},{"Showcase":false,"Products":null,"FileName":"Ekran-goruntusu-2025-04-29-173322.png","Path":"photo-images\\Ekran-goruntusu-2025-04-29-173322.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"a25508ed-d7f9-4211-933d-20cac2bb02ef","CreatedDate":"2025-05-15T15:38:53.223063Z"},{"Showcase":true,"Products":null,"FileName":"ornekSite-4.png","Path":"photo-images\\ornekSite-4.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"acb9bda3-a045-46bd-8fd0-f655fbbf270c","CreatedDate":"2025-05-14T12:20:22.403939Z"},{"Showcase":false,"Products":null,"FileName":"ornekSite-3.png","Path":"photo-images\\ornekSite-3.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"b7dfda9c-9d79-40a7-aecb-9d2da2e8661f","CreatedDate":"2025-05-14T12:20:19.732544Z"},{"Showcase":false,"Products":null,"FileName":"Ekran-goruntusu-2025-04-29-173323.png","Path":"photo-images\\Ekran-goruntusu-2025-04-29-173323.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"bfbcf22a-a569-4d33-82d6-b3bcbc1590e1","CreatedDate":"2025-05-15T16:19:05.233859Z"},{"Showcase":false,"Products":null,"FileName":"ornekSite.png","Path":"photo-images\\ornekSite.png","Storage":"LocalStorage","UpdateDate":"0001-01-01T00:00:00","Id":"f1fc9ef0-39f5-4341-8944-56cd97a83860","CreatedDate":"2025-05-14T12:20:06.22504Z"}]}]}
+2025-05-27 03:58:11.605 +03:00 [INF] HTTP GET /api/products responded 200 in 31.3917 ms
+2025-05-27 03:58:11.606 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/api/products?page=0&size=5 - - - 200 - application/json;+charset=utf-8 34.0419ms

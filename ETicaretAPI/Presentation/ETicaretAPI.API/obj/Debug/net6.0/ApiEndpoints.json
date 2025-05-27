@@ -64,6 +64,70 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "ETicaretAPI.API.Controllers.BasketsController",
+    "Method": "GetBasketItems",
+    "RelativePath": "api/Baskets",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "getBasketItemsQueryRequest",
+        "Type": "ETicaretAPI.Application.Features.Queries.Basket.GetBasketItems.GetBasketItemsQueryRequest",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ETicaretAPI.API.Controllers.BasketsController",
+    "Method": "AddItemToBasket",
+    "RelativePath": "api/Baskets",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "addItemToBasketCommandRequest",
+        "Type": "ETicaretAPI.Application.Features.Commands.Basket.AddItemToBasket.AddItemToBasketCommandRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ETicaretAPI.API.Controllers.BasketsController",
+    "Method": "UpdateQuantity",
+    "RelativePath": "api/Baskets",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateQuantityCommandRequest",
+        "Type": "ETicaretAPI.Application.Features.Commands.Basket.UpdateQuantity.UpdateQuantityCommandRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ETicaretAPI.API.Controllers.BasketsController",
+    "Method": "RemoveBasketItem",
+    "RelativePath": "api/Baskets/{BasketItemId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "BasketItemId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ETicaretAPI.API.Controllers.FilesController",
     "Method": "GetBaseStorageUrl",
     "RelativePath": "api/Files/GetBaseStorageUrl",

@@ -25,6 +25,8 @@ using Serilog.Sinks.PostgreSQL;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddHttpContextAccessor();//Client'tan gelen request neticvesinde oluþturulan HttpContext nesnesine katmanlardaki class'lar üzerinden(busineess logic) eriþebilmemizi saðlayan bir servistir.
+
 // Add services to the container.
 builder.Services.AddPresitenceServices();
 builder.Services.AddInfrastructureServices();

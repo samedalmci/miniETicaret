@@ -120,6 +120,18 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-VzsDDv39nwoEjM8jQlbnT9e7aixEdbJcn5OSRyya1ak="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"152927"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022VzsDDv39nwoEjM8jQlbnT9e7aixEdbJcn5OSRyya1ak=\u0022"},{"Name":"Last-Modified","Value":"Mon, 26 May 2025 16:11:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ETicaretAPI.API/photo-images/ornekSite-8.bjaw6u44my.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\photo-images\ornekSite-8.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"bjaw6u44my"},{"Name":"integrity","Value":"sha256-VzsDDv39nwoEjM8jQlbnT9e7aixEdbJcn5OSRyya1ak="},{"Name":"label","Value":"_content/ETicaretAPI.API/photo-images/ornekSite-8.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"152927"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022VzsDDv39nwoEjM8jQlbnT9e7aixEdbJcn5OSRyya1ak=\u0022"},{"Name":"Last-Modified","Value":"Mon, 26 May 2025 20:37:20 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ETicaretAPI.API/photo-images/ornekSite-8.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\photo-images\ornekSite-8.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-VzsDDv39nwoEjM8jQlbnT9e7aixEdbJcn5OSRyya1ak="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"152927"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022VzsDDv39nwoEjM8jQlbnT9e7aixEdbJcn5OSRyya1ak=\u0022"},{"Name":"Last-Modified","Value":"Mon, 26 May 2025 20:37:20 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/ETicaretAPI.API/photo-images/ornekSite.bjaw6u44my.png">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\photo-images\ornekSite.png'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

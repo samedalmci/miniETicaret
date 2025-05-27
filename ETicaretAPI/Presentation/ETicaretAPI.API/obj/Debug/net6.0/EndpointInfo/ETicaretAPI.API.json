@@ -129,6 +129,107 @@
         }
       }
     },
+    "/api/Baskets": {
+      "get": {
+        "tags": [
+          "Baskets"
+        ],
+        "parameters": [
+          {
+            "name": "getBasketItemsQueryRequest",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/GetBasketItemsQueryRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Baskets"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddItemToBasketCommandRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddItemToBasketCommandRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddItemToBasketCommandRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Baskets"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateQuantityCommandRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateQuantityCommandRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateQuantityCommandRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Baskets/{BasketItemId}": {
+      "delete": {
+        "tags": [
+          "Baskets"
+        ],
+        "parameters": [
+          {
+            "name": "BasketItemId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/api/Files/GetBaseStorageUrl": {
       "get": {
         "tags": [
@@ -436,6 +537,20 @@
   },
   "components": {
     "schemas": {
+      "AddItemToBasketCommandRequest": {
+        "type": "object",
+        "properties": {
+          "ProductId": {
+            "type": "string",
+            "nullable": true
+          },
+          "Quantity": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
       "CreateProductCommandRequest": {
         "type": "object",
         "properties": {
@@ -488,6 +603,10 @@
             "nullable": true
           }
         },
+        "additionalProperties": false
+      },
+      "GetBasketItemsQueryRequest": {
+        "type": "object",
         "additionalProperties": false
       },
       "GoogleLoginCommandRequest": {
@@ -566,6 +685,20 @@
           "Price": {
             "type": "number",
             "format": "float"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateQuantityCommandRequest": {
+        "type": "object",
+        "properties": {
+          "BasketItemId": {
+            "type": "string",
+            "nullable": true
+          },
+          "Quantity": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false

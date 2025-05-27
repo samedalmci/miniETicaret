@@ -9,3 +9,4 @@ wwwroot\photo-images\ornekSite-4.png
 wwwroot\photo-images\ornekSite-5.png
 wwwroot\photo-images\ornekSite-6.png
 wwwroot\photo-images\ornekSite-7.png
+wwwroot\photo-images\ornekSite-8.png

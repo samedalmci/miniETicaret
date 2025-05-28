@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ETicaretAPI.SingalR")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e83cdda705431b77f42529752faa896f28f0454d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1cb2b50413cac76d0af10598f959af9802431188")]
 [assembly: System.Reflection.AssemblyProductAttribute("ETicaretAPI.SingalR")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ETicaretAPI.SingalR")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

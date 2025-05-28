@@ -14,6 +14,8 @@ namespace ETicaretAPI.Domain.Entities
 
         public string Address { get; set; }
 
+        public string OrderCode { get; set; }
+
         public Basket Basket { get; set; }
 
         //public ICollection<Product> Products { get; set; }

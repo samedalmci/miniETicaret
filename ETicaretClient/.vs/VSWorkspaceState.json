@@ -3,8 +3,11 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\dialogs",
-    "\\src\\app\\services"
+    "\\src\\app\\contracts",
+    "\\src\\app\\contracts\\order",
+    "\\src\\app\\directives",
+    "\\src\\app\\directives\\admin"
   ],
+  "SelectedNode": "\\src\\app\\contracts\\order\\list_order.ts",
   "PreviewInSolutionExplorer": false
 }

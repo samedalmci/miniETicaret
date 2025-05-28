@@ -3,15 +3,7 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\directives",
-    "\\src\\app\\directives\\common",
-    "\\src\\app\\services",
-    "\\src\\app\\services\\common",
-    "\\src\\app\\ui",
-    "\\src\\app\\ui\\components",
-    "\\src\\app\\ui\\components\\products",
-    "\\src\\app\\ui\\components\\products\\list"
+    "\\src\\app\\services"
   ],
-  "SelectedNode": "\\src\\app\\directives\\common\\dynamic-load-component.directive.ts",
   "PreviewInSolutionExplorer": false
 }

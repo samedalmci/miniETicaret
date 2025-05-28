@@ -3,6 +3,7 @@
     "",
     "\\src",
     "\\src\\app",
+    "\\src\\app\\dialogs",
     "\\src\\app\\services"
   ],
   "PreviewInSolutionExplorer": false

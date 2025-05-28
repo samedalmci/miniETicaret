@@ -51,8 +51,7 @@
               "RelativeToolTip": "Core\\ETicaretAPI.Application\\Features\\Queries\\Order\\GetAllOrdersQueryResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T17:01:06.701Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T17:01:06.701Z"
             },
             {
               "$type": "Document",
@@ -64,8 +63,7 @@
               "RelativeToolTip": "Presentation\\ETicaretAPI.API\\Controllers\\OrdersController.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAABZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T16:59:47.189Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T16:59:47.189Z"
             },
             {
               "$type": "Document",
@@ -77,8 +75,7 @@
               "RelativeToolTip": "Presentation\\ETicaretAPI.API\\Controllers\\ProductsController.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T16:59:35.67Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T16:59:35.67Z"
             }
           ]
         }

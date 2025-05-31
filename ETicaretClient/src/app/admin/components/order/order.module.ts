@@ -14,22 +14,24 @@ import { DialogModule } from '../../../dialogs/dialog.module';
 import { DeleteDirective } from '../../../directives/admin/delete.directive';
 import { DeleteDirectiveModule } from '../../../directives/admin/delete.directive.module';
 
-
-
-
 @NgModule({
   declarations: [
-    OrderComponent
+    OrderComponent,
+    ListComponent
   ],
   imports: [
     CommonModule,
     RouterModule.forChild([
       { path: "", component: OrderComponent }
     ]),
-    MatSidenavModule, MatFormFieldModule, MatInputModule, MatButtonModule, MatTableModule, MatPaginatorModule,
+    MatSidenavModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatButtonModule,
+    MatTableModule,
+    MatPaginatorModule,
     DialogModule,
-    DeleteDirectiveModule,
-    ListComponent
+    DeleteDirectiveModule
   ]
 })
-export class OrderModule { }
+export class OrderModule { } 

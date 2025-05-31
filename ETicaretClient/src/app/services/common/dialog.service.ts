@@ -1,12 +1,11 @@
+import { ComponentType } from '@angular/cdk/portal';
 import { Injectable } from '@angular/core';
 import { DialogPosition, MatDialog } from '@angular/material/dialog';
-import { ComponentType } from 'ngx-toastr';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DialogService {
-
   constructor(
     private dialog: MatDialog
   ) { }
@@ -20,26 +19,22 @@ export class DialogService {
     });
 
     dialogRef.afterClosed().subscribe(result => {
-      if (result == dialogParameters.data) {
-        dialogParameters. afterClosed();
+      if (result == dialogParameters.data && dialogParameters.afterClosed) {
+        dialogParameters.afterClosed(); // Callback kontrolü ekleyin
       }
     });
   }
 }
 
-
-export class DialogParameters
-{
-  componentType: ComponentType<any>
-  data: any
-  afterClosed: () => void;
+export class DialogParameters {
+  componentType: ComponentType<any>;
+  data: any;
+  afterClosed?: () => void; // Optional yapın
   options?: Partial<DialogOptions> = new DialogOptions();
 }
 
 export class DialogOptions {
-
   width?: string = "250px";
   height?: string;
   position?: DialogPosition;
-
 }

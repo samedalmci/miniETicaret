@@ -5,8 +5,8 @@
     "\\src\\app",
     "\\src\\app\\contracts",
     "\\src\\app\\contracts\\order",
-    "\\src\\app\\directives",
-    "\\src\\app\\directives\\admin"
+    "\\src\\app\\dialogs",
+    "\\src\\app\\dialogs\\order-detail-dialog"
   ],
   "PreviewInSolutionExplorer": false
 }

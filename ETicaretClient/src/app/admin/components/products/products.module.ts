@@ -15,8 +15,6 @@ import { FileUploadModule } from '../../../services/common/file-upload/file-uplo
 import { DialogModule } from '../../../dialogs/dialog.module';
 import { DeleteDirectiveModule } from '../../../directives/admin/delete.directive.module';
 
-
-
 @NgModule({
   declarations: [
     ProductsComponent,
@@ -26,15 +24,12 @@ import { DeleteDirectiveModule } from '../../../directives/admin/delete.directiv
   imports: [
     CommonModule,
     RouterModule.forChild([
-      {path: "", component: ProductsComponent}
-
+      { path: "", component: ProductsComponent }
     ]),
-    MatSidenavModule,MatFormFieldModule,MatInputModule,MatButtonModule,MatTableModule,MatPaginatorModule,
+    MatSidenavModule, MatFormFieldModule, MatInputModule, MatButtonModule, MatTableModule, MatPaginatorModule,
     DialogModule,
     FileUploadModule,
-    DeleteDirectiveModule  
-
-
+    DeleteDirectiveModule
   ]
 })
 export class ProductsModule { }

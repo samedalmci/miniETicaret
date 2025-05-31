@@ -9,6 +9,10 @@ import { MatCardModule } from '@angular/material/card';
 import { FormsModule } from '@angular/forms';
 import { BasketItemRemoveDialogComponent } from './basket-item-remove-dialog/basket-item-remove-dialog.component';
 import { ShoppingCompleteDialogComponent } from './shoping-complete-dialog/shoping-complete-dialog.component';
+import { OrderDetailDialogComponent } from './order-detail-dialog/order-detail-dialog.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 
 @NgModule({
@@ -17,14 +21,13 @@ import { ShoppingCompleteDialogComponent } from './shoping-complete-dialog/shopi
     SelectProductImageDialogComponent,
     BasketItemRemoveDialogComponent,
     ShoppingCompleteDialogComponent,
+    OrderDetailDialogComponent,
 
   ],
   imports: [
     CommonModule,
-    MatDialogModule,
-    MatButtonModule,
+    MatDialogModule, MatButtonModule, MatCardModule, MatTableModule, MatToolbarModule, MatProgressSpinnerModule,
     FileUploadModule,
-    MatCardModule
   ]
 })
 export class DialogModule { }

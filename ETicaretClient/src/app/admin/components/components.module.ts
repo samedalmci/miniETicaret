@@ -7,17 +7,15 @@ import { DashboardModule } from './dashboard/dashboard.module';
 import { DeleteDirective } from '../../directives/admin/delete.directive';
 import { MatDialogModule } from '@angular/material/dialog';
 
-
-
 @NgModule({
-  declarations: [
-  ],
+  declarations: [],
   imports: [
     CommonModule,
     ProductsModule,
     OrderModule,
     CustomerModule,
-    DashboardModule
+    DashboardModule,
+    MatDialogModule
   ]
 })
 export class ComponentsModule { }

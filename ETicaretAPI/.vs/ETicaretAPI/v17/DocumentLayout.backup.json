@@ -3,88 +3,76 @@
   "WorkspaceRootPath": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AD79A7C0-6AD8-4BC2-9DDB-70B885AE9687}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|c:\\users\\samed\\desktop\\eticaretuygulamas\u0131\\minieticaret\\eticaretapi\\core\\eticaretapi.application\\features\\commands\\appuser\\verifyresettoken\\verifyresettokencommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD79A7C0-6AD8-4BC2-9DDB-70B885AE9687}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|solutionrelative:core\\eticaretapi.application\\features\\commands\\appuser\\verifyresettoken\\verifyresettokencommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD79A7C0-6AD8-4BC2-9DDB-70B885AE9687}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|c:\\users\\samed\\desktop\\eticaretuygulamas\u0131\\minieticaret\\eticaretapi\\core\\eticaretapi.application\\features\\commands\\appuser\\verifyresettoken\\verifyresettokencommandresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD79A7C0-6AD8-4BC2-9DDB-70B885AE9687}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|solutionrelative:core\\eticaretapi.application\\features\\commands\\appuser\\verifyresettoken\\verifyresettokencommandresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD79A7C0-6AD8-4BC2-9DDB-70B885AE9687}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|c:\\users\\samed\\desktop\\eticaretuygulamas\u0131\\minieticaret\\eticaretapi\\core\\eticaretapi.application\\features\\commands\\appuser\\verifyresettoken\\verifyresettokencommandrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD79A7C0-6AD8-4BC2-9DDB-70B885AE9687}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|solutionrelative:core\\eticaretapi.application\\features\\commands\\appuser\\verifyresettoken\\verifyresettokencommandrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD79A7C0-6AD8-4BC2-9DDB-70B885AE9687}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|c:\\users\\samed\\desktop\\eticaretuygulamas\u0131\\minieticaret\\eticaretapi\\core\\eticaretapi.application\\helpers\\customencoders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD79A7C0-6AD8-4BC2-9DDB-70B885AE9687}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|solutionrelative:core\\eticaretapi.application\\helpers\\customencoders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C7CC385-1E60-412E-92E0-CA95DE9D04CE}|Infrastructure\\ETicaretAPI.Infrastructure\\ETicaretAPI.Infrastructure.csproj|c:\\users\\samed\\desktop\\eticaretuygulamas\u0131\\minieticaret\\eticaretapi\\infrastructure\\eticaretapi.infrastructure\\services\\mailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C7CC385-1E60-412E-92E0-CA95DE9D04CE}|Infrastructure\\ETicaretAPI.Infrastructure\\ETicaretAPI.Infrastructure.csproj|solutionrelative:infrastructure\\eticaretapi.infrastructure\\services\\mailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{203036FF-ECC5-4B70-88CC-EF7CB6D1FF64}|Infrastructure\\ETicaretAPI.Persistence\\ETicaretAPI.Persistence.csproj|c:\\users\\samed\\desktop\\eticaretuygulamas\u0131\\minieticaret\\eticaretapi\\infrastructure\\eticaretapi.persistence\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{203036FF-ECC5-4B70-88CC-EF7CB6D1FF64}|Infrastructure\\ETicaretAPI.Persistence\\ETicaretAPI.Persistence.csproj|solutionrelative:infrastructure\\eticaretapi.persistence\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{203036FF-ECC5-4B70-88CC-EF7CB6D1FF64}|Infrastructure\\ETicaretAPI.Persistence\\ETicaretAPI.Persistence.csproj|c:\\users\\samed\\desktop\\eticaretuygulamas\u0131\\minieticaret\\eticaretapi\\infrastructure\\eticaretapi.persistence\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{203036FF-ECC5-4B70-88CC-EF7CB6D1FF64}|Infrastructure\\ETicaretAPI.Persistence\\ETicaretAPI.Persistence.csproj|solutionrelative:infrastructure\\eticaretapi.persistence\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{203036FF-ECC5-4B70-88CC-EF7CB6D1FF64}|Infrastructure\\ETicaretAPI.Persistence\\ETicaretAPI.Persistence.csproj|c:\\users\\samed\\desktop\\eticaretuygulamas\u0131\\minieticaret\\eticaretapi\\infrastructure\\eticaretapi.persistence\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{203036FF-ECC5-4B70-88CC-EF7CB6D1FF64}|Infrastructure\\ETicaretAPI.Persistence\\ETicaretAPI.Persistence.csproj|solutionrelative:infrastructure\\eticaretapi.persistence\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44620835-309D-4531-9C6C-D4EFFA734E1A}|Presentation\\ETicaretAPI.API\\ETicaretAPI.API.csproj|c:\\users\\samed\\desktop\\eticaretuygulamas\u0131\\minieticaret\\eticaretapi\\presentation\\eticaretapi.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44620835-309D-4531-9C6C-D4EFFA734E1A}|Presentation\\ETicaretAPI.API\\ETicaretAPI.API.csproj|solutionrelative:presentation\\eticaretapi.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44620835-309D-4531-9C6C-D4EFFA734E1A}|Presentation\\ETicaretAPI.API\\ETicaretAPI.API.csproj|c:\\users\\samed\\desktop\\eticaretuygulamas\u0131\\minieticaret\\eticaretapi\\presentation\\eticaretapi.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44620835-309D-4531-9C6C-D4EFFA734E1A}|Presentation\\ETicaretAPI.API\\ETicaretAPI.API.csproj|solutionrelative:presentation\\eticaretapi.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Infrastructure\\ETicaretAPI.Persistence\\Migrations\\20250603161743_mig_4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Infrastructure\\ETicaretAPI.Persistence\\Migrations\\20250603161743_mig_4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{44620835-309D-4531-9C6C-D4EFFA734E1A}|Presentation\\ETicaretAPI.API\\ETicaretAPI.API.csproj|c:\\users\\samed\\desktop\\eticaretuygulamas\u0131\\minieticaret\\eticaretapi\\presentation\\eticaretapi.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{44620835-309D-4531-9C6C-D4EFFA734E1A}|Presentation\\ETicaretAPI.API\\ETicaretAPI.API.csproj|solutionrelative:presentation\\eticaretapi.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AD79A7C0-6AD8-4BC2-9DDB-70B885AE9687}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|c:\\users\\samed\\desktop\\eticaretuygulamas\u0131\\minieticaret\\eticaretapi\\core\\eticaretapi.application\\features\\commands\\appuser\\updatepassword\\updatepasswordcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD79A7C0-6AD8-4BC2-9DDB-70B885AE9687}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|solutionrelative:core\\eticaretapi.application\\features\\commands\\appuser\\updatepassword\\updatepasswordcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{203036FF-ECC5-4B70-88CC-EF7CB6D1FF64}|Infrastructure\\ETicaretAPI.Persistence\\ETicaretAPI.Persistence.csproj|c:\\users\\samed\\desktop\\eticaretuygulamas\u0131\\minieticaret\\eticaretapi\\infrastructure\\eticaretapi.persistence\\contexts\\eticaretapidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{203036FF-ECC5-4B70-88CC-EF7CB6D1FF64}|Infrastructure\\ETicaretAPI.Persistence\\ETicaretAPI.Persistence.csproj|solutionrelative:infrastructure\\eticaretapi.persistence\\contexts\\eticaretapidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AD79A7C0-6AD8-4BC2-9DDB-70B885AE9687}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|c:\\users\\samed\\desktop\\eticaretuygulamas\u0131\\minieticaret\\eticaretapi\\core\\eticaretapi.application\\features\\commands\\appuser\\updatepassword\\updatepasswordcommandrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD79A7C0-6AD8-4BC2-9DDB-70B885AE9687}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|solutionrelative:core\\eticaretapi.application\\features\\commands\\appuser\\updatepassword\\updatepasswordcommandrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{44620835-309D-4531-9C6C-D4EFFA734E1A}|Presentation\\ETicaretAPI.API\\ETicaretAPI.API.csproj|c:\\users\\samed\\desktop\\eticaretuygulamas\u0131\\minieticaret\\eticaretapi\\presentation\\eticaretapi.api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44620835-309D-4531-9C6C-D4EFFA734E1A}|Presentation\\ETicaretAPI.API\\ETicaretAPI.API.csproj|solutionrelative:presentation\\eticaretapi.api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AD79A7C0-6AD8-4BC2-9DDB-70B885AE9687}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|c:\\users\\samed\\desktop\\eticaretuygulamas\u0131\\minieticaret\\eticaretapi\\core\\eticaretapi.application\\features\\commands\\appuser\\updatepassword\\updatepasswordcommandresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD79A7C0-6AD8-4BC2-9DDB-70B885AE9687}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|solutionrelative:core\\eticaretapi.application\\features\\commands\\appuser\\updatepassword\\updatepasswordcommandresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{203036FF-ECC5-4B70-88CC-EF7CB6D1FF64}|Infrastructure\\ETicaretAPI.Persistence\\ETicaretAPI.Persistence.csproj|c:\\users\\samed\\desktop\\eticaretuygulamas\u0131\\minieticaret\\eticaretapi\\infrastructure\\eticaretapi.persistence\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{203036FF-ECC5-4B70-88CC-EF7CB6D1FF64}|Infrastructure\\ETicaretAPI.Persistence\\ETicaretAPI.Persistence.csproj|solutionrelative:infrastructure\\eticaretapi.persistence\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AD79A7C0-6AD8-4BC2-9DDB-70B885AE9687}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|c:\\users\\samed\\desktop\\eticaretuygulamas\u0131\\minieticaret\\eticaretapi\\core\\eticaretapi.application\\features\\commands\\appuser\\passwordreset\\passwordresetcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD79A7C0-6AD8-4BC2-9DDB-70B885AE9687}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|solutionrelative:core\\eticaretapi.application\\features\\commands\\appuser\\passwordreset\\passwordresetcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{203036FF-ECC5-4B70-88CC-EF7CB6D1FF64}|Infrastructure\\ETicaretAPI.Persistence\\ETicaretAPI.Persistence.csproj|c:\\users\\samed\\desktop\\eticaretuygulamas\u0131\\minieticaret\\eticaretapi\\infrastructure\\eticaretapi.persistence\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{203036FF-ECC5-4B70-88CC-EF7CB6D1FF64}|Infrastructure\\ETicaretAPI.Persistence\\ETicaretAPI.Persistence.csproj|solutionrelative:infrastructure\\eticaretapi.persistence\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AD79A7C0-6AD8-4BC2-9DDB-70B885AE9687}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|c:\\users\\samed\\desktop\\eticaretuygulamas\u0131\\minieticaret\\eticaretapi\\core\\eticaretapi.application\\features\\commands\\appuser\\passwordreset\\passwordresetcommandrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD79A7C0-6AD8-4BC2-9DDB-70B885AE9687}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|solutionrelative:core\\eticaretapi.application\\features\\commands\\appuser\\passwordreset\\passwordresetcommandrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{203036FF-ECC5-4B70-88CC-EF7CB6D1FF64}|Infrastructure\\ETicaretAPI.Persistence\\ETicaretAPI.Persistence.csproj|c:\\users\\samed\\desktop\\eticaretuygulamas\u0131\\minieticaret\\eticaretapi\\infrastructure\\eticaretapi.persistence\\repositories\\completedorder\\completedorderwriterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{203036FF-ECC5-4B70-88CC-EF7CB6D1FF64}|Infrastructure\\ETicaretAPI.Persistence\\ETicaretAPI.Persistence.csproj|solutionrelative:infrastructure\\eticaretapi.persistence\\repositories\\completedorder\\completedorderwriterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AD79A7C0-6AD8-4BC2-9DDB-70B885AE9687}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|c:\\users\\samed\\desktop\\eticaretuygulamas\u0131\\minieticaret\\eticaretapi\\core\\eticaretapi.application\\features\\commands\\appuser\\passwordreset\\passwordresetcommandresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD79A7C0-6AD8-4BC2-9DDB-70B885AE9687}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|solutionrelative:core\\eticaretapi.application\\features\\commands\\appuser\\passwordreset\\passwordresetcommandresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{203036FF-ECC5-4B70-88CC-EF7CB6D1FF64}|Infrastructure\\ETicaretAPI.Persistence\\ETicaretAPI.Persistence.csproj|c:\\users\\samed\\desktop\\eticaretuygulamas\u0131\\minieticaret\\eticaretapi\\infrastructure\\eticaretapi.persistence\\repositories\\completedorder\\completedorderreadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{203036FF-ECC5-4B70-88CC-EF7CB6D1FF64}|Infrastructure\\ETicaretAPI.Persistence\\ETicaretAPI.Persistence.csproj|solutionrelative:infrastructure\\eticaretapi.persistence\\repositories\\completedorder\\completedorderreadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AD79A7C0-6AD8-4BC2-9DDB-70B885AE9687}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|c:\\users\\samed\\desktop\\eticaretuygulamas\u0131\\minieticaret\\eticaretapi\\core\\eticaretapi.application\\abstractions\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD79A7C0-6AD8-4BC2-9DDB-70B885AE9687}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|solutionrelative:core\\eticaretapi.application\\abstractions\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{624A43D5-79A1-477E-ABF4-5A111C1D02EE}|Core\\ETicaretAPI.Domain\\ETicaretAPI.Domain.csproj|c:\\users\\samed\\desktop\\eticaretuygulamas\u0131\\minieticaret\\eticaretapi\\core\\eticaretapi.domain\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{624A43D5-79A1-477E-ABF4-5A111C1D02EE}|Core\\ETicaretAPI.Domain\\ETicaretAPI.Domain.csproj|solutionrelative:core\\eticaretapi.domain\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AD79A7C0-6AD8-4BC2-9DDB-70B885AE9687}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|c:\\users\\samed\\desktop\\eticaretuygulamas\u0131\\minieticaret\\eticaretapi\\core\\eticaretapi.application\\abstractions\\services\\imailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD79A7C0-6AD8-4BC2-9DDB-70B885AE9687}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|solutionrelative:core\\eticaretapi.application\\abstractions\\services\\imailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{624A43D5-79A1-477E-ABF4-5A111C1D02EE}|Core\\ETicaretAPI.Domain\\ETicaretAPI.Domain.csproj|c:\\users\\samed\\desktop\\eticaretuygulamas\u0131\\minieticaret\\eticaretapi\\core\\eticaretapi.domain\\entities\\completedorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{624A43D5-79A1-477E-ABF4-5A111C1D02EE}|Core\\ETicaretAPI.Domain\\ETicaretAPI.Domain.csproj|solutionrelative:core\\eticaretapi.domain\\entities\\completedorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AD79A7C0-6AD8-4BC2-9DDB-70B885AE9687}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|c:\\users\\samed\\desktop\\eticaretuygulamas\u0131\\minieticaret\\eticaretapi\\core\\eticaretapi.application\\abstractions\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD79A7C0-6AD8-4BC2-9DDB-70B885AE9687}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|solutionrelative:core\\eticaretapi.application\\abstractions\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AD79A7C0-6AD8-4BC2-9DDB-70B885AE9687}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|c:\\users\\samed\\desktop\\eticaretuygulamas\u0131\\minieticaret\\eticaretapi\\core\\eticaretapi.application\\repositories\\completedorder\\icompletedorderwriterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD79A7C0-6AD8-4BC2-9DDB-70B885AE9687}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|solutionrelative:core\\eticaretapi.application\\repositories\\completedorder\\icompletedorderwriterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AD79A7C0-6AD8-4BC2-9DDB-70B885AE9687}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|c:\\users\\samed\\desktop\\eticaretuygulamas\u0131\\minieticaret\\eticaretapi\\core\\eticaretapi.application\\exceptions\\passwordchangefailedexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD79A7C0-6AD8-4BC2-9DDB-70B885AE9687}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|solutionrelative:core\\eticaretapi.application\\exceptions\\passwordchangefailedexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AD79A7C0-6AD8-4BC2-9DDB-70B885AE9687}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|c:\\users\\samed\\desktop\\eticaretuygulamas\u0131\\minieticaret\\eticaretapi\\core\\eticaretapi.application\\repositories\\completedorder\\icompletedorderreadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD79A7C0-6AD8-4BC2-9DDB-70B885AE9687}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|solutionrelative:core\\eticaretapi.application\\repositories\\completedorder\\icompletedorderreadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD79A7C0-6AD8-4BC2-9DDB-70B885AE9687}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|c:\\users\\samed\\desktop\\eticaretuygulamas\u0131\\minieticaret\\eticaretapi\\core\\eticaretapi.application\\features\\queries\\order\\getorderbyid\\getorderbyidqueryresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD79A7C0-6AD8-4BC2-9DDB-70B885AE9687}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|solutionrelative:core\\eticaretapi.application\\features\\queries\\order\\getorderbyid\\getorderbyidqueryresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD79A7C0-6AD8-4BC2-9DDB-70B885AE9687}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|c:\\users\\samed\\desktop\\eticaretuygulamas\u0131\\minieticaret\\eticaretapi\\core\\eticaretapi.application\\features\\commands\\order\\completeorder\\completeordercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD79A7C0-6AD8-4BC2-9DDB-70B885AE9687}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|solutionrelative:core\\eticaretapi.application\\features\\commands\\order\\completeorder\\completeordercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD79A7C0-6AD8-4BC2-9DDB-70B885AE9687}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|c:\\users\\samed\\desktop\\eticaretuygulamas\u0131\\minieticaret\\eticaretapi\\core\\eticaretapi.application\\features\\commands\\order\\completeorder\\completeordercommandrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD79A7C0-6AD8-4BC2-9DDB-70B885AE9687}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|solutionrelative:core\\eticaretapi.application\\features\\commands\\order\\completeorder\\completeordercommandrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD79A7C0-6AD8-4BC2-9DDB-70B885AE9687}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|c:\\users\\samed\\desktop\\eticaretuygulamas\u0131\\minieticaret\\eticaretapi\\core\\eticaretapi.application\\features\\commands\\order\\completeorder\\completeordercommandresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD79A7C0-6AD8-4BC2-9DDB-70B885AE9687}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|solutionrelative:core\\eticaretapi.application\\features\\commands\\order\\completeorder\\completeordercommandresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD79A7C0-6AD8-4BC2-9DDB-70B885AE9687}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|c:\\users\\samed\\desktop\\eticaretuygulamas\u0131\\minieticaret\\eticaretapi\\core\\eticaretapi.application\\dtos\\order\\singleorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD79A7C0-6AD8-4BC2-9DDB-70B885AE9687}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|solutionrelative:core\\eticaretapi.application\\dtos\\order\\singleorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD79A7C0-6AD8-4BC2-9DDB-70B885AE9687}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|c:\\users\\samed\\desktop\\eticaretuygulamas\u0131\\minieticaret\\eticaretapi\\core\\eticaretapi.application\\abstractions\\services\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD79A7C0-6AD8-4BC2-9DDB-70B885AE9687}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|solutionrelative:core\\eticaretapi.application\\abstractions\\services\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -94,31 +82,59 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Infrastructure\\ETicaretAPI.Persistence\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\ETicaretAPI.Persistence\\Services\\UserService.cs",
-              "ToolTip": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Infrastructure\\ETicaretAPI.Persistence\\Services\\UserService.cs",
-              "RelativeToolTip": "Infrastructure\\ETicaretAPI.Persistence\\Services\\UserService.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAAAEQAAAAUAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "20250603161743_mig_4.cs",
+              "DocumentMoniker": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Infrastructure\\ETicaretAPI.Persistence\\Migrations\\20250603161743_mig_4.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\ETicaretAPI.Persistence\\Migrations\\20250603161743_mig_4.cs",
+              "ToolTip": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Infrastructure\\ETicaretAPI.Persistence\\Migrations\\20250603161743_mig_4.cs",
+              "RelativeToolTip": "Infrastructure\\ETicaretAPI.Persistence\\Migrations\\20250603161743_mig_4.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBgAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T10:35:59.93Z"
+              "WhenOpened": "2025-06-03T16:17:44.23Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Infrastructure\\ETicaretAPI.Persistence\\Services\\AuthService.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\ETicaretAPI.Persistence\\Services\\AuthService.cs",
-              "ToolTip": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Infrastructure\\ETicaretAPI.Persistence\\Services\\AuthService.cs",
-              "RelativeToolTip": "Infrastructure\\ETicaretAPI.Persistence\\Services\\AuthService.cs",
-              "ViewState": "AgIAAJsAAAAAAAAAAAASwLgAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\appsettings.json",
+              "RelativeDocumentMoniker": "Presentation\\ETicaretAPI.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\appsettings.json",
+              "RelativeToolTip": "Presentation\\ETicaretAPI.API\\appsettings.json",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-03T16:06:53.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "Presentation\\ETicaretAPI.API\\Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "Presentation\\ETicaretAPI.API\\Controllers\\OrdersController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowBMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T10:28:32.759Z"
+              "WhenOpened": "2025-06-03T15:15:34.074Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Infrastructure\\ETicaretAPI.Persistence\\Services\\OrderService.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\ETicaretAPI.Persistence\\Services\\OrderService.cs",
+              "ToolTip": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Infrastructure\\ETicaretAPI.Persistence\\Services\\OrderService.cs",
+              "RelativeToolTip": "Infrastructure\\ETicaretAPI.Persistence\\Services\\OrderService.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAIwIEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T15:14:00.717Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -128,228 +144,179 @@
               "RelativeDocumentMoniker": "Infrastructure\\ETicaretAPI.Persistence\\ServiceRegistration.cs",
               "ToolTip": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Infrastructure\\ETicaretAPI.Persistence\\ServiceRegistration.cs",
               "RelativeToolTip": "Infrastructure\\ETicaretAPI.Persistence\\ServiceRegistration.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAAgwDoAAABgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T10:26:52.571Z"
+              "WhenOpened": "2025-06-03T15:13:37.686Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MailService.cs",
-              "DocumentMoniker": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Infrastructure\\ETicaretAPI.Infrastructure\\Services\\MailService.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\ETicaretAPI.Infrastructure\\Services\\MailService.cs",
-              "ToolTip": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Infrastructure\\ETicaretAPI.Infrastructure\\Services\\MailService.cs",
-              "RelativeToolTip": "Infrastructure\\ETicaretAPI.Infrastructure\\Services\\MailService.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAADgAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "CompletedOrderWriteRepository.cs",
+              "DocumentMoniker": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Infrastructure\\ETicaretAPI.Persistence\\Repositories\\CompletedOrder\\CompletedOrderWriteRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\ETicaretAPI.Persistence\\Repositories\\CompletedOrder\\CompletedOrderWriteRepository.cs",
+              "ToolTip": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Infrastructure\\ETicaretAPI.Persistence\\Repositories\\CompletedOrder\\CompletedOrderWriteRepository.cs",
+              "RelativeToolTip": "Infrastructure\\ETicaretAPI.Persistence\\Repositories\\CompletedOrder\\CompletedOrderWriteRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T10:23:11.723Z"
+              "WhenOpened": "2025-06-03T15:11:54.183Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CustomEncoders.cs",
-              "DocumentMoniker": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Helpers\\CustomEncoders.cs",
-              "RelativeDocumentMoniker": "Core\\ETicaretAPI.Application\\Helpers\\CustomEncoders.cs",
-              "ToolTip": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Helpers\\CustomEncoders.cs",
-              "RelativeToolTip": "Core\\ETicaretAPI.Application\\Helpers\\CustomEncoders.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "CompletedOrderReadRepository.cs",
+              "DocumentMoniker": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Infrastructure\\ETicaretAPI.Persistence\\Repositories\\CompletedOrder\\CompletedOrderReadRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\ETicaretAPI.Persistence\\Repositories\\CompletedOrder\\CompletedOrderReadRepository.cs",
+              "ToolTip": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Infrastructure\\ETicaretAPI.Persistence\\Repositories\\CompletedOrder\\CompletedOrderReadRepository.cs",
+              "RelativeToolTip": "Infrastructure\\ETicaretAPI.Persistence\\Repositories\\CompletedOrder\\CompletedOrderReadRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T10:21:57.781Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "VerifyResetTokenCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Features\\Commands\\AppUser\\VerifyResetToken\\VerifyResetTokenCommandHandler.cs",
-              "RelativeDocumentMoniker": "Core\\ETicaretAPI.Application\\Features\\Commands\\AppUser\\VerifyResetToken\\VerifyResetTokenCommandHandler.cs",
-              "ToolTip": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Features\\Commands\\AppUser\\VerifyResetToken\\VerifyResetTokenCommandHandler.cs",
-              "RelativeToolTip": "Core\\ETicaretAPI.Application\\Features\\Commands\\AppUser\\VerifyResetToken\\VerifyResetTokenCommandHandler.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAvwBkAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T10:19:19.997Z",
+              "WhenOpened": "2025-06-03T15:11:36.019Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "VerifyResetTokenCommandRequest.cs",
-              "DocumentMoniker": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Features\\Commands\\AppUser\\VerifyResetToken\\VerifyResetTokenCommandRequest.cs",
-              "RelativeDocumentMoniker": "Core\\ETicaretAPI.Application\\Features\\Commands\\AppUser\\VerifyResetToken\\VerifyResetTokenCommandRequest.cs",
-              "ToolTip": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Features\\Commands\\AppUser\\VerifyResetToken\\VerifyResetTokenCommandRequest.cs",
-              "RelativeToolTip": "Core\\ETicaretAPI.Application\\Features\\Commands\\AppUser\\VerifyResetToken\\VerifyResetTokenCommandRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Title": "ETicaretAPIDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Infrastructure\\ETicaretAPI.Persistence\\Contexts\\ETicaretAPIDbContext.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\ETicaretAPI.Persistence\\Contexts\\ETicaretAPIDbContext.cs",
+              "ToolTip": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Infrastructure\\ETicaretAPI.Persistence\\Contexts\\ETicaretAPIDbContext.cs",
+              "RelativeToolTip": "Infrastructure\\ETicaretAPI.Persistence\\Contexts\\ETicaretAPIDbContext.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAEwCoAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T10:20:01.253Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\appsettings.json",
-              "RelativeDocumentMoniker": "Presentation\\ETicaretAPI.API\\appsettings.json",
-              "ToolTip": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\appsettings.json",
-              "RelativeToolTip": "Presentation\\ETicaretAPI.API\\appsettings.json",
-              "ViewState": "AgIAABQAAAAAAAAAAAAAACwAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-02T10:43:16.116Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "VerifyResetTokenCommandResponse.cs",
-              "DocumentMoniker": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Features\\Commands\\AppUser\\VerifyResetToken\\VerifyResetTokenCommandResponse.cs",
-              "RelativeDocumentMoniker": "Core\\ETicaretAPI.Application\\Features\\Commands\\AppUser\\VerifyResetToken\\VerifyResetTokenCommandResponse.cs",
-              "ToolTip": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Features\\Commands\\AppUser\\VerifyResetToken\\VerifyResetTokenCommandResponse.cs",
-              "RelativeToolTip": "Core\\ETicaretAPI.Application\\Features\\Commands\\AppUser\\VerifyResetToken\\VerifyResetTokenCommandResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T10:20:01.902Z",
+              "WhenOpened": "2025-06-03T15:05:55.096Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Presentation\\ETicaretAPI.API\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Presentation\\ETicaretAPI.API\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAAAEEAAAAFAAAAAAAAAA==",
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Domain\\Entities\\Order.cs",
+              "RelativeDocumentMoniker": "Core\\ETicaretAPI.Domain\\Entities\\Order.cs",
+              "ToolTip": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Domain\\Entities\\Order.cs",
+              "RelativeToolTip": "Core\\ETicaretAPI.Domain\\Entities\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T10:40:44.328Z"
+              "WhenOpened": "2025-06-03T15:05:41.692Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "Presentation\\ETicaretAPI.API\\Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "Presentation\\ETicaretAPI.API\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAAACMAAABpAAAAAAAAAA==",
+              "Title": "CompletedOrder.cs",
+              "DocumentMoniker": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Domain\\Entities\\CompletedOrder.cs",
+              "RelativeDocumentMoniker": "Core\\ETicaretAPI.Domain\\Entities\\CompletedOrder.cs",
+              "ToolTip": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Domain\\Entities\\CompletedOrder.cs",
+              "RelativeToolTip": "Core\\ETicaretAPI.Domain\\Entities\\CompletedOrder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T10:41:50.863Z"
+              "WhenOpened": "2025-06-03T15:04:11.937Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ICompletedOrderWriteRepository.cs",
+              "DocumentMoniker": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Repositories\\CompletedOrder\\ICompletedOrderWriteRepository.cs",
+              "RelativeDocumentMoniker": "Core\\ETicaretAPI.Application\\Repositories\\CompletedOrder\\ICompletedOrderWriteRepository.cs",
+              "ToolTip": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Repositories\\CompletedOrder\\ICompletedOrderWriteRepository.cs",
+              "RelativeToolTip": "Core\\ETicaretAPI.Application\\Repositories\\CompletedOrder\\ICompletedOrderWriteRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T15:03:09.78Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "UpdatePasswordCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Features\\Commands\\AppUser\\UpdatePassword\\UpdatePasswordCommandHandler.cs",
-              "RelativeDocumentMoniker": "Core\\ETicaretAPI.Application\\Features\\Commands\\AppUser\\UpdatePassword\\UpdatePasswordCommandHandler.cs",
-              "ToolTip": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Features\\Commands\\AppUser\\UpdatePassword\\UpdatePasswordCommandHandler.cs",
-              "RelativeToolTip": "Core\\ETicaretAPI.Application\\Features\\Commands\\AppUser\\UpdatePassword\\UpdatePasswordCommandHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Title": "ICompletedOrderReadRepository.cs",
+              "DocumentMoniker": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Repositories\\CompletedOrder\\ICompletedOrderReadRepository.cs",
+              "RelativeDocumentMoniker": "Core\\ETicaretAPI.Application\\Repositories\\CompletedOrder\\ICompletedOrderReadRepository.cs",
+              "ToolTip": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Repositories\\CompletedOrder\\ICompletedOrderReadRepository.cs",
+              "RelativeToolTip": "Core\\ETicaretAPI.Application\\Repositories\\CompletedOrder\\ICompletedOrderReadRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T10:17:33.968Z"
+              "WhenOpened": "2025-06-03T15:03:01.33Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "UpdatePasswordCommandRequest.cs",
-              "DocumentMoniker": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Features\\Commands\\AppUser\\UpdatePassword\\UpdatePasswordCommandRequest.cs",
-              "RelativeDocumentMoniker": "Core\\ETicaretAPI.Application\\Features\\Commands\\AppUser\\UpdatePassword\\UpdatePasswordCommandRequest.cs",
-              "ToolTip": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Features\\Commands\\AppUser\\UpdatePassword\\UpdatePasswordCommandRequest.cs",
-              "RelativeToolTip": "Core\\ETicaretAPI.Application\\Features\\Commands\\AppUser\\UpdatePassword\\UpdatePasswordCommandRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAwAAAAAAAAAA==",
+              "Title": "GetOrderByIdQueryResponse.cs",
+              "DocumentMoniker": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Features\\Queries\\Order\\GetOrderById\\GetOrderByIdQueryResponse.cs",
+              "RelativeDocumentMoniker": "Core\\ETicaretAPI.Application\\Features\\Queries\\Order\\GetOrderById\\GetOrderByIdQueryResponse.cs",
+              "ToolTip": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Features\\Queries\\Order\\GetOrderById\\GetOrderByIdQueryResponse.cs",
+              "RelativeToolTip": "Core\\ETicaretAPI.Application\\Features\\Queries\\Order\\GetOrderById\\GetOrderByIdQueryResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T10:17:59.471Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "UpdatePasswordCommandResponse.cs",
-              "DocumentMoniker": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Features\\Commands\\AppUser\\UpdatePassword\\UpdatePasswordCommandResponse.cs",
-              "RelativeDocumentMoniker": "Core\\ETicaretAPI.Application\\Features\\Commands\\AppUser\\UpdatePassword\\UpdatePasswordCommandResponse.cs",
-              "ToolTip": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Features\\Commands\\AppUser\\UpdatePassword\\UpdatePasswordCommandResponse.cs",
-              "RelativeToolTip": "Core\\ETicaretAPI.Application\\Features\\Commands\\AppUser\\UpdatePassword\\UpdatePasswordCommandResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T10:18:00.375Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "PasswordResetCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Features\\Commands\\AppUser\\PasswordReset\\PasswordResetCommandHandler.cs",
-              "RelativeDocumentMoniker": "Core\\ETicaretAPI.Application\\Features\\Commands\\AppUser\\PasswordReset\\PasswordResetCommandHandler.cs",
-              "ToolTip": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Features\\Commands\\AppUser\\PasswordReset\\PasswordResetCommandHandler.cs",
-              "RelativeToolTip": "Core\\ETicaretAPI.Application\\Features\\Commands\\AppUser\\PasswordReset\\PasswordResetCommandHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T10:14:05.546Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "PasswordResetCommandResponse.cs",
-              "DocumentMoniker": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Features\\Commands\\AppUser\\PasswordReset\\PasswordResetCommandResponse.cs",
-              "RelativeDocumentMoniker": "Core\\ETicaretAPI.Application\\Features\\Commands\\AppUser\\PasswordReset\\PasswordResetCommandResponse.cs",
-              "ToolTip": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Features\\Commands\\AppUser\\PasswordReset\\PasswordResetCommandResponse.cs",
-              "RelativeToolTip": "Core\\ETicaretAPI.Application\\Features\\Commands\\AppUser\\PasswordReset\\PasswordResetCommandResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T10:16:29.775Z"
+              "WhenOpened": "2025-06-03T15:02:19.478Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "PasswordResetCommandRequest.cs",
-              "DocumentMoniker": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Features\\Commands\\AppUser\\PasswordReset\\PasswordResetCommandRequest.cs",
-              "RelativeDocumentMoniker": "Core\\ETicaretAPI.Application\\Features\\Commands\\AppUser\\PasswordReset\\PasswordResetCommandRequest.cs",
-              "ToolTip": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Features\\Commands\\AppUser\\PasswordReset\\PasswordResetCommandRequest.cs",
-              "RelativeToolTip": "Core\\ETicaretAPI.Application\\Features\\Commands\\AppUser\\PasswordReset\\PasswordResetCommandRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAqAAAAAAAAAA==",
+              "Title": "CompleteOrderCommandResponse.cs",
+              "DocumentMoniker": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Features\\Commands\\Order\\CompleteOrder\\CompleteOrderCommandResponse.cs",
+              "RelativeDocumentMoniker": "Core\\ETicaretAPI.Application\\Features\\Commands\\Order\\CompleteOrder\\CompleteOrderCommandResponse.cs",
+              "ToolTip": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Features\\Commands\\Order\\CompleteOrder\\CompleteOrderCommandResponse.cs",
+              "RelativeToolTip": "Core\\ETicaretAPI.Application\\Features\\Commands\\Order\\CompleteOrder\\CompleteOrderCommandResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T10:15:31.105Z"
+              "WhenOpened": "2025-06-03T15:02:02.899Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "PasswordChangeFailedException.cs",
-              "DocumentMoniker": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Exceptions\\PasswordChangeFailedException.cs",
-              "RelativeDocumentMoniker": "Core\\ETicaretAPI.Application\\Exceptions\\PasswordChangeFailedException.cs",
-              "ToolTip": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Exceptions\\PasswordChangeFailedException.cs",
-              "RelativeToolTip": "Core\\ETicaretAPI.Application\\Exceptions\\PasswordChangeFailedException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 14,
+              "Title": "CompleteOrderCommandRequest.cs",
+              "DocumentMoniker": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Features\\Commands\\Order\\CompleteOrder\\CompleteOrderCommandRequest.cs",
+              "RelativeDocumentMoniker": "Core\\ETicaretAPI.Application\\Features\\Commands\\Order\\CompleteOrder\\CompleteOrderCommandRequest.cs",
+              "ToolTip": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Features\\Commands\\Order\\CompleteOrder\\CompleteOrderCommandRequest.cs",
+              "RelativeToolTip": "Core\\ETicaretAPI.Application\\Features\\Commands\\Order\\CompleteOrder\\CompleteOrderCommandRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T10:12:57.776Z"
+              "WhenOpened": "2025-06-03T14:36:35.239Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "IUserService.cs",
-              "DocumentMoniker": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Abstractions\\Services\\IUserService.cs",
-              "RelativeDocumentMoniker": "Core\\ETicaretAPI.Application\\Abstractions\\Services\\IUserService.cs",
-              "ToolTip": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Abstractions\\Services\\IUserService.cs",
-              "RelativeToolTip": "Core\\ETicaretAPI.Application\\Abstractions\\Services\\IUserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 13,
+              "Title": "CompleteOrderCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Features\\Commands\\Order\\CompleteOrder\\CompleteOrderCommandHandler.cs",
+              "RelativeDocumentMoniker": "Core\\ETicaretAPI.Application\\Features\\Commands\\Order\\CompleteOrder\\CompleteOrderCommandHandler.cs",
+              "ToolTip": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Features\\Commands\\Order\\CompleteOrder\\CompleteOrderCommandHandler.cs",
+              "RelativeToolTip": "Core\\ETicaretAPI.Application\\Features\\Commands\\Order\\CompleteOrder\\CompleteOrderCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T10:11:57.515Z"
+              "WhenOpened": "2025-06-03T14:36:07.644Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "IMailService.cs",
-              "DocumentMoniker": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Abstractions\\Services\\IMailService.cs",
-              "RelativeDocumentMoniker": "Core\\ETicaretAPI.Application\\Abstractions\\Services\\IMailService.cs",
-              "ToolTip": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Abstractions\\Services\\IMailService.cs",
-              "RelativeToolTip": "Core\\ETicaretAPI.Application\\Abstractions\\Services\\IMailService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "DocumentIndex": 16,
+              "Title": "SingleOrder.cs",
+              "DocumentMoniker": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\DTOs\\Order\\SingleOrder.cs",
+              "RelativeDocumentMoniker": "Core\\ETicaretAPI.Application\\DTOs\\Order\\SingleOrder.cs",
+              "ToolTip": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\DTOs\\Order\\SingleOrder.cs",
+              "RelativeToolTip": "Core\\ETicaretAPI.Application\\DTOs\\Order\\SingleOrder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T10:10:54.996Z"
+              "WhenOpened": "2025-06-03T14:35:26.839Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "IAuthService.cs",
-              "DocumentMoniker": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Abstractions\\Services\\IAuthService.cs",
-              "RelativeDocumentMoniker": "Core\\ETicaretAPI.Application\\Abstractions\\Services\\IAuthService.cs",
-              "ToolTip": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Abstractions\\Services\\IAuthService.cs",
-              "RelativeToolTip": "Core\\ETicaretAPI.Application\\Abstractions\\Services\\IAuthService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAvAAAAAAAAAA==",
+              "Title": "IOrderService.cs",
+              "DocumentMoniker": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Abstractions\\Services\\IOrderService.cs",
+              "RelativeDocumentMoniker": "Core\\ETicaretAPI.Application\\Abstractions\\Services\\IOrderService.cs",
+              "ToolTip": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Abstractions\\Services\\IOrderService.cs",
+              "RelativeToolTip": "Core\\ETicaretAPI.Application\\Abstractions\\Services\\IOrderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T10:10:32.932Z"
+              "WhenOpened": "2025-06-03T14:35:08.957Z",
+              "EditorCaption": ""
             }
           ]
         }

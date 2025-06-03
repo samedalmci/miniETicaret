@@ -5,4 +5,5 @@ export class SingleOrder {
   Description: string;
   Id: string;
   OrderCode: string;
+  Completed: boolean;
 }

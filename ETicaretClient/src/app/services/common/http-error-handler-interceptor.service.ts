@@ -18,8 +18,7 @@ export class HttpErrorHandlerInterceptorService implements HttpInterceptor {
     return next.handle(req).pipe(catchError(error => {
       switch (error.status) {
         case HttpStatusCode.Unauthorized:
-          this.userAuthService.refreshTokenLogin(localStorage.getItem("refreshToken"), (state) => {
-            debugger;
+          this.userAuthService.refreshTokenLogin(localStorage.getItem("refreshToken"), (state) => {          
             if (!state) {
               const url = this.router.url;
               if (url == "/products")

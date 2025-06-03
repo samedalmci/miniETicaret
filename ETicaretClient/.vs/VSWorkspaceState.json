@@ -3,11 +3,10 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\ui",
-    "\\src\\app\\ui\\components",
-    "\\src\\app\\ui\\components\\password-reset",
-    "\\src\\app\\ui\\components\\update-password"
+    "\\src\\app\\dialogs",
+    "\\src\\app\\dialogs\\complete-order-dialog",
+    "\\src\\app\\dialogs\\shoping-complete-dialog",
+    "\\src\\assets"
   ],
-  "SelectedNode": "\\src\\app\\ui\\components\\update-password\\update-password.component.html",
   "PreviewInSolutionExplorer": false
 }

@@ -13,6 +13,8 @@ import { OrderDetailDialogComponent } from './order-detail-dialog/order-detail-d
 import { MatTableModule } from '@angular/material/table';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { CompleteOrderDialogComponent } from './complete-order-dialog/complete-order-dialog.component';
+
 
 
 @NgModule({
@@ -22,6 +24,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     BasketItemRemoveDialogComponent,
     ShoppingCompleteDialogComponent,
     OrderDetailDialogComponent,
+    CompleteOrderDialogComponent
 
   ],
   imports: [

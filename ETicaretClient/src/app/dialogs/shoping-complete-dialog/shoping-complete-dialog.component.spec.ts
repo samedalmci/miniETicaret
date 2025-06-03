@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { CompleteOrderDialogComponent } from '../complete-order-dialog/complete-order-dialog.component';
 
-import { ShopingCompleteDialogComponent } from './shoping-complete-dialog.component';
 
-describe('ShopingCompleteDialogComponent', () => {
-  let component: ShopingCompleteDialogComponent;
-  let fixture: ComponentFixture<ShopingCompleteDialogComponent>;
+describe('CompleteOrderDialogComponent', () => {
+  let component: CompleteOrderDialogComponent;
+  let fixture: ComponentFixture<CompleteOrderDialogComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ShopingCompleteDialogComponent]
+      declarations: [CompleteOrderDialogComponent]
     })
-    .compileComponents();
+      .compileComponents();
 
-    fixture = TestBed.createComponent(ShopingCompleteDialogComponent);
+    fixture = TestBed.createComponent(CompleteOrderDialogComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

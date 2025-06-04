@@ -42,8 +42,7 @@
               "RelativeToolTip": "src\\app\\admin\\components\\order\\list\\list.component.html",
               "ViewState": "AgIAABAAAAAAAAAAAAAwwDEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-06-03T17:03:50.69Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-03T17:03:50.69Z"
             },
             {
               "$type": "Document",
@@ -55,8 +54,7 @@
               "RelativeToolTip": "src\\app\\dialogs\\order-detail-dialog\\order-detail-dialog.component.ts",
               "ViewState": "AgIAACQAAAAAAAAAAAAjwDgAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-06-03T17:02:00.979Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-03T17:02:00.979Z"
             },
             {
               "$type": "Document",
@@ -68,8 +66,7 @@
               "RelativeToolTip": "src\\app\\dialogs\\order-detail-dialog\\order-detail-dialog.component.html",
               "ViewState": "AgIAACcAAAAAAAAAAADwv0UAAABsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-06-03T16:24:22.455Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-03T16:24:22.455Z"
             },
             {
               "$type": "Document",
@@ -94,8 +91,7 @@
               "RelativeToolTip": "src\\app\\dialogs\\complete-order-dialog\\complete-order-dialog.component.ts",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-06-03T16:13:16.391Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-03T16:13:16.391Z"
             }
           ]
         }

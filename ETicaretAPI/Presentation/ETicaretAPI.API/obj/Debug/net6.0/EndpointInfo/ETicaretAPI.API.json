@@ -5,6 +5,18 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/ApplicationServices": {
+      "get": {
+        "tags": [
+          "ApplicationServices"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/api/Auth/Login": {
       "post": {
         "tags": [
@@ -603,7 +615,7 @@
         }
       }
     },
-    "/api/Products/DeleteProductImages/{id}": {
+    "/api/Products/DeleteProductImage/{id}": {
       "delete": {
         "tags": [
           "Products"

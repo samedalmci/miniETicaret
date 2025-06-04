@@ -72,7 +72,7 @@
               "RelativeDocumentMoniker": "Core\\ETicaretAPI.Application\\Features\\Commands\\Order\\CompleteOrder\\CompleteOrderCommandHandler.cs",
               "ToolTip": "C:\\Users\\samed\\Desktop\\ETicaretUygulamas\u0131\\miniETicaret\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Features\\Commands\\Order\\CompleteOrder\\CompleteOrderCommandHandler.cs",
               "RelativeToolTip": "Core\\ETicaretAPI.Application\\Features\\Commands\\Order\\CompleteOrder\\CompleteOrderCommandHandler.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAlwB4AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAlwB8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-04T12:57:20.863Z",
               "EditorCaption": ""
@@ -87,8 +87,7 @@
               "RelativeToolTip": "Presentation\\ETicaretAPI.API\\Controllers\\ProductsController.cs",
               "ViewState": "AgIAAFkAAAAAAAAAAAAAwHAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T12:55:14.492Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-04T12:55:14.492Z"
             },
             {
               "$type": "Document",
@@ -100,8 +99,7 @@
               "RelativeToolTip": "Presentation\\ETicaretAPI.API\\Controllers\\OrdersController.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAowBMAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T12:54:59.863Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-04T12:54:59.863Z"
             },
             {
               "$type": "Document",
@@ -113,8 +111,7 @@
               "RelativeToolTip": "Presentation\\ETicaretAPI.API\\Controllers\\BasketsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T12:54:35.785Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-04T12:54:35.785Z"
             },
             {
               "$type": "Document",
@@ -126,8 +123,7 @@
               "RelativeToolTip": "Infrastructure\\ETicaretAPI.Infrastructure\\ServiceRegistration.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T12:51:56.904Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-04T12:51:56.904Z"
             },
             {
               "$type": "Document",
@@ -139,8 +135,7 @@
               "RelativeToolTip": "Presentation\\ETicaretAPI.API\\Controllers\\ApplicationServicesController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T12:53:51.359Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-04T12:53:51.359Z"
             },
             {
               "$type": "Document",
@@ -152,8 +147,7 @@
               "RelativeToolTip": "Infrastructure\\ETicaretAPI.Infrastructure\\Services\\Configurations\\ApplicationService.cs",
               "ViewState": "AgIAACoAAAAAAAAAAAAgwD0AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T12:53:10.856Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-04T12:53:10.856Z"
             },
             {
               "$type": "Document",
@@ -165,8 +159,7 @@
               "RelativeToolTip": "Core\\ETicaretAPI.Application\\Enums\\ActionType.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T12:51:23.737Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-04T12:51:23.737Z"
             },
             {
               "$type": "Document",
@@ -178,8 +171,7 @@
               "RelativeToolTip": "Core\\ETicaretAPI.Application\\DTOs\\Configuration\\Menu.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T12:50:41.882Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-04T12:50:41.882Z"
             },
             {
               "$type": "Document",
@@ -191,8 +183,7 @@
               "RelativeToolTip": "Core\\ETicaretAPI.Application\\DTOs\\Configuration\\Action.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T12:50:24.723Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-04T12:50:24.723Z"
             },
             {
               "$type": "Document",
@@ -204,8 +195,7 @@
               "RelativeToolTip": "Core\\ETicaretAPI.Application\\CustomAttributes\\AuthorizeDefinitionAttribute.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T12:49:49.673Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-04T12:49:49.673Z"
             },
             {
               "$type": "Document",
@@ -217,8 +207,7 @@
               "RelativeToolTip": "Core\\ETicaretAPI.Application\\Consts\\AuthorizeDefinitionConstants.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T12:48:38.12Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-04T12:48:38.12Z"
             },
             {
               "$type": "Document",
@@ -230,8 +219,7 @@
               "RelativeToolTip": "Core\\ETicaretAPI.Application\\Abstractions\\Services\\Configurations\\IApplicationService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T12:47:26.38Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-04T12:47:26.38Z"
             }
           ]
         }

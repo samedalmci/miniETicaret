@@ -6,6 +6,7 @@ import { CustomerModule } from './customer/customer.module';
 import { DashboardModule } from './dashboard/dashboard.module';
 import { DeleteDirective } from '../../directives/admin/delete.directive';
 import { MatDialogModule } from '@angular/material/dialog';
+import { AuthorizeMenuModule } from './authorize-menu/authorize-menu.module';
 
 @NgModule({
   declarations: [],
@@ -15,7 +16,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     OrderModule,
     CustomerModule,
     DashboardModule,
-    MatDialogModule
+    MatDialogModule,
+    AuthorizeMenuModule
   ]
 })
 export class ComponentsModule { }

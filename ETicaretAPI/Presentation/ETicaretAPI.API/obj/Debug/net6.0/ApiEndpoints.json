@@ -106,6 +106,38 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "ETicaretAPI.API.Controllers.AuthorizationEndpointsController",
+    "Method": "AssignRoleEndpoint",
+    "RelativePath": "api/AuthorizationEndpoints",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "assignRoleEndpointCommandRequest",
+        "Type": "ETicaretAPI.Application.Features.Commands.AuthorizationEndpoint.AssignRoleEndpoint.AssignRoleEndpointCommandRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ETicaretAPI.API.Controllers.AuthorizationEndpointsController",
+    "Method": "GetRolesToEndpoint",
+    "RelativePath": "api/AuthorizationEndpoints/GetRolesToEndpoint",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "rolesToEndpointQueryRequest",
+        "Type": "ETicaretAPI.Application.Features.Queries.AuthorizationEndpoint.GetRolesToEndpoints.GetRolesToEndpointQueryRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ETicaretAPI.API.Controllers.BasketsController",
     "Method": "GetBasketItems",
     "RelativePath": "api/Baskets",

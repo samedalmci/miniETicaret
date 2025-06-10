@@ -2,7 +2,7 @@
 {
     public class GetRolesQueryResponse
     {
-        public object Datas { get; set; }
+        public List<object> Datas { get; set; } = new List<object>();
         public int TotalCount { get; set; }
     }
 }

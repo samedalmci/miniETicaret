@@ -1,4 +1,4 @@
-import { Component, Inject, OnDestroy, OnInit } from '@angular/core';
+import { Component, Inject, OnDestroy, OnInit, ChangeDetectorRef } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { BaseDialog } from '../base/base-dialog';
 import { MatSelectionList } from '@angular/material/list';
@@ -19,24 +19,38 @@ export class AuthorizeMenuDialogComponent extends BaseDialog<AuthorizeMenuDialog
     @Inject(MAT_DIALOG_DATA) public data: any,
     private roleService: RoleService,
     private authorizationEndpointService: AuthorizationEndpointService,
-    private spinner: NgxSpinnerService) {
+    private spinner: NgxSpinnerService,
+    private cdr: ChangeDetectorRef) {
     super(dialogRef)
   }
 
-  roles: { datas: List_Role[], totalCount: number };
-  assignedRoles: Array<string>;
-  listRoles: { name: string, selected: boolean }[];
+  roles: { datas: List_Role[], totalCount: number } = { datas: [], totalCount: 0 };
+  assignedRoles: Array<string> = [];
+  listRoles: { name: string, selected: boolean }[] = [];
+
   async ngOnInit() {
-    this.assignedRoles = await this.authorizationEndpointService.getRolesToEndpoint(this.data.code, this.data.menuName);
+    try {
+      this.assignedRoles = await this.authorizationEndpointService.getRolesToEndpoint(this.data.code, this.data.menuName);
 
-    this.roles = await this.roleService.getRoles(-1, -1);
+      let rolesResponse = await this.roleService.getRoles(-1, -1);
+      if (rolesResponse && rolesResponse.Datas && rolesResponse.TotalCount !== undefined) {
+        this.roles = {
+          datas: rolesResponse.Datas,
+          totalCount: rolesResponse.TotalCount
+        };
 
-    this.listRoles = this.roles.datas.map((r: any) => {
-      return {
-        name: r.name,
-        selected: this.assignedRoles?.indexOf(r.name) > -1
+        this.listRoles = this.roles.datas.map((r: any) => {
+          return {
+            name: r.Name,
+            selected: this.assignedRoles?.indexOf(r.Name) > -1
+          }
+        });
       }
-    });
+    } catch (error) {
+      console.error('Error in ngOnInit:', error);
+    } finally {
+      this.cdr.detectChanges();
+    }
   }
 
   assignRoles(rolesComponent: MatSelectionList) {

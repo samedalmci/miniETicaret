@@ -2,6 +2,6 @@
 {
     public class GetRolesToEndpointQueryResponse
     {
-        public object Roles { get; set; }
+        public List<string> Roles { get; set; } = new List<string>();
     }
 }

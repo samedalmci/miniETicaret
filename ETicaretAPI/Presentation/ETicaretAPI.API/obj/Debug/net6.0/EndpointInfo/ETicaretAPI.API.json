@@ -1590,15 +1590,19 @@
         "additionalProperties": false
       },
       "GetRolesToEndpointQueryRequest": {
+        "required": [
+          "Code",
+          "Menu"
+        ],
         "type": "object",
         "properties": {
           "Code": {
-            "type": "string",
-            "nullable": true
+            "minLength": 1,
+            "type": "string"
           },
           "Menu": {
-            "type": "string",
-            "nullable": true
+            "minLength": 1,
+            "type": "string"
           }
         },
         "additionalProperties": false

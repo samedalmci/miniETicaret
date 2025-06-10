@@ -22,7 +22,7 @@ namespace ETicaretAPI.Application.Features.Queries.Role.GetRoles
             var (datas, count) = _roleService.GetAllRoles(request.Page, request.Size);
             return new()
             {
-                Datas = datas,
+                Datas = ((IEnumerable<object>)datas).ToList(),
                 TotalCount = count
             };
         }

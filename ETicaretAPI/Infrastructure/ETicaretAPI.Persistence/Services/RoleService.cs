@@ -1,4 +1,4 @@
-﻿﻿using ETicaretAPI.Application.Abstractions.Services;
+﻿using ETicaretAPI.Application.Abstractions.Services;
 using ETicaretAPI.Domain.Entities.Identity;
 using Microsoft.AspNetCore.Identity;
 using System;
@@ -32,7 +32,7 @@ namespace ETicaretAPI.Persistence.Services
             return result.Succeeded;
         }
 
-        public (object, int) GetAllRoles(int page, int size)
+        public (IEnumerable<object>, int) GetAllRoles(int page, int size)
         {
             var query = _roleManager.Roles;
 
@@ -42,7 +42,10 @@ namespace ETicaretAPI.Persistence.Services
                 rolesQuery = query.Skip(page * size).Take(size);
             else
                 rolesQuery = query;
-           
+
+            if (rolesQuery == null)
+                return (new List<object>(), 0);
+
             return (rolesQuery.Select(r => new { r.Id, r.Name }), query.Count());
         }
 

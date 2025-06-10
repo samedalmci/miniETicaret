@@ -19,11 +19,22 @@ namespace ETicaretAPI.Application.Features.Queries.AuthorizationEndpoint.GetRole
 
         public async Task<GetRolesToEndpointQueryResponse> Handle(GetRolesToEndpointQueryRequest request, CancellationToken cancellationToken)
         {
-            var datas = await _authorizationEndpointService.GetRolesToEndpointAsync(request.Code, request.Menu);
-            return new()
+            try
             {
-                Roles = datas
-            };
+                if (string.IsNullOrEmpty(request.Code) || string.IsNullOrEmpty(request.Menu))
+                    throw new ArgumentException("Code and Menu cannot be null or empty");
+
+                var datas = await _authorizationEndpointService.GetRolesToEndpointAsync(request.Code, request.Menu);
+                return new()
+                {
+                    Roles = datas ?? new List<string>()
+                };
+            }
+            catch (Exception ex)
+            {
+                // Log the error here if you have a logging service
+                throw new Exception($"Error in GetRolesToEndpointQueryHandler: {ex.Message}", ex);
+            }
         }
     }
 }

@@ -20,16 +20,36 @@ namespace ETicaretAPI.API.Controllers
         [HttpPost("[action]")]
         public async Task<IActionResult> GetRolesToEndpoint(GetRolesToEndpointQueryRequest rolesToEndpointQueryRequest)
         {
-            GetRolesToEndpointQueryResponse response = await _mediator.Send(rolesToEndpointQueryRequest);
-            return Ok(response);
+            try
+            {
+                if (rolesToEndpointQueryRequest == null)
+                    return BadRequest("Request cannot be null");
+
+                GetRolesToEndpointQueryResponse response = await _mediator.Send(rolesToEndpointQueryRequest);
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
         }
 
         [HttpPost]
         public async Task<IActionResult> AssignRoleEndpoint(AssignRoleEndpointCommandRequest assignRoleEndpointCommandRequest)
         {
-            assignRoleEndpointCommandRequest.Type = typeof(Program);
-            AssignRoleEndpointCommandResponse response = await _mediator.Send(assignRoleEndpointCommandRequest);
-            return Ok(response);
+            try
+            {
+                if (assignRoleEndpointCommandRequest == null)
+                    return BadRequest("Request cannot be null");
+
+                assignRoleEndpointCommandRequest.Type = typeof(Program);
+                AssignRoleEndpointCommandResponse response = await _mediator.Send(assignRoleEndpointCommandRequest);
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
         }
     }
 }

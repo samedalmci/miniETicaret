@@ -86,13 +86,26 @@ namespace ETicaretAPI.Persistence.Services
 
         public async Task<List<string>> GetRolesToEndpointAsync(string code, string menu)
         {
-            Endpoint? endpoint = await _endpointReadRepository.Table
-                .Include(e => e.Roles)
-                .Include(e => e.Menu)
-                .FirstOrDefaultAsync(e => e.Code == code && e.Menu.Name == menu);
-            if (endpoint != null)
+            try
+            {
+                if (string.IsNullOrEmpty(code) || string.IsNullOrEmpty(menu))
+                    return new List<string>();
+
+                Endpoint? endpoint = await _endpointReadRepository.Table
+                    .Include(e => e.Roles)
+                    .Include(e => e.Menu)
+                    .FirstOrDefaultAsync(e => e.Code == code && e.Menu.Name == menu);
+
+                if (endpoint == null)
+                    return new List<string>();
+
                 return endpoint.Roles.Select(r => r.Name).ToList();
-            return null;
+            }
+            catch (Exception ex)
+            {
+                // Log the error here if you have a logging service
+                throw new Exception($"Error in GetRolesToEndpointAsync: {ex.Message}", ex);
+            }
         }
     }
 }

@@ -27,19 +27,25 @@ export class AuthorizationEndpointService {
   }
 
   async getRolesToEndpoint(code: string, menu: string, successCallBack?: () => void, errorCallBack?: (error) => void): Promise<string[]> {
-    const observable: Observable<any> = this.httpClientService.post({
-      controller: "AuthorizationEndpoints",
-      action: "GetRolesToEndpoint"
-    }, {
-      code: code,
-      menu: menu
-    });
+    try {
+      const observable: Observable<any> = this.httpClientService.post({
+        controller: "AuthorizationEndpoints",
+        action: "GetRolesToEndpoint"
+      }, {
+        code: code,
+        menu: menu
+      });
 
-    const promiseData = firstValueFrom(observable);
-    promiseData.then(successCallBack)
-      .catch(errorCallBack);
+      const promiseData = firstValueFrom(observable);
+      promiseData.then(successCallBack)
+        .catch(errorCallBack);
 
-    return (await promiseData).roles;
+      const response = await promiseData;
+      return response?.Roles || [];
+    } catch (error) {
+      console.error('Error in getRolesToEndpoint:', error);
+      return [];
+    }
   }
 }
 

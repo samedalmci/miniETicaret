@@ -14,7 +14,7 @@ import { FacebookLoginProvider, GoogleLoginProvider, SocialAuthServiceConfig, So
 import { HttpErrorHandlerInterceptorService } from './services/common/http-error-handler-interceptor.service';
 import { isPlatformBrowser } from '@angular/common';
 import { DynamicLoadComponentDirective } from './directives/common/dynamic-load-component.directive';
-
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [
@@ -26,10 +26,12 @@ import { DynamicLoadComponentDirective } from './directives/common/dynamic-load-
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    AdminModule,UiModule,
+    AdminModule,
+    UiModule,
     ToastrModule.forRoot(),
     NgxSpinnerModule,
     HttpClientModule,
+    MatProgressSpinnerModule,
     JwtModule.forRoot({
       config: {
         tokenGetter: function() {

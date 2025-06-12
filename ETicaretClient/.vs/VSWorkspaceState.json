@@ -3,9 +3,7 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\services",
-    "\\src\\app\\services\\common"
+    "\\src\\app\\dialogs"
   ],
-  "SelectedNode": "\\package.json",
   "PreviewInSolutionExplorer": false
 }

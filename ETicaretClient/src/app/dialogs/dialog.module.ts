@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DeleteDialogComponent } from './delete-dialog/delete-dialog.component';
+import { FileUploadDialogComponent } from './file-upload-dialog/file-upload-dialog.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 import { SelectProductImageDialogComponent } from './select-product-image-dialog/select-product-image-dialog.component';
@@ -8,19 +9,21 @@ import { FileUploadModule } from '../services/common/file-upload/file-upload.mod
 import { MatCardModule } from '@angular/material/card';
 import { FormsModule } from '@angular/forms';
 import { BasketItemRemoveDialogComponent } from './basket-item-remove-dialog/basket-item-remove-dialog.component';
-import { ShoppingCompleteDialogComponent } from './shoping-complete-dialog/shoping-complete-dialog.component';
 import { OrderDetailDialogComponent } from './order-detail-dialog/order-detail-dialog.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { CompleteOrderDialogComponent } from './complete-order-dialog/complete-order-dialog.component';
 import { AuthorizeMenuDialogComponent } from './authorize-menu-dialog/authorize-menu-dialog.component';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatListModule } from '@angular/material/list';
 import { AuthorizeUserDialogComponent } from './authorize-user-dialog/authorize-user-dialog.component';
 import { QrcodeDialogComponent } from './qrcode-dialog/qrcode-dialog.component';
-
-
+import { QrcodeReadingDialogComponent } from './qrcode-reading-dialog/qrcode-reading-dialog.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { ShoppingCompleteDialogComponent } from './shoping-complete-dialog/shoping-complete-dialog.component';
+import { NgxScannerQrcodeComponent } from 'ngx-scanner-qrcode';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [
@@ -32,13 +35,15 @@ import { QrcodeDialogComponent } from './qrcode-dialog/qrcode-dialog.component';
     CompleteOrderDialogComponent,
     AuthorizeMenuDialogComponent,
     AuthorizeUserDialogComponent,
-    QrcodeDialogComponent
-
+    QrcodeDialogComponent,
+    QrcodeReadingDialogComponent
   ],
   imports: [
     CommonModule,
-    MatDialogModule, MatButtonModule, MatCardModule, MatTableModule, MatToolbarModule, MatProgressSpinnerModule, MatBadgeModule, MatListModule,
+    MatDialogModule, MatButtonModule, MatCardModule, MatTableModule, MatToolbarModule, MatBadgeModule, MatListModule, MatFormFieldModule, MatInputModule,
     FileUploadModule,
+    NgxScannerQrcodeComponent,
+    MatProgressSpinnerModule
   ]
 })
 export class DialogModule { }

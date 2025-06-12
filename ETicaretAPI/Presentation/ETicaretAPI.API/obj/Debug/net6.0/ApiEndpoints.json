@@ -430,6 +430,22 @@
   },
   {
     "ContainingType": "ETicaretAPI.API.Controllers.ProductsController",
+    "Method": "UpdateStockQrCodeToProduct",
+    "RelativePath": "api/Products/qrcode",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateStockQrCodeToProductCommandRequest",
+        "Type": "ETicaretAPI.Application.Features.Commands.Product.UpdateStockQrCodeToProduct.UpdateStockQrCodeToProductCommandRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ETicaretAPI.API.Controllers.ProductsController",
     "Method": "GetQrCodeToProduct",
     "RelativePath": "api/Products/qrcode/{productId}",
     "HttpMethod": "GET",

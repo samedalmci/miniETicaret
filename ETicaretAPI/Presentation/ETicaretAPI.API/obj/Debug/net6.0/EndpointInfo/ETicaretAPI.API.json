@@ -591,6 +591,37 @@
         }
       }
     },
+    "/api/Products/qrcode": {
+      "put": {
+        "tags": [
+          "Products"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateStockQrCodeToProductCommandRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateStockQrCodeToProductCommandRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateStockQrCodeToProductCommandRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/api/Products/{Id}": {
       "get": {
         "tags": [
@@ -3219,6 +3250,20 @@
           "Name": {
             "type": "string",
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateStockQrCodeToProductCommandRequest": {
+        "type": "object",
+        "properties": {
+          "ProductId": {
+            "type": "string",
+            "nullable": true
+          },
+          "Stock": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false

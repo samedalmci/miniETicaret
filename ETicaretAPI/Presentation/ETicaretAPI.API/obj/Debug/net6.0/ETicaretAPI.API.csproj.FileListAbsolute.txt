@@ -281,3 +281,4 @@ C:\Users\samed\Desktop\ETicaretUygulaması\miniETicaret\ETicaretAPI\Presentation
 C:\Users\samed\Desktop\ETicaretUygulaması\miniETicaret\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net6.0\Serilog.Sinks.Seq.dll
 C:\Users\samed\Desktop\ETicaretUygulaması\miniETicaret\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net6.0\ETicaretAPI.SingalR.dll
 C:\Users\samed\Desktop\ETicaretUygulaması\miniETicaret\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net6.0\ETicaretAPI.SingalR.pdb
+C:\Users\samed\Desktop\ETicaretUygulaması\miniETicaret\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net6.0\QRCoder.dll

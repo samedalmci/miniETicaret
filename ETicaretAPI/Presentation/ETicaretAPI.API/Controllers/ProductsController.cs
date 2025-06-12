@@ -14,6 +14,8 @@ using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
+using ETicaretAPI.Application.Abstractions.Services;
+using ETicaretAPI.Persistence.Services;
 
 namespace ETicaretAPI.API.Controllers
 {
@@ -23,11 +25,13 @@ namespace ETicaretAPI.API.Controllers
     {
         readonly IMediator _mediator;
         readonly ILogger<ProductsController> _logger;
+        readonly IProductService _productService;
 
-        public ProductsController(IMediator mediator, ILogger<ProductsController> logger)
+        public ProductsController(IMediator mediator, ILogger<ProductsController> logger, IProductService productService)
         {
             _mediator = mediator;
             _logger = logger;
+            _productService = productService;
         }
 
         [HttpGet]
@@ -35,6 +39,13 @@ namespace ETicaretAPI.API.Controllers
         {
             GettAllProductQueryResponse response = await _mediator.Send(getAllProductQueryRequest);
             return Ok(response);
+        }
+
+        [HttpGet("qrcode/{productId}")] 
+        public async Task<IActionResult> GetQrCodeToProduct([FromRoute] string productId)
+        {
+            var data = await _productService.QrCodeToProductAsync(productId);
+            return File(data, "image/png");
         }
 
         [HttpGet("{Id}")]

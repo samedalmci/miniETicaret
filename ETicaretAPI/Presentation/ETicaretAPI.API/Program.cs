@@ -3,6 +3,7 @@ using System.Security.Claims;
 using System.Text;
 using ETicaretAPI.API.Configurations.ColumnWriters;
 using ETicaretAPI.API.Extensions;
+using ETicaretAPI.API.Filters;
 using ETicaretAPI.Application;
 using ETicaretAPI.Application.Validators.Products;
 using ETicaretAPI.Infrastructure;
@@ -15,6 +16,7 @@ using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.HttpLogging;
+using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using NpgsqlTypes;
 using Serilog;
@@ -82,7 +84,13 @@ builder.Services.AddHttpLogging(logging =>
     logging.ResponseBodyLogLimit = 4096;
 });
 
-builder.Services.AddControllers(options => options.Filters.Add<ValidationFilter>())
+builder.Services.AddControllers(options =>
+{
+    options.Filters.Add<ValidationFilter>();
+    options.Filters.Add<RolePermissionFilter>();
+})
+
+
     .AddFluentValidation(configuration => configuration.RegisterValidatorsFromAssemblyContaining<CreateProductValidator>())
     .ConfigureApiBehaviorOptions(options => options.SuppressModelStateInvalidFilter = true);
  

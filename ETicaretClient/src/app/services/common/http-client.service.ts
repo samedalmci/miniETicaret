@@ -14,13 +14,18 @@ export class HttpClientService {
     return `${requestParameter.baseUrl ? requestParameter.baseUrl : this.baseUrl}/${requestParameter.controller}${requestParameter.action ? `/${requestParameter.action}` : ""}`;
   }
 
-  private getHeaders(): HttpHeaders {
+  private getHeaders(requestParameter: Partial<RequestParameters>): HttpHeaders {
     let headers = new HttpHeaders();
     if (typeof window !== 'undefined') {
       const token = localStorage.getItem("accessToken");
       if (token) {
         headers = headers.set("Authorization", `Bearer ${token}`);
       }
+    }
+    if (requestParameter.headers) {
+      requestParameter.headers.keys().forEach(key => {
+        headers = headers.set(key, requestParameter.headers.get(key));
+      });
     }
     return headers;
   }
@@ -33,7 +38,10 @@ export class HttpClientService {
     else
       url = `${this.url(requestParameter)}${id ? `/${id}` : ""}${requestParameter.queryString ? `?${requestParameter.queryString}` : ""}`;
 
-    return this.httpClient.get<T>(url, { headers: this.getHeaders() });
+    return this.httpClient.get<T>(url, { 
+      headers: this.getHeaders(requestParameter), 
+      responseType: requestParameter.responseType as any 
+    });
   }
 
   post<T>(requestParameter: Partial<RequestParameters>, body: Partial<T>): Observable<T> {
@@ -43,7 +51,10 @@ export class HttpClientService {
     else
       url = `${this.url(requestParameter)}${requestParameter.queryString ? `?${requestParameter.queryString}` : ""}`;
 
-    return this.httpClient.post<T>(url, body, { headers: this.getHeaders() });
+    return this.httpClient.post<T>(url, body, { 
+      headers: this.getHeaders(requestParameter), 
+      responseType: requestParameter.responseType as any 
+    });
   }
 
   put<T>(requestParameter: Partial<RequestParameters>, body: Partial<T>): Observable<T> {
@@ -53,7 +64,10 @@ export class HttpClientService {
     else
       url = `${this.url(requestParameter)}${requestParameter.queryString ? `?${requestParameter.queryString}` : ""}`;
 
-    return this.httpClient.put<T>(url, body, { headers: this.getHeaders() });
+    return this.httpClient.put<T>(url, body, { 
+      headers: this.getHeaders(requestParameter), 
+      responseType: requestParameter.responseType as any 
+    });
   }
 
   delete<T>(requestParameter: Partial<RequestParameters>, id: string): Observable<T> {
@@ -63,7 +77,10 @@ export class HttpClientService {
     else
       url = `${this.url(requestParameter)}/${id}${requestParameter.queryString ? `?${requestParameter.queryString}` : ""}`;
 
-    return this.httpClient.delete<T>(url, { headers: this.getHeaders() });
+    return this.httpClient.delete<T>(url, { 
+      headers: this.getHeaders(requestParameter), 
+      responseType: requestParameter.responseType as any 
+    });
   }
 }
 
@@ -75,4 +92,6 @@ export class RequestParameters{
   headers?: HttpHeaders;
   baseUrl?: string;
   fullEndPoint?: string;
+
+  responseType?: string = 'json';
 }

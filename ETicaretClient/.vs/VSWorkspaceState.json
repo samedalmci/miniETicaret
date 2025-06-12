@@ -3,9 +3,9 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\admin",
-    "\\src\\app\\admin\\components",
-    "\\src\\app\\admin\\components\\user"
+    "\\src\\app\\services",
+    "\\src\\app\\services\\common"
   ],
+  "SelectedNode": "\\package.json",
   "PreviewInSolutionExplorer": false
 }

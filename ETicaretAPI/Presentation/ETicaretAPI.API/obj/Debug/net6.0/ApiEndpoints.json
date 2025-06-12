@@ -430,6 +430,22 @@
   },
   {
     "ContainingType": "ETicaretAPI.API.Controllers.ProductsController",
+    "Method": "GetQrCodeToProduct",
+    "RelativePath": "api/Products/qrcode/{productId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ETicaretAPI.API.Controllers.ProductsController",
     "Method": "Upload",
     "RelativePath": "api/Products/Upload",
     "HttpMethod": "POST",

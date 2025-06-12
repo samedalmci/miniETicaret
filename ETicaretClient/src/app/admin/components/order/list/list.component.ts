@@ -29,18 +29,10 @@ export class ListComponent extends BaseComponent implements OnInit {
 
   async getOrders() {
     this.showSpinner(SpinnerType.BallAtom);
-    console.log('Getting orders...');
-
     try {
       const allOrders: { TotalOrderCount: number; Orders: List_Order[] } = await this.orderService.getAllOrders(
         this.paginator ? this.paginator.pageIndex : 0,
-        this.paginator ? this.paginator.pageSize : 5,
-        () => {
-          console.log('Orders loaded successfully');
-          this.hideSpinner(SpinnerType.BallAtom);
-        },
-        errorMessage => {
-          console.error('Error loading orders:', errorMessage);
+        this.paginator ? this.paginator.pageSize : 5, () => this.hideSpinner(SpinnerType.BallAtom), (errorMessage: any) => {         
           this.alertifyService.message(errorMessage, {
             dismissOthers: true,
             messageType: MessageType.Error,
@@ -48,15 +40,11 @@ export class ListComponent extends BaseComponent implements OnInit {
           });
         }
       );
-
-      console.log('Orders data:', allOrders);
-      console.log('First order:', allOrders.Orders[0]);
       this.dataSource = new MatTableDataSource<List_Order>(allOrders.Orders);
       if (this.paginator) {
         this.paginator.length = allOrders.TotalOrderCount;
       }
     } catch (error) {
-      console.error('Error in getOrders:', error);
       this.hideSpinner(SpinnerType.BallAtom);
     }
   }

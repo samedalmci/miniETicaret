@@ -2,7 +2,6 @@
 
 Bu proje, **ASP.NET Core 6** ve **Angular** teknolojileri kullanılarak geliştirilmiş bir full-stack mini e-ticaret uygulamasıdır. Amaç; kurumsal mimari, katmanlı yapı, güvenlik ve modern web teknolojileriyle gerçek dünya uygulamasına yakın bir yapı sunmaktır.
 
-> 🚧 **Proje aktif olarak geliştirilmeye devam etmektedir. Yeni özellikler ve iyileştirmeler düzenli olarak eklenmektedir.
 
 ## 🚀 Kullanılan Teknolojiler
 

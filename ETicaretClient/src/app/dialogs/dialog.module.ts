@@ -22,7 +22,7 @@ import { QrcodeReadingDialogComponent } from './qrcode-reading-dialog/qrcode-rea
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { ShoppingCompleteDialogComponent } from './shoping-complete-dialog/shoping-complete-dialog.component';
-import { NgxScannerQrcodeComponent } from 'ngx-scanner-qrcode';
+import { NgxScannerQrcodeModule } from 'ngx-scanner-qrcode';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @NgModule({
@@ -41,8 +41,8 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
   imports: [
     CommonModule,
     MatDialogModule, MatButtonModule, MatCardModule, MatTableModule, MatToolbarModule, MatBadgeModule, MatListModule, MatFormFieldModule, MatInputModule,
-    FileUploadModule,
-    NgxScannerQrcodeComponent,
+    FileUploadModule,  
+    NgxScannerQrcodeModule,
     MatProgressSpinnerModule
   ]
 })

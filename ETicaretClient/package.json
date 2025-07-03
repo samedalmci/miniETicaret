@@ -33,7 +33,7 @@
     "express": "^4.18.2",
     "jquery": "^3.7.1",
     "ngx-file-drop": "^16.0.0",
-    "ngx-scanner-qrcode": "^1.7.6",
+    "ngx-scanner-qrcode": "^1.1.4",
     "ngx-spinner": "^19.0.0",
     "ngx-toastr": "^19.0.0",
     "rxjs": "~7.8.0",

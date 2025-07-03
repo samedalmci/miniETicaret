@@ -28,6 +28,6 @@ namespace ETicaretAPI.Application.Features.Commands.AppUser.FacebookLogin
             {
                 Token = token,
             };
-        }
+        }       
     }
 }

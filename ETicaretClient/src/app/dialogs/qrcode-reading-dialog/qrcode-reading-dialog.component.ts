@@ -30,7 +30,6 @@ export class QrcodeReadingDialogComponent extends BaseDialog<QrcodeReadingDialog
   @ViewChild("scanner", { static: true }) scanner: NgxScannerQrcodeComponent;
   @ViewChild("txtStock", { static: true }) txtStock: ElementRef;
 
-
   ngOnInit(): void {
     this.scanner.start();
   }
@@ -40,11 +39,53 @@ export class QrcodeReadingDialogComponent extends BaseDialog<QrcodeReadingDialog
   }
 
   onEvent(e) {
-    this.spinner.show(SpinnerType.BallAtom)
-    const data: any = (e as { data: string }).data;
-    if (data != null && data != "") {
-      const jsonData = JSON.parse(data);
+    try {
+      this.spinner.show(SpinnerType.BallAtom);
+      const data: any = (e as { data: string }).data;
+      
+      console.log("QR Kod içeriği:", data);
+      
+      if (!data) {
+        this.toastrService.message("QR kod okunamadı. Lütfen tekrar deneyin.", "Hata", {
+          messageType: ToastrMessageType.Error,
+          position: ToastrPosition.TopRight
+        });
+        this.spinner.hide(SpinnerType.BallAtom);
+        return;
+      }
+
+      let jsonData;
+      try {
+        jsonData = JSON.parse(data);
+        console.log("Parse edilmiş JSON:", jsonData);
+      } catch (error) {
+        console.error("JSON parse hatası:", error);
+        this.toastrService.message("Geçersiz QR kod formatı. Lütfen doğru QR kodu okutun.", "Hata", {
+          messageType: ToastrMessageType.Error,
+          position: ToastrPosition.TopRight
+        });
+        this.spinner.hide(SpinnerType.BallAtom);
+        return;
+      }
+
+      if (!jsonData.Id || !jsonData.Name) {
+        this.toastrService.message("QR kod içeriği eksik. Lütfen doğru QR kodu okutun.", "Hata", {
+          messageType: ToastrMessageType.Error,
+          position: ToastrPosition.TopRight
+        });
+        this.spinner.hide(SpinnerType.BallAtom);
+        return;
+      }
+
       const stockValue = (this.txtStock.nativeElement as HTMLInputElement).value;
+      if (!stockValue || isNaN(parseInt(stockValue))) {
+        this.toastrService.message("Lütfen geçerli bir stok değeri girin.", "Hata", {
+          messageType: ToastrMessageType.Error,
+          position: ToastrPosition.TopRight
+        });
+        this.spinner.hide(SpinnerType.BallAtom);
+        return;
+      }
 
       this.productService.updateStockQrCodeToProduct(jsonData.Id, parseInt(stockValue), () => {
         $("#btnClose").click();
@@ -52,9 +93,14 @@ export class QrcodeReadingDialogComponent extends BaseDialog<QrcodeReadingDialog
           messageType: ToastrMessageType.Success,
           position: ToastrPosition.TopRight
         });
-
-        this.spinner.hide(SpinnerType.BallAtom)
+        this.spinner.hide(SpinnerType.BallAtom);
       });
+    } catch (error) {
+      this.toastrService.message("Bir hata oluştu: " + error, "Hata", {
+        messageType: ToastrMessageType.Error,
+        position: ToastrPosition.TopRight
+      });
+      this.spinner.hide(SpinnerType.BallAtom);
     }
   }
 }

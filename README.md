@@ -14,7 +14,7 @@ Bu proje, **ASP.NET Core 6** ve **Angular** teknolojileri kullanılarak gelişti
 - **Middleware** – Exception handling & logging
 - **AutoMapper** – Nesne dönüşümleri
 - **FluentValidation** – Model doğrulama
-- **gRPC** – Mikroservis mimarisine geçiş hazırlığı
+- **gRPC** – Mikroservis mimarisine geçiş hazırlığı 
 
 ### Frontend (Angular)
 - **Angular CLI** – Modern SPA yapısı
